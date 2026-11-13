@@ -95,3 +95,39 @@ test("the low mooring needs a way across for Ada and preserves its berth", () =>
     assert.equal(stateKey(ending), stateKey(start()));
   }
 });
+
+test("the chart draws the skiff at the pilot's actual berth", () => {
+  const translations = [];
+  const context = onScreen => {
+    const ctx = {};
+    for (const name of [
+      "beginPath", "moveTo", "lineTo", "closePath", "stroke", "fill", "ellipse", "fillRect",
+      "fillText", "save", "restore", "rotate", "scale", "setTransform", "drawImage", "clip", "arc"
+    ]) ctx[name] = () => {};
+    ctx.translate = (x, y) => { if (onScreen) translations.push([x, y]); };
+    ctx.createLinearGradient = () => ({ addColorStop() {} });
+    ctx.measureText = str => ({ width: str.length * 6 });
+    return ctx;
+  };
+  const document = { createElement: () => ({ width: 0, height: 0, getContext: () => context(false) }) };
+  class Path2DStub { moveTo() {} lineTo() {} bezierCurveTo() {} }
+  runInNewContext(readFileSync(join(__dirname, "market-chart.js"), "utf8"), {
+    window, document, Path2D: Path2DStub
+  });
+  const canvas = { width: 0, height: 0, getContext: () => context(true) };
+  const high = start();
+  doWork(high, "go1", "moorSill", "go4", "go5", "rub", "go4", "take");
+  assert.equal(high.phase, "return");
+  window.drawMarketChart(canvas, high);
+  assert.ok(translations.some(([x, y]) => x === 254 && y === 259),
+    "recalled high-berth skiff must be at the broken rail");
+  assert.ok(!translations.some(([x, y]) => x === 120 && y === 320),
+    "skiff must not remain at the initial approach");
+  translations.length = 0;
+  const low = start();
+  doWork(low, "go1", "moorGutter");
+  window.drawMarketChart(canvas, low);
+  assert.ok(translations.some(([x, y]) => x === 465 && y === 351),
+    "low-berth skiff must stay in the gutter");
+  assert.deepEqual([canvas.width, canvas.height], [1600, 880]);
+});
