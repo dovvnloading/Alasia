@@ -30,49 +30,45 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  T["Selwick tide mills<br/>supply mechanical work"]
-  C["Main collars and fitted undersea links<br/>route load"]
-  V["Verran lower harbor<br/>receives lift"]
-  A["Anset<br/>public donor, exhausted"]
-  R["Sere<br/>hidden inhabited donor, lost"]
-  O["Orren<br/>new concealed donor, failing"]
-  K["Keld<br/>makes collars; not a magical battery"]
-  T --> C
-  K -.->|"fittings, maintenance"| C
-  A -->|"Y-94 trials; exhausted"| C
-  R ==>|"Y-41 Winter Allocation"| C
-  O ==>|"Y-7 reroute; current crisis"| C
-  C -->|"sustained protected lift"| V
+  M["Selwick tide mills"] --> G["Storm gates"]
+  M --> J["Outer Sill jacks"]
+  O["Orren shelf"] -->|donates ground| C["Fitted trunk"]
+  J -->|drives transfer| C
+  C -->|supports| V["Verran lower berths"]
 ```
 
 **Causal reading:** Anset was the initial publicly acknowledged cost. When Anset's capacity failed, a small authority moved the donor side to inhabited Sere while continuing to report Anset. Later it moved to Orren. The **load route requires physical undersea fittings**; this diagram is not a supernatural mind-to-mind flow. Keld supplies equipment but is not itself automatically a load donor.
 
-**Important:** the diagram does *not* imply that all three donors are presently donating equal force. Their arrows show **historical allocations** and the reason the current choices exist.
+The diagram shows the working connections on the opening tide. For the two emergency settings, a fitter standing at the Outer Sill can trace the following routes.
 
-## 3. One route through the campaign
+| Setting | Ground and equipment in use | What runs out |
+| --- | --- | --- |
+| Shared Settlement | Two short relief spurs already reach Verran's **Washhouse Steps** and Selwick's **Net Yard**. Both were laid after Y-41 to test loads on narrow margins. Keld's crews bring replacement collars and fit them at the existing heads. The trunk serves fewer berths at reduced lift. | Each authorized stroke spends ground at both sites. Permission ends after twelve high waters. If either site withdraws earlier, or fresh assent is missing at expiry, the watch closes both feeds before another draw. It bleeds the load already held over successive cycles. |
+| Phased Trunk Release | Crews unload the Sixth Jack under control and bring down support for the lower harbor in stages. The Selwick masonry wall stands on its footings and the tide gearing still turns its gates. | Verran loses lower berths as their approaches flood. Upper stores still exist, but small boats and hand carriage cannot replace a deep, working grain quay. |
 
-```mermaid
-flowchart LR
-  O1["Orren: gauge discrepancy"] --> O2["South Cut: deliberate valve"]
-  O2 --> K["Keld: original casting imprint"]
-  K --> R["Sere: proof of inhabitation"]
-  R --> V["Verran: Third Column published"]
-  V --> P["Relief chain: ferries, grain and collars"]
-  P --> S["Selwick: Sixth Jack stabilized"]
-  S --> A["Shared Settlement"]
-  S --> B["Phased Trunk Release"]
-  A --> E["Visible cost, public donor register"]
-  B --> E
-```
+Both settings leave the **Verran Ropewalk** out. Its occupiers refuse the use of their strip of working shore. A pin through the closed branch at the Ropewalk gives them a way to see that their answer holds.
 
-Every arrow needs an *in-game reason* why the next stop becomes necessary. A ferry transition is never enough by itself. See [campaign spine](../02-narrative/campaign-spine.md).
+## 3. The crossings after South Cut
+
+The temporary hold buys six high waters. Tessa marks them from the first high water after the brace goes in. Keld and the Boat League work in parallel during the crossings. Making the player ferry every crew and every fitting would consume time they do not have.
+
+| High water | Passage and constraint |
+| --- | --- |
+| First | The worker takes the maintenance passage from Orren to Keld. A Keld fitter can read the batch mark and make an impression while other hands begin their relief work. |
+| Second | Return to Orren to pick up Ada and the shallow boat for Sere. Only the exceptional ebb after this high water exposes the Market Steps. Ordinary ferries draw too much water to land there. |
+| Third | Come back through Orren and take the staple route to Verran with the shore tally. The hearing stops the lower hoist. The north ferry remains at the freight berth under load. Small boats still run. |
+| Fourth | The worker attends the Verran meetings. At Net Yard, Renn's crew makes a preliminary walk with occupiers. Keld sends collars by its existing freight routes and Verran passes the Selwick fittings on by service boat. |
+| Fifth | Cross Verran to Selwick with the relief crews. The worker joins the Net Yard occupiers on the ground before the terms go to the Outer Sill. The watch has the remaining interval to unload the reserve. |
+| Sixth | Last safe high water of the South Cut hold. The crews must have the transition in hand at the Outer Sill. More time at Sere or another round trip for a reading would spend the same water. |
+
+The [campaign](../02-narrative/campaign-spine.md) follows the boats and the families waiting on them.
 
 ## 4. Geography contradiction checks
 
 1. If Verran receives lift from Selwick's main trunk, why does the dangerous donor lie south? **Because connected fitted routes traverse the Sound; the undersea links are finite, mapped and maintained.** Mark them in future level plans.
 2. If Anset is under water, why did early engineers accept the test? **It was publicly uninhabited and designated expendable by emergency authorities**, though ecological harms should not be erased.
 3. If Sere is “lost,” why can people visit it? **Much is below ordinary high tide; a few built thresholds emerge at exceptional low ebb.** Lost = lost habitable ground and legal recognition, not magically inaccessible.
-4. If Keld's rock is high, why not use it as donor at Y-41? **Its major high beds were poorly connected and its quarry fittings vital to repairs.** Future lower-margin sharing is possible with new fitments and limited evacuation, not a past no-cost solution.
+4. If Keld's rock is high, why not use it as donor at Y-41? **Its major high beds were poorly connected and its quarry fittings vital to repairs.** Today's short relief spurs at Washhouse Steps and Net Yard postdate the Winter Allocation. Keld supplies the fitters and collars.
 5. If the sea is east, why is Orren southwest flooded? **The water level varies basin-wide; it is Orren's ground that fails**, plus storm surge through the east throat.
 6. If everything is on one graph, why not simply disconnect a line? **Existing receivers lose support and loaded collars may release dangerous stored strain.** Safe phased operations are the Act III challenge.
 

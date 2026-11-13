@@ -1,6 +1,6 @@
 # History, knowledge, civil life and documents
 
-**ID:** WRL-003 · **Status:** WORKING · **Depends on:** WRL-001, WRL-002 · **Version:** 0.1
+**ID:** WRL-003 · **Status:** WORKING · **Depends on:** WRL-001, WRL-002 · **Version:** 0.2
 
 Time is expressed as **years before the first Orren failure (Y0)**. Do not invent multiple calendars or a 10,000-year mythology until the present story requires them. This is a world with generational memory and dated institutional records.
 
@@ -11,28 +11,32 @@ Time is expressed as **years before the first Orren failure (Y0)**. Do not inven
 | Before Y-150 | Settlements use passive causeways, raised thresholds, tide gates and seasonal evacuation | Widespread practical knowledge | Older masonry demonstrates safer but limited alternatives |
 | Circa Y-120 | Keld fitters develop stable collars for seamglass in fixed masonry | Work crews and guilds; early failures public | The profession tools have real predecessors |
 | **Y-94** | **Anset Trials:** an uninhabited shoal visibly settles in exchange for protected lift near a port | Public engineering demonstration and debate | The law is not a secret origin revealed to a chosen hero |
-| **Y-76** | The Board of Sills is chartered to coordinate trade and load allocations; public reporting mandates levels and scheduled works | Four islands benefit; Keld and Orren retain bargaining rights | The player can invoke a **broken civic obligation**, not just rebel against evil |
-| **Y-41** | **The Winter Allocation:** severe storm and grain-port damage at Verran; settlement rerouted to inhabited Sere while official reports still name Anset | A narrow group of Board and senior surveyors sign; Sere families protest | The central culpable choice; records and living survivors remain |
+| **Y-76** | Verran, Keld, Orren and Selwick charter the Board to coordinate trade and allocations. Its public sheets must show levels and scheduled work. | Verran enters Sere as an outlying ferry ward. Sere households pay dues through Verran and have no seat of their own. | Verran can speak for both the harbor receiving lift and the families losing ground. The same ward entry also ties Verran to the surviving claims. |
+| **Y-41** | During the Winter Allocation the Board routes settlement to inhabited Sere to hold Verran's grain berths. Published reports continue to name Anset. | Eran reads and initials the return for passengers still waiting at the Market Steps. He diverts their promised third ferry to freight and authorizes a second stroke. | Survivors know that the boat never came and that Eran received their list. They spend forty-one years trying to establish where the ferry went and when he ordered the next stroke. |
 | Y-40 to Y-37 | Sere evacuations and intermittent collapses; ferry links end, deeds remain unresolved; public charts redraw coast | Survivors know their home was spent; others hear distorted accounts | Personal claims and removed place names become evidence |
 | **Y-7** | Donor-capacity problem forces covert link to Orren on the same low shelf | Board maintenance orders disguised as ordinary strengthening | Orren has persistent new settlement and unsafe foundations |
 | Y-2 | Gauges diverge and chalk-colony outbreaks rise at active cuts; survey logs are locked | Field crews raise disputed warnings | Characters already have reasons to distrust official figures |
-| **Y0** | The South Cut fails as Orren prepares for a scheduled tide | Everyone sees the crisis; evidence of the forced donor link surfaces | Play begins as an actual rescue, not an exposition meeting |
+| **Y0** | Renn reports wear on the Sixth Jack. Eran orders one extra loaded stroke so Verran can unload an arriving grain lighter. South Cut gives way under that stroke. | Verran's crew can land the grain. At Low Quay the stair drops under people waiting for a ferry. | The extra stroke leaves both a signed exception and a shore where its cost can be measured. |
+
+The four charter islands retained the right to recall the Board's operating authority on a named route. Each island has to send its assent. Together the four returns release the watch from the Board's orders on that route and entrust the handover to the local watch. Using new donor ground still requires the agreement of its occupiers.
 
 **Important age check:** Eran Velt is approximately seventy-seven in Y0. At Y-41 he was in his mid-thirties, a technical allocation officer who prepared the routing proposal; senior Board members approved it. He later became chair. He is neither the immortal founder of the network nor secretly responsible for every action over a century.
 
-**Important burden check:** The Board did not “forget” Sere in Y-40. It omitted Sere from *state charts* and donor ledgers and contested compensation. Survivors and their descendants remained in the Inner Sound. This distinction must survive every draft.
+After Y-41 the Board redrew the public shipping chart, withheld the internal donor register and contested compensation. Sere families settled in Orren and Verran. A child could grow up there knowing exactly where her grandmother had lived while every claim for the loss of that address came back undelivered.
 
 ## 2. Why the original allocation looked rational
 
 At Y-41 the storm damaged Verran's lower harbor in grain-hungry winter. Its piers served the protected Sound's largest warehouses and shipments; shutting them for a season risked shortages across Keld, Selwick and Orren. Anset was exhausted; Keld's high plate was structurally unsuitable as a donor and its quarry fittings were needed for repairs. Sere was populated but low and connected.
 
-The Board **could** have announced the sacrifice, limited the transfer, organized early boats and accepted a harsher rationing plan. It instead hid the donor to protect trade confidence and avoid lawful compensation obligations. Its choice is understandable in its initial urgency and indefensible in the deliberate concealment and continued draw. Story revision must not change this into “every alternative would have killed everyone,” because then moral agency disappears.
+There were two decisions that winter. The first stroke bought a damaged harbor time to land food. Before the second, an officer could have held the load and let the third ferry finish its passenger run. That would have left grain on the water and meant smaller rations. The senior Board had approved the route. Eran was the officer on duty who knew which passengers were still waiting and sent their ferry to the freight berth. Later the Board could have paid claims, published the route or set an end date. It kept collecting Sere dues.
 
 ## 3. What physical records survive
 
 **Two sets of charts:** public sounding sheets give water levels and work schedules; internal work registers include the **Third Column** for donor settlement. Older paper is water-damaged; carved gauges, collar maker's marks and redundant stone impressions offer cross-checks.
 
 **Property and taxation:** Sere's household and harbor taxes persisted for years through refugee relocations because creditors still demanded payment. Ada Sen holds individual claims. This creates a concrete legal conflict: one authority collects dues from people it will not recognize as a community.
+
+**The third ferry.** A ferry carried one half of a numbered brass tally. The shore crew held its mate until the boat returned, so a change of crew could tell at a glance which passage it still owed. Sere survivors know which landing to search. The low ebb exposes the shore half at the Market Steps. Its number also appears on a freight receipt in Verran. Together they identify the boat promised to Sere and the work it did instead. A messenger carried the list of people still waiting to Verran. When families petitioned after the evacuation, the office returned that sheet with their claim. Ada kept it. The receipt bell beside Eran's initials is one bell earlier than the work bell on his second-stroke order. Each piece answers a different objection at the hearing.
 
 **Craft records:** Keld workshop casting dies identify batches of routing collars. Tool marks survive where ink does not. A field professional can interpret them, but cannot automatically infer the entire political motive.
 
