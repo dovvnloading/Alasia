@@ -395,13 +395,14 @@
   function boatPosition(moored) {
     if (moored === "sill") return [335, 76, -.24];
     if (moored === "gutter") return [465, 351, -.24];
+    if (moored === "rail") return [254, 259, -.44];
     return [120, 320, -.44];
   }
 
   function boat(ctx, moored) {
     const [x, y, a] = boatPosition(moored);
     if (moored) {
-      const [px, py] = moored === "sill" ? sites[2] : sites[3];
+      const [px, py] = moored === "sill" ? sites[2] : moored === "rail" ? sites[1] : sites[3];
       line(ctx, [[x + 12, y + 1], [x + 18, (y + py) / 2], [px - 2, py]], "#1e3932", 2.9);
       line(ctx, [[x + 12, y], [x + 18, (y + py) / 2 - 1], [px - 2, py - 1]], "#c6ac7d", 1.2);
     }
@@ -521,7 +522,7 @@
         "#e7b45e", "#634e31", 1.1);
       line(ctx, [[628.8, 176], [631.5, 180.1]], "#ffe5a4", 1.1);
     }
-    const mooring = fallen && state.moored === "sill" ? null : state.moored;
+    const mooring = fallen && state.moored === "sill" ? "rail" : state.moored;
     boat(ctx, mooring);
     if (!state.exit) {
       markers(ctx, {
