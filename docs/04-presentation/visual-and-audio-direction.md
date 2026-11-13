@@ -79,13 +79,13 @@ Class silhouette identifiers must read on black material in **0.3-second thumbna
 
 ## 6. Visual storytelling shots (concept briefs, not commissioned art yet)
 
-**Keyframe K1 — Gauge Steps:** camera high above diagonal stone steps; official tide post fixed on wall while privately carved lines lie far below; Tessa leans against a rope bundle counting passenger slots. *Story information visible before dialogue:* something has moved that should not have moved.
+**Keyframe K1 — Gauge Steps.** A cut runs across the stair cheek and the adjoining bedrock post. The cut on the stair has dropped a course. Frame the join from the gangplank so a passenger reaching for the worker’s elbow crosses the gap in the same shot. Tessa looks from the passenger’s foot to the boat, judging whether she can take the next person.
 
 **Keyframe K2 — North Face, Keld:** a casting die sits beside its new identical impression; opposite walls show white stress cracks beneath repaired supports; bright warm kiln light only at the edge. *Story information:* the technology came from skill and labor, and evidence persists in matter.
 
-**Keyframe K3 — Sere at low water:** a former market corner barely clears the tidal mud; Ada is knee-deep beside a tax mark, not posed atop a monumental ruin. The horizon is mostly water. *Story information:* an inhabited place was administratively removed, not mythically vanished.
+**Keyframe K3 — Sere at low water.** Ada has one hand under the Market Steps, feeling for the brass tally the third ferry never collected. Her other hand follows the rail until it reaches open water. Leave room in the frame for the length of railing she remembers.
 
-**Keyframe K4 — Sixth Jack:** numbered frames across a six-jack working array; the reserve sixth jack is the active runaway machine, with a broad central piston and two secondary load paths in view, the arena floor giving way in **legible staged sectors**; thin white stress lines and one amber control station. *Story information:* the machine is dangerous but understandable. The opponent is a system, not a demon wearing industrial skin.
+**Keyframe K4 — Sixth Jack.** A row of five working frames ends at the scarred return on the reserve. In the foreground the stranded defender turns her hook and offers the handle. Beyond her we can see the cart lane begin to tilt. Keep both in the same readable field before the next stroke.
 
 ## 7. Interface — information as instrumentation
 

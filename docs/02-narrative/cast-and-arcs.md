@@ -1,126 +1,77 @@
 # Principal cast, motivations, relationships and arcs
 
-**ID:** NAR-002 · **Status:** WORKING · **Version:** 0.1
+**NAR-002 · Working treatment v0.2**
 
-**Standard:** People have private histories and practical wants independent of their scene utility. A character's opinion is not a faction's script. Each major role below includes a contradiction, a costly decision, and a point where the player's action changes their options.
+## The player — licensed field-worker
 
-## The player — licensed field-worker, not a prophesied heir
+At Low Quay somebody is waiting to board. The worker makes a landing fit, tests it under weight and signs the return. Their original specifies the landing. The duplicate dispatch stub bears their mark, but its scope box is still blank. The runner holds out a hand. The worker sees the empty box and lets the stub go to make the boarding bell. They have taken this shortcut on routine jobs before. Three trades can do the job. A Shorer feels a bearing foot curl against its seat. A Sounder hears a second interval through the gauge stair. A Linewright feels the slack go out of an abandoned cable while replacing a ferry anchor. Each has a reason to stay when the landing starts to move. The worker's name, appearance, history and allegiance belong to the player.
 
-**Fixed facts:** Trained in one of three field professions and authorized to approach live collars. Arrives on Orren for a specific maintenance call. Knows how equipment works but not what records were suppressed. Being capable in a hazardous site is a matter of skill and training. Their competence explains why they can survive densely hostile work areas, but **not** why they can dictate law.
+At South Cut the worker finds their own stamp copied onto the Board order as clearance for the whole route. The duty office had the standing route order and supplied the wider clearance. Now the worker knows what could be done with the space they left. Tessa has just sent people across on their word. When she asks what else they signed for, the player can show her the two sheets or tell her how the runner came by the blank stub. She still needs someone to hold the cut.
 
-**Open character space:** name, gender presentation, individual background, dialogue manner and personal allegiance. Starter origin vignettes should give profession-specific familiarity with a single site or NPC without creating three incompatible timelines.
+At Verran the worker supplies the original landing return for comparison and enters their own stamp in evidence. They tell the waiting crews that the duplicate was blank when the runner took it, that they saw the blank, and that they let the runner go. Iven can account for what the duty office entered afterward. Somebody at the hiring desk takes their name off the Board work list pending inquiry. The work they lose is the kind they came to Orren to do. Keep the license and the skills. A player who wants the harbor kept open has as much reason to give evidence as one who wants its lower docks released.
 
-**Arc:** repair → suspicion → public proof → informed redistribution of risk. The player may favor different people but cannot learn that “the truth never mattered.” Decisions must remain about actual work, records and human consequences.
-
-**Individual class entry hooks:**
-- **Shorer:** contracted to inspect a quay brace that should not be loaded at the current tide. First clue comes from a bent bearing foot.
-- **Sounder:** hired to verify conflicting gauge signals; reads an impossible interval in a staircase that has settled.
-- **Linewright:** replacing a ferry-line anchor; discovers new tension in an abandoned donor cable.
-
-All lead to the same South Cut failure. No class-only exclusive “true ending.”
+When the worker reaches Selwick, Renn gives them a place on her crew for a specific job. They can put either workable plan before the people who will carry it, answer for its costs and undertake their part. A signature at the end has a boundary the player can feel. It commits their own hands.
 
 ## Tessa Rul — Orren Boat League captain
 
-**Age / position:** late thirties; a working captain and representative elected for the season. Runs ferries, not a rebel army. She has kept passenger capacities, sickness notices and maintenance losses in the League's book long before the crisis.
+Late thirties, elected for one season. Tessa knows which of the people waiting at Gauge Steps can manage a ladder and which need a plank. Anyone counting the ladder berth as a spare place while a woman waits with both knees bound is going to hear about it. At the opening, let the player take a line from Tessa so she can get down off the boat and walk the woman aboard herself. Forty-six places are a promise she will have to keep in person.
 
-**Public want:** evacuate the lowest terraces and stop the unexplained drop.
+Tessa wants the donor valve cut. Seeing what a sudden release can do to Selwick changes what she is willing to ask a crew to risk. It leaves her opinion of the Board intact. At the third high water the north ferry is due back on Orren's run. Tessa wants it clear of the freight berth before the reading bell. When Bela calls a halt on the powered hoist, Tessa can stand on the quay beside the loaded ferry while its scheduled departure bell rings. She blames the timing of publication. Even a player who shares her anger has to go and face the people she gave a sailing time to.
 
-**Private want:** keep Orren from becoming dependent on Verran's promises yet again. Her mistrust makes her overestimate the safety of a direct cut.
+Tessa offers a passenger-only passage with her remaining boats. She puts the minimum capacity Orren will retain in the schedule and continues to press for the return of the heavy ferry. Let an Orren family who voted for her see a Verran passenger step into a seat they wanted for kin on the next trip. Tessa helps that passenger down. A fair agreement can cost her the next election.
 
-**Correct belief:** every bureaucratic delay costs places on real boats. She knows a person left behind and a crate of grain are not morally interchangeable.
-
-**Blind spot:** Verran's stores feed Orren too; destroying the lower harbor may return as hunger after the tide leaves.
-
-**Actions:** organizes evacuation, rejects dishonest passenger guarantees, pushes for a destructive valve cut, later agrees to a negotiated chain once she sees the Selwick hazard and real prepared alternatives. Her compromise costs her standing among Orren families who want retribution.
-
-**Key relational collision:** Tessa and Eran both count capacity, but he counts bulk freight and she counts passengers with names. She does not need to win an argument with a sermon; her ledger shows what the Board's plan ignored.
-
-**Climax proof of change:** she assigns scarce boats beyond Orren under a published schedule while demanding compensation and reserving a minimum local capacity. She has not become trusting; she has become able to make a bounded agreement.
-
-**Voice:** imperative, detailed, economical. Uses hull, depth and passenger terms. Avoid speeches about “the sea taking everything.”
+**Voice.** A sailing time, a passenger's name, the job your hands could be doing right now. When she has bad news, she goes to the waiting place and gives it herself.
 
 ## Iven Marr — chief surveyor, Office of Soundings
 
-**Age / position:** mid-forties; career civil expert, promoted after the Sere crisis. He did **not** make the Y-41 allocation. He did sign misleading gauges and donor maintenance summaries after Y-7.
+Mid-forties. He was a small child at the Winter Allocation. The signatures he has to answer for went onto the Orren maintenance summaries after Y-7. Iven likes teaching apprentices to take two readings before they speak. They learned something else from him as well. You can tell the truth to the last fraction and leave out an entire shore.
 
-**Public want:** prevent panic by controlling the release of uncertain readings.
+At Gauge Steps he asks for the old stone rubbing. A footing really can settle by itself. He already knows about the diversion and lets the worker take his question for a complete explanation. At the hearing the worker places their fresh return on the table. Leaving it there on its own would let the inquiry begin and end with the newest signature. Iven lays his signed series beside it and gives up custody of the full donor column. The crews can take copies before he gets a chance to explain himself. He loses his rank. Some of the people who trusted the marks on his charts still want him off the quay.
 
-**Private want:** believe that the precision of his measurements excuses the selective publication of them.
+Renn needs his calculations for the relief spurs and the staged release. She has her own crew take the readings beside him. He has to stand there while they check each figure he gives, including the ones he knows are right.
 
-**Correct belief:** an abrupt trunk cut can damage several places at once. He knows the instruments intimately and is required for safe reallocation.
-
-**Blind spot:** when a chart is intentionally incomplete, accurate numbers become part of a lie. He treats transparency as a reward granted by experts rather than a public condition of dangerous choices.
-
-**Actions:** first dismisses the discrepancy as a local foundation fault; must confront the old gauges; releases partial charts to slow the player; is cornered by Sere's legal records and Keld casting impressions; ultimately publishes the original donor figures and submits his signatures to an inquiry.
-
-**Climax proof of change:** he puts the full donor column on the public board *before* knowing which plan wins. His arc costs his rank and public trust. He is still technically indispensable.
-
-**Voice:** measured, conditional, exact; tends to distinguish “confirmed” from “inferred.” When guilty, he shortens sentences and stops qualifying everything.
+**Voice.** Iven distinguishes an observed drop from an inferred cause. Give him a shorter sentence when somebody finds his signature. He can identify his handwriting in two words.
 
 ## Ada Sen — registrar of displaced Sere claims
 
-**Age / position:** mid-fifties; a teenager when the Winter Allocation began. Now maintains land deeds, dues records and death/relocation claims for Sere families who never received legal closure.
+Mid-fifties. As a teenager Ada kept shore paperwork from the Market Steps. For forty-one years strangers have asked her to describe the morning she left. She would like one visitor to remember that the woman who lived over the net shop could whistle through a gap in her teeth. She is tired of giving the woman's last known address.
 
-**Public want:** have Sere recognized as a formerly inhabited island and settle the outstanding claims.
+Ada has always known where the Market Steps are. She takes the player there at exceptional ebb for the shore half of the paired brass tally belonging to the promised third ferry. She can find its old berth, and she can tell whose names were still on the dated passenger sheet. Until she sees the matching freight entry, she cannot tell the families where the ferry went. At the hearing the marks establish that Eran received and initialed the uncollected list before he authorized the second stroke. The freight receipt accounts for the hull on the voyage he ordered instead. Ada finds the waiting families and tells them where the boat went. Give them room to answer her differently. Someone who now works the Verran docks has to go back to that job in the morning.
 
-**Private want:** stop living as a witness to a fact other people demand she prove again each year. She fears her memory has been turned into a profession.
+Tessa wants to get the north ferry away before publication. Ada refuses to put the record away for another crossing. She remembers how long the third boat's passengers were asked to wait. Later she insists that displaced tenants can enter claims alongside deed holders. One of the disputed households rented from her own family. She helps their surviving tenant enter a claim against the same property as hers and leaves both entries in the book. She secures standing for displaced households while compensation still lies ahead. The families affected at Washhouse Steps, the Net Yard and Ropewalk speak for their own ground.
 
-**Correct belief:** naming and compensating the displaced matters even if a harbor remains functional; witnesses require institutional standing.
+**Voice.** Ada supplies a kitchen, a street or a person's habitual seat on a boat when someone calls Sere a loss. Let a familiar name catch her by surprise, even halfway through an objection she has made a hundred times.
 
-**Blind spot:** a perfect historical case can absorb years while present-day evacuations need immediate attention. She initially refuses to compromise on sequence, not on truth.
+## Eran Velt — chair of the Board of Sills
 
-**Actions:** refuses to give the player family records merely to make a sensational accusation; takes them to the actual ruins at a planned low-water landing; cross-checks work orders against paid dues; forms a public claims roll; asks a hard question of both emergency plans.
+About seventy-seven. He was in his mid-thirties when senior members approved his proposal to use Sere as the donor in a grain emergency. Their vote explains how the first stroke came to be made. The choice of the second was his. He had acknowledged the list of people still waiting at the Market Steps. He diverted their third ferry to freight and authorized another stroke. He spent the following decades keeping that part of the record out of public hands.
 
-**Climax proof of change:** she permits an emergency chart correction before compensation is finalized, in exchange for the donor register becoming irrevocably public and a legal standing for claims. She does not forgive the Board.
+At the opening Eran wants an arriving grain lighter unloaded while Verran's lower berth can still hold her. He orders one more loaded stroke despite Renn's warning about the reserve. The grain has buyers who will go hungry if it spoils. People on Orren are still queuing for passage when the cost of unloading that lighter reaches their shore. After the hoist crews stop, Eran breaks the Board seal on its dry bonded grain and releases it for hand distribution. Have him stay for the first sacks and tell Bela how much to charge against the winter reserve. She needs that number. A porter who has every reason to cheer when the seal comes off can still be on the inquiry bench the next morning.
 
-**Voice:** procedural, tactile, precise about documents and people; she calls Sere by street and household rather than by beautiful ruin.
+His hardest moment comes after admission. He can describe precisely what the freight run carried. Ada asks him what message he sent to the people at the Steps. Give him time to remember that he never sent one. He still argues for protecting the harbor. People can take his grain, hear him out and decline to give him back his seal. He lives to answer the families.
 
-**Critical constraint:** no mystical survivor power, hereditary prophecy, magical perfect recall, tragic death to motivate the protagonist, or expository ghost.
+**Voice.** Unhurried with the detail of any job he can defend. Let the listener notice which detail he has left out.
 
-## Eran Velt — current chair, Board of Sills
+## Bela Quine — Verran granary steward
 
-**Age / position:** about seventy-seven; trained as allocation engineer, recommended the donor route at Y-41 in his mid-thirties, later rose to chair. His role in the original decision is direct but *not solitary*: senior members approved it, professional crews built it, public institutions sustained concealment.
+Bela can tell by the drag of a sack on the flags when the grain on the underside has taken water. She has spent years keeping the hoist crew working through bad seasons. At full publication she is the one who refuses to certify another powered lift on the old papers. Her colleagues stop work. The loaded north ferry stays at the dock. Ordinary passenger boats can still move. The first person asking Bela when wages resume is someone she persuaded to take an extra shift.
 
-**Public want:** keep Verran's grain harbor and the Sound's integrated supply system functioning through storm season.
+She takes the bonded grain Eran offers and organizes hand distribution. Tessa wants a hull emptied quickly enough to work a passenger run. Bela needs the workers on that same quay to eat. They can agree on a safe passenger passage and still have a bitter argument about who lost a day's pay. If the lower docks close, Bela has to put new quantities in the ration books. If the harbor carries on under Shared Settlement, she must explain to people leaving the Washhouse Steps what their neighbors' next shipment is going to cost them.
 
-**Private want:** prove that the first terrible decision was, and remains, necessary. If a better plan is achievable, then the personal cost he imposed on Sere becomes harder to endure.
+## Renn Hadr — Selwick repair forewoman
 
-**Correct belief:** a poor emergency stop can kill more people than the machinery being criticized; multiple communities rely on the main trunk.
+Renn sent the reserve warning before Eran ordered the extra stroke. She kept the watch going afterward. The younger hands worked it because she stayed. She knows exactly whose trust she spent that day.
 
-**Blind spot:** sees the immediate starvation risk but treats continuing injustice as a technical footnote. “Until the crisis passes” has become forty-one years of administrative self-protection.
+At the Outer Sill she has to bring the protective crew and the field-worker onto the same floor while the Sixth Jack is taking load. She can secure tools, call people clear and put a defender who knows the jack on the next station. The crew can get everyone through alive. She signs for a sequence her people can work and owns the decision to start or stop the operation. Her hand on a valve gives her no claim on the shore beneath someone else's bed.
 
-**Actions:** has withheld original donor authorizations; sends a protective crew to Selwick because a rash intervention would be deadly; tries to bind the player to a technical hearing; admits the signed route when evidence is public but insists the present risk outweighs legal reckoning; fails to control the final civic assembly.
+## The Keld foreman
 
-**Climax proof of failure:** the final operational choice proceeds with named donor areas and external witnesses, not under his discretionary seal. He faces inquiry alive. He is not redeemed by a self-sacrificial boss fight.
+He can read the old casting mark under the later one by touch. Releasing the shop record may cost work to the people who fitted those collars and brings his own shop under scrutiny. Let a younger fitter hold the impression while he identifies the batch in front of the shift. That gives the crew a witness even if the foreman later wishes he had kept quiet.
 
-**Voice:** unhurried, concrete, rarely grand; explains a disaster as a list of shipments and days. When challenged about Sere's people, he cannot hide behind figures without revealing his moral limits.
+## What the two endings leave between people
 
-## Supporting roles with defined functions
+At Ropewalk the occupiers refuse their ground. The crews strike that site from their work in either ending. Shared Settlement can run on the existing relief spurs at Verran's Washhouse Steps and Selwick's Net Yard with the affected occupiers' and crews' agreement. Their undertaking expires after twelve high waters. Further operation requires fresh assent. Without it, staged release follows. Under Phased Trunk Release, Verran gives up the lower docks. Workers there have a claim on the emergency provisions and an argument with the decision that put them out of work. Neither outcome settles Ada's outstanding cases.
 
-**Bela Quine — Verran granary steward:** not an abstract “citizen voice.” She knows grain spoilage, upper-store capacity and what a flooded quay does to the ration books. Enables the alternative plans and objects to gratuitous harbor sabotage.
+On the first sailing afterward, Tessa still needs Bela's freight figures. Bela asks for the number of passenger places Tessa actually has. Let the player see who gets to write each number in the book.
 
-**Renn Hadr — Selwick repair forewoman:** responsible for safe valves and the crew on the exposed barrier. Initially refuses the player access for safety reasons, not blind obedience; can be persuaded by a worked, independently measured bypass plan. A false “guards turn evil” scene is forbidden.
-
-**Keld foreman — not yet named:** represents the workshop's complicity and material constraints. Name only after his scene objectives are written. Avoid expanding the cast with invented surnames just to imply depth.
-
-## Relationship changes over acts
-
-| Pair | Act I | Act II | Act III |
-| --- | --- | --- | --- |
-| Player ↔ Tessa | Contractor earns limited trust by opening a real boat route | Disagree over whether to destroy the network | Coordinate an accountable ferry schedule despite disagreement |
-| Player ↔ Iven | Official restricts access, disputes measurements | Competing evidence forces acknowledgment | Public instrument data becomes available to the crews |
-| Ada ↔ Iven | Claimant vs keeper of incomplete charts | Cross-examination of records rather than theatrical revelation | Agree on one public, dated donor register |
-| Tessa ↔ Bela | Orren's passengers vs Verran's grain | Each sees the other's emergency inventory | Shared logistics enable both final plans |
-| Eran ↔ Iven | Superior and surveyor; institutional silence | Iven's original signature becomes evidence | Eran loses unilateral access to the records |
-| Ada ↔ Eran | Historical petitioner vs signatory | Sere is established as inhabited, knowingly lowered | Accountability persists past the final machine fight |
-
-## Revision requirements for AAA-level characterization
-
-- Each protagonist needs **a playable scene where their value conflicts with their own immediate interest**. A single moving monologue does not count.
-- Every adult lead must have agency beyond being saved, betrayed or killed.
-- No one conveniently changes their deepest belief because the protagonist completes a fetch quest.
-- Exposition cannot duplicate the same secret three times. Each character knows a **different kind of fact**: Tessa capacities, Iven levels, Ada claims, Eran allocations.
-- Check all ages against Y-41 and Y-7.
-- Develop relationship scenes, distinctive speaking rhythms, subtext and dialogue as the campaign is written. These characters are still being authored.
-
-Story sequence: [campaign](campaign-spine.md). Writing procedure: [quest and dialogue](writing-and-quest-standards.md).
+[Campaign](campaign-spine.md) · [Quest and dialogue scenes](writing-and-quest-standards.md)

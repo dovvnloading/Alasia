@@ -1,6 +1,6 @@
 # Atlas, routes, settlements and economies
 
-**ID:** WRL-002 · **Status:** WORKING · **Depends on:** WRL-001 · **Version:** 0.1
+**ID:** WRL-002 · **Status:** WORKING · **Depends on:** WRL-001 · **Version:** 0.2
 
 The world begins with **one interdependent basin**, not a continent filled with unrelated biomes. These are *relative* positions; final distance, coastline and elevation require a geographic blockout.
 
@@ -30,9 +30,11 @@ The world begins with **one interdependent basin**, not a continent filled with 
 
 **City fabric:** tall stepped granaries on masonry plinths, contiguous narrow streets uphill, replacement tide marks under fresh render, iron gauge gates at the lower docks. The upper ridge is populous and securely above the sea; the lower port is where the allocation stakes are visible.
 
-**Politics and contradictions:** Verran's workers need the same food as Orren's; not everyone benefits equally from the Board. A dock porter may support the grain lifeline and still oppose the concealment. Public protests can cut access to the very pier needed for evacuation.
+**Who can use the quay.** The lower harbor handles loads too heavy to move by hand. When Bela stops the powered hoist, the loaded north ferry stays alongside and misses a passenger run. Small boats can still work the landing. Up the ridge, the Board has grain already in dry bond. Once Eran breaks the seal, people can carry it down in sacks.
 
 **Scenes with function:** **Counting Hall** (Board decisions and archive access); **North Granary** (demonstration of material stakes and supply-chain dependency); **Lower Dock Steps** (visible historic lift marks). Each supports a story beat and a playable route.
+
+At **Washhouse Steps**, below the ridge on a separate strip of shore from the supported berths, boat crews bring their oilskins to be scrubbed. A flush iron cover sits under a wash bench. It gives a fitter access to a short relief spur installed after the Winter Allocation. To use that strip as a donor, people must move the benches, clear the steps and accept the loss of their landing. They can carry the benches uphill. They cannot carry the slope on which a loaded boat can come alongside.
 
 **Removed and what breaks:** without Verran, there is no plausible reason why officials would sacrifice the distant donors: the central receiving harbor and regional food bottleneck are the incentive.
 
@@ -60,7 +62,7 @@ The world begins with **one interdependent basin**, not a continent filled with 
 
 **First vertical-slice district (distinct playable functions):**
 - **Low Quay:** safe hub turned crowded embarkation point; grounded characters, trade, evacuation priorities.
-- **Gauge Steps:** official and private tide marks do not agree; the first visible discrepancy and combat teachable space.
+- **Gauge Steps:** the tide is on schedule at the fixed bedrock post. The survey cut on the landing stair has dropped below its mate on the post.
 - **Reedward:** fields and terraced cottages cut by newly flooded ditches; civilians and displaced fauna.
 - **South Cut:** maintenance sluice and illegally opened donor valve; multi-stage combat encounter and first incontrovertible work order.
 
@@ -70,7 +72,7 @@ The world begins with **one interdependent basin**, not a continent filled with 
 
 ## 5. Selwick — the necessary control point
 
-**Why here:** a narrow island at the Sound's eastern mouth constricts tidal flow. The engineers can harvest surge with mills and protect the inner islands behind an expensive stormwall. This makes it the only plausible home for the largest pressure-routing assembly. The **Outer Sill** has six numbered load jacks: five form the normal working array, and the sixth is a reserve/overflow shunt. Repeated misuse of that sixth unit explains its overload at the campaign climax. Its number is stamped on service plates; it is not a legendary title.
+**Why here:** a narrow island at the Sound's eastern mouth constricts tidal flow. Its masonry wall breaks the surge and the water turns the mills. The **Outer Sill** has five working jacks and a sixth to take overflow. Renn had recorded the wear on this reserve before Eran ordered the extra stroke. The gate race has a separate drive. A safe release of the Verran harbor trunk leaves the gates operable.
 
 **Economy:** tide machinery, pilotage, salvage, stormwall maintenance, lighthouse service. Food imports mean crew loyalties are mixed; closing the main trunk can save one shore and ruin the port workers' own homes.
 
@@ -78,13 +80,15 @@ The world begins with **one interdependent basin**, not a continent filled with 
 
 **Scenes:** **Breach Walk** (evacuation and windswept traversal); **Outer Sill** (the main routing system, controllable but structurally unstable). The final encounter is machinery under pressure and organized opposition, not an unrelated cosmic monarch.
 
+Inside the wall at **Net Yard**, crews spread their nets on short hooks to pick the weed out and see the holes against the sky. A second relief spur reaches its tidal apron. Putting that ground under load would take the drying yard out of use. The gate crew can vouch for a fitting. The people who mend their nets there have to answer for the ground.
+
 **Removed and what breaks:** the physical means to make a final allocation is missing, and the player has no place where the last decision can be enacted.
 
 ## 6. Two lost places, each with a different purpose
 
 **Anset — the accepted test.** A small, mostly uninhabited shoal with experimental stone rings and a former warning beacon. Public engineering accounts and visible foundation plates establish that the ancient trade-off was once transparent. Its submersion demonstrates the system's capacity limit. **Not** another hidden massacre, not a full dungeon city.
 
-**Sere — the denied cost.** Forty-one years ago Sere had lived-in quay steps, property parcels, public burial marks and registered fishing families. The Board rerouted settlement there after a winter storm damaged Verran's harbor defenses. Inundation and rapid subsidence destroyed homes; survivors carried documents and traditions to Orren and Verran. At extreme low water, only portions of the **Market Steps** and workshop foundations emerge. The truth is discovered through material evidence and living testimony, never a spooky ghost flashback.
+**Sere — the denied cost.** Forty-one years ago Sere had lived-in quay steps, property parcels, public burial marks and registered fishing families. The Board rerouted settlement there after a winter storm damaged Verran's harbor defenses. Inundation and rapid subsidence destroyed homes. Survivors carried documents and traditions to Orren and Verran. At exceptional ebb only portions of the **Market Steps** and workshop foundations emerge. Ada remembers where the ferry crew kept their brass tallies. The challenge is reaching the steps while they are exposed and getting the shore half back to Verran before the hearing.
 
 **Distinct storytelling roles:** Anset proves the rule. Sere proves the abuse. Orren proves that the abuse continues. **No third lost island unless a new causal role passes review.**
 

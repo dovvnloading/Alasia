@@ -6,7 +6,7 @@
 
 ## The premise
 
-The islands of Alasia survive through a network of machines that keep threatened shores above the tide. But every protected foundation transfers its strain elsewhere. What began as a public, costly engineering practice became a concealed sacrifice: an inhabited island called **Sere** was spent to keep Verran's grain harbor working. Decades later the hidden cost falls on **Orren**. A specialist field-worker caught in the first failure discovers the evidence and the people responsible.
+The islands of Alasia keep their grain ports above the tide by transferring the strain into another shore. Forty-one years ago the Board of Sills used inhabited **Sere** to hold up Verran’s harbor. Its families kept receiving tax bills after the island vanished from the public chart. Now a field-worker signs off on a ferry landing at **Orren** and finds their stamp on the order that lowered the island beneath it. Publishing the two papers together will strand the boat Orren needs to bring its people home.
 
 The story is about survival purchased at someone else's expense, the memories that official charts cannot erase, and the people who must live with the consequences of a new decision. It is *not* a chosen-one prophecy or an invasion by a generic ancient evil.
 

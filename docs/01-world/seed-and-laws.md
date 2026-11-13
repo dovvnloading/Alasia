@@ -1,6 +1,6 @@
 # World seed and the physical laws of Alasia
 
-**ID:** WRL-001 · **Status:** WORKING · **Dependencies:** FND-001, GOV-002 · **Version:** 0.1
+**ID:** WRL-001 · **Status:** WORKING · **Dependencies:** FND-001, GOV-002 · **Version:** 0.2
 
 ## 1. The event that creates the world
 
@@ -10,7 +10,7 @@ Early engineers used the phenomenon to correct a wall settling on one side of a 
 
 Anset, a mostly uninhabited low shoal, was the first publicly accepted donor. In a winter emergency forty-one years before the campaign, authorities deliberately redirected the donor side to **inhabited Sere** to keep Verran's grain harbor usable. Sere's lower ground sank faster than its people could evacuate. The records of the donor choice were concealed, and the official account called Sere's loss an exceptional storm disaster. The people affected were never universally deceived; their testimony was discounted.
 
-Now Anset's foundation is exhausted, Sere cannot bear further settlement, and the network is quietly drawing from **Orren**. It begins to fail on the day we meet the player.
+With Anset exhausted and Sere unable to bear more, the Board opened the **Orren** route seven years ago. At the opening tide Renn's warning about wear on the reserve jack is already on Eran's desk. He orders one extra loaded stroke to keep Verran's berth usable while a grain lighter unloads. A collar gives at South Cut and the landing at Low Quay settles. The reserve comes back only halfway onto its seat. Each regular pulse now bears on its worn return. When the fifth-high-water watch tries to unload it for handover, the return jams.
 
 ## 2. Rule set — these cannot be hand-waved
 
@@ -23,6 +23,8 @@ Now Anset's foundation is exhausted, Sere cannot bear further settlement, and th
 **R-04 — Capacity is finite.** Seamglass develops chalk-white stress veins; beyond its rated capacity it fractures. Braces, collars, cables and human bodies fail before a region can carry arbitrary load. Field implements store only brief impulses. Large sills need tide-driven gearing and constant maintenance. No perpetual ultimate ability.
 
 **R-05 — Change is not free in either direction.** Turning a sill off does not instantly undo decades of settlement. It removes active protection against continuing subsidence and the next tide, so a receiving lower harbor can become unusable over a managed series of cycles. A sudden interruption may drop locally supported footings or throw stored strain into workers; it does **not** drop a whole island in one magical instant. Restoration of a former donor's land requires earthworks and time, not a one-scene purification.
+
+At Selwick the masonry wall breaks the surge. Its gates can still turn on their own tide-driven gearing after crews unload the Verran trunk. At a safe stroke boundary Renn closes the donor feeds. Subsequent cycles bleed off the strain already held in the jacks and trunk without taking any new draw. She needs people on both sets of controls while that load comes off beside the gate works. Once the lift ends, Verran loses its low berths over successive tides.
 
 **R-06 — There is no perfect secrecy.** Gauges, stone marks, floods and work orders reveal what has happened. Eran Velt and the Board can alter **public registries**, survey access and the language of culpability; they cannot remove memory from people or erase geological evidence. Civilian witnesses disagree on motives, not on whether they once had homes.
 
@@ -42,12 +44,13 @@ Now Anset's foundation is exhausted, Sere cannot bear further settlement, and th
 
 The official chart of the Inner Sound displays **observed level** and **scheduled lift**. The original engineering ledger also contained **donor settlement**: the suppressed **Third Column**. The public was told that uninhabited Anset was still absorbing the work, long after the routing had moved to Sere. That lie required a small conspiracy: the Board members with allocation authority, a fraction of survey leadership, and work crews compelled by safety orders. **Not** every civilian, engineer or guard is complicit.
 
-Surviving evidence:
-- Two generations of tide lines scratched into the same Orren steps, indicating land movement rather than sea rise.
+Evidence survives in records kept for different purposes.
+
+- Yesterday a mason rescored the old survey cut across the landing stair and its adjoining bedrock post. The tide still reaches its expected mark on the post. The cut on the stair now sits lower, and a fresh break runs through the bedding under it.
 - A routing collar stamped for Sere under an ostensibly Anset-only drawing.
 - A Sere tax and property register that was never legally reconciled with the shipping map.
 - Sill logs showing that Verran gained lift on the exact nights Sere lost ground.
-- Testimony from those evacuated and those who refused to leave.
+- The Sere shore tally, a Verran freight receipt and a passenger return held by Ada. The families who waited at the Market Steps can say what it meant when the third boat failed to come back.
 
 The story's mystery is not “what occult creature did it?” It is **who signed what, with whose knowledge, when another alternative existed, and what the living can now do**.
 
@@ -78,7 +81,7 @@ Enemy taxonomy and ethical handling: [enemies, loot and progression](../03-gamep
 - A donor island is **never** a mana battery that can be reused after its rock is exhausted.
 - Published maps can omit Sere; a sailor or survivor can still know it existed.
 - No class teleports, rewinds events, raises the dead, summons armies or generates limitless lift.
-- The tide alone does not explain Orren's overnight drop; a specific **routing failure** and evidence must.
+- The opening drop follows Eran's extra loaded stroke on the existing Orren route. The damaged collar, the station record and the bedrock gauge let the worker reconstruct it.
 - The climax must show why both continuing and stopping the existing allocation can harm people.
 - Sere's dead and displaced are not just quest tokens; their property, records and unresolved claims matter.
 - A critical world event must be witnessed or inferred in gameplay, not deposited only in a codex.
