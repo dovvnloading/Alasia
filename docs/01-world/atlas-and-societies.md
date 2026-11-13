@@ -4,6 +4,8 @@
 
 The world begins with **one interdependent basin**, not a continent filled with unrelated biomes. These are *relative* positions; final distance, coastline and elevation require a geographic blockout.
 
+For the coastlines, landings and room plans, open the [playable Inner Sound atlas](playable-world-atlas.md).
+
 ## 1. Spatial model — the Inner Sound
 
 | Location | Relative position | Elevation / physical role | Travel / dependence |

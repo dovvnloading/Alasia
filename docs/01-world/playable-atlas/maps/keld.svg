@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1248" height="764" viewBox="0 0 1248 764" role="img" aria-labelledby="title desc"><title id="title">Keld</title><desc id="desc">North-up layout and numbered route key. 1. Freight landing. 2. Kitchen on the turn. 3. Old Kiln. 4. North Face. 5. Faulted gallery. 6. Spare vent.</desc><defs><pattern id="water" patternUnits="userSpaceOnUse" width="50" height="18"><path d="M4,4q6,-2 13,0t10,0M33,13q5,-1.5 10,0" fill="none" stroke="#4c817e" stroke-width="0.8" opacity="0.29"/></pattern><pattern id="grain" patternUnits="userSpaceOnUse" width="23" height="21"><path d="M2,3l1,0M12,17l1,0M21,6l.8,0" fill="none" stroke="#877f64" stroke-width="1.5" opacity="0.3"/></pattern><pattern id="field" patternUnits="userSpaceOnUse" width="12" height="12"><path d="M-2,1L13,7M-2,6L13,12" fill="none" stroke="#666d4c" stroke-width="0.9" opacity="0.42"/></pattern><pattern id="stone" patternUnits="userSpaceOnUse" width="27" height="16"><path d="M2,3h10m2,1h3m3,9h6M8,13h3" fill="none" stroke="#777767" stroke-width="0.75" opacity="0.44"/></pattern><pattern id="mud" patternUnits="userSpaceOnUse" width="17" height="11"><path d="M2,4q3,-1 6,0m3,4l3,-1" fill="none" stroke="#7f795e" stroke-width="0.8" opacity="0.53"/></pattern><pattern id="wood" patternUnits="userSpaceOnUse" width="13" height="10"><path d="M0,2h13M0,7h13M6,2v5" fill="none" stroke="#70634f" stroke-width="0.8" opacity="0.5"/></pattern><pattern id="roof" patternUnits="userSpaceOnUse" width="11" height="11"><path d="M-2,8l10,-10M4,12l10,-10" fill="none" stroke="#5e645a" stroke-width="1" opacity="0.55"/></pattern><pattern id="shell" patternUnits="userSpaceOnUse" width="20" height="13"><path d="M2,5q2,-4 4,-1m6,6q1,-3 3,-1" fill="none" stroke="#7e978b" stroke-width="0.9" opacity="0.72"/></pattern></defs>
+<rect x="0" y="0" width="1248" height="764" fill="#f4f0e4" />
+<text x="32.0" y="32.0" fill="#1c5c61" font-family="Arial, 'Liberation Sans', sans-serif" font-size="14" text-anchor="start" font-weight="700" letter-spacing="2.4">ALASIA   /   LOST ISLES</text>
+<text x="1216.0" y="32.0" fill="#1c5c61" font-family="Arial, 'Liberation Sans', sans-serif" font-size="14" text-anchor="end" letter-spacing="1.7">INNER SOUND   /   02</text>
+<path d="M32,45L1216,45" fill="none" stroke="#797e6d" stroke-width="1.1" />
+<text x="31.0" y="98.0" fill="#1f3539" font-family="Georgia, 'DejaVu Serif', serif" font-size="49" text-anchor="start" >Keld</text>
+<text x="33.0" y="126.0" fill="#475a55" font-family="Arial, 'Liberation Sans', sans-serif" font-size="20" text-anchor="start" >Quarry district · landing to the faulted gallery</text>
+<defs><clipPath id="map"><rect x="32" y="148" width="776" height="531"/></clipPath></defs><g clip-path="url(#map)">
+<rect x="32" y="148" width="776" height="531" fill="#b9d4cd" />
+<rect x="32" y="148" width="776" height="531" fill="url(#water)" />
+<path d="M32.00,148.00 L808.00,148.00 L808.00,397.57 L769.20,418.81 L753.68,477.22 L699.36,493.15 L668.32,530.32 L575.20,540.94 L544.16,572.80 L451.04,578.11 L412.24,604.66 L357.92,609.97 L288.08,594.04 L233.76,599.35 L210.48,620.59 L140.64,625.90 L101.84,647.14 L32.00,636.52 Z" fill="none" stroke="#8fb8b1" stroke-width="27" stroke-linejoin="round" />
+<path d="M32.00,148.00 L808.00,148.00 L808.00,397.57 L769.20,418.81 L753.68,477.22 L699.36,493.15 L668.32,530.32 L575.20,540.94 L544.16,572.80 L451.04,578.11 L412.24,604.66 L357.92,609.97 L288.08,594.04 L233.76,599.35 L210.48,620.59 L140.64,625.90 L101.84,647.14 L32.00,636.52 Z" fill="none" stroke="#c2d9ce" stroke-width="25" stroke-linejoin="round" />
+<path d="M32.00,148.00 L808.00,148.00 L808.00,397.57 L769.20,418.81 L753.68,477.22 L699.36,493.15 L668.32,530.32 L575.20,540.94 L544.16,572.80 L451.04,578.11 L412.24,604.66 L357.92,609.97 L288.08,594.04 L233.76,599.35 L210.48,620.59 L140.64,625.90 L101.84,647.14 L32.00,636.52 Z" fill="none" stroke="#82aba3" stroke-width="14" stroke-linejoin="round" />
+<path d="M32.00,148.00 L808.00,148.00 L808.00,397.57 L769.20,418.81 L753.68,477.22 L699.36,493.15 L668.32,530.32 L575.20,540.94 L544.16,572.80 L451.04,578.11 L412.24,604.66 L357.92,609.97 L288.08,594.04 L233.76,599.35 L210.48,620.59 L140.64,625.90 L101.84,647.14 L32.00,636.52 Z" fill="none" stroke="#cedece" stroke-width="12" stroke-linejoin="round" />
+<path d="M32.00,148.00 L808.00,148.00 L808.00,397.57 L769.20,418.81 L753.68,477.22 L699.36,493.15 L668.32,530.32 L575.20,540.94 L544.16,572.80 L451.04,578.11 L412.24,604.66 L357.92,609.97 L288.08,594.04 L233.76,599.35 L210.48,620.59 L140.64,625.90 L101.84,647.14 L32.00,636.52 Z" fill="#e5dcbd" stroke="#626d60" stroke-width="1.8" stroke-linejoin="round" />
+<path d="M32.00,148.00 L808.00,148.00 L808.00,397.57 L769.20,418.81 L753.68,477.22 L699.36,493.15 L668.32,530.32 L575.20,540.94 L544.16,572.80 L451.04,578.11 L412.24,604.66 L357.92,609.97 L288.08,594.04 L233.76,599.35 L210.48,620.59 L140.64,625.90 L101.84,647.14 L32.00,636.52 Z" fill="url(#grain)" stroke="none" stroke-width="1" stroke-linejoin="round" />
+<g><title>Quarry landing</title>
+<path d="M218.24,551.56 L264.80,519.70 L412.24,535.63 L451.04,562.18 L420.00,588.73 L350.16,599.35 L257.04,583.42 Z" fill="#d5d0b7" stroke="#929482" stroke-width="1.15" stroke-linejoin="round" />
+<path d="M218.24,551.56 L264.80,519.70 L412.24,535.63 L451.04,562.18 L420.00,588.73 L350.16,599.35 L257.04,583.42 Z" fill="url(#stone)" stroke="none" stroke-width="1" stroke-linejoin="round" />
+</g>
+<g><title>Spoil terrace</title>
+<path d="M63.04,434.74 L132.88,381.64 L264.80,371.02 L381.20,402.88 L412.24,434.74 L342.40,450.67 L249.28,434.74 L179.44,445.36 L148.40,487.84 L194.96,525.01 L163.92,535.63 L86.32,498.46 Z" fill="#d5d0b7" stroke="#929482" stroke-width="1.15" stroke-linejoin="round" />
+<path d="M63.04,434.74 L132.88,381.64 L264.80,371.02 L381.20,402.88 L412.24,434.74 L342.40,450.67 L249.28,434.74 L179.44,445.36 L148.40,487.84 L194.96,525.01 L163.92,535.63 L86.32,498.46 Z" fill="url(#stone)" stroke="none" stroke-width="1" stroke-linejoin="round" />
+</g>
+<g><title>Kitchen and pantry</title>
+<path d="M280.32,429.43 L334.64,424.12 L365.68,440.05 L357.92,471.91 L319.12,477.22 L303.60,450.67 L272.56,445.36 Z" fill="#b3b6a0" stroke="#929482" stroke-width="1.15" stroke-linejoin="round" />
+<path d="M280.32,429.43 L334.64,424.12 L365.68,440.05 L357.92,471.91 L319.12,477.22 L303.60,450.67 L272.56,445.36 Z" fill="url(#roof)" stroke="none" stroke-width="1" stroke-linejoin="round" />
+</g>
+<g><title>Kiln court</title>
+<path d="M404.48,402.88 L458.80,360.40 L489.84,349.78 L551.92,349.78 L582.96,371.02 L551.92,392.26 L497.60,408.19 L443.28,424.12 Z" fill="#d5d0b7" stroke="#929482" stroke-width="1.15" stroke-linejoin="round" />
+<path d="M404.48,402.88 L458.80,360.40 L489.84,349.78 L551.92,349.78 L582.96,371.02 L551.92,392.26 L497.60,408.19 L443.28,424.12 Z" fill="url(#stone)" stroke="none" stroke-width="1" stroke-linejoin="round" />
+</g>
+<g><title>Old Kiln</title>
+<path d="M497.60,349.78 L505.36,323.23 L544.16,312.61 L575.20,328.54 L575.20,355.09 L536.40,360.40 Z" fill="#b3b6a0" stroke="#929482" stroke-width="1.15" stroke-linejoin="round" />
+<path d="M497.60,349.78 L505.36,323.23 L544.16,312.61 L575.20,328.54 L575.20,355.09 L536.40,360.40 Z" fill="url(#roof)" stroke="none" stroke-width="1" stroke-linejoin="round" />
+</g>
+<g><title>North Face benches</title>
+<path d="M435.52,286.06 L482.08,227.65 L598.48,201.10 L745.92,211.72 L753.68,238.27 L637.28,243.58 L606.24,270.13 L637.28,280.75 L683.84,275.44 L668.32,312.61 L590.72,323.23 L520.88,301.99 Z" fill="#d5d0b7" stroke="#929482" stroke-width="1.15" stroke-linejoin="round" />
+<path d="M435.52,286.06 L482.08,227.65 L598.48,201.10 L745.92,211.72 L753.68,238.27 L637.28,243.58 L606.24,270.13 L637.28,280.75 L683.84,275.44 L668.32,312.61 L590.72,323.23 L520.88,301.99 Z" fill="url(#stone)" stroke="none" stroke-width="1" stroke-linejoin="round" />
+</g>
+<g><title>Gallery roof cut away</title>
+<path d="M342.40,243.58 L427.76,211.72 L489.84,222.34 L513.12,243.58 L513.12,275.44 L466.56,301.99 L427.76,296.68 L451.04,264.82 L420.00,248.89 L373.44,280.75 L334.64,275.44 Z" fill="#c6ad8b" stroke="#929482" stroke-width="1.15" stroke-linejoin="round" />
+<path d="M342.40,243.58 L427.76,211.72 L489.84,222.34 L513.12,243.58 L513.12,275.44 L466.56,301.99 L427.76,296.68 L451.04,264.82 L420.00,248.89 L373.44,280.75 L334.64,275.44 Z" fill="url(#wood)" stroke="none" stroke-width="1" stroke-linejoin="round" />
+</g>
+<g><title>Vent access</title>
+<path d="M218.24,291.37 L272.56,259.51 L350.16,248.89 L388.96,264.82 L357.92,286.06 L303.60,296.68 L288.08,317.92 L342.40,312.61 L420.00,301.99 L451.04,312.61 L427.76,333.85 L280.32,344.47 L233.76,323.23 Z" fill="#d5d0b7" stroke="#929482" stroke-width="1.15" stroke-linejoin="round" />
+<path d="M218.24,291.37 L272.56,259.51 L350.16,248.89 L388.96,264.82 L357.92,286.06 L303.60,296.68 L288.08,317.92 L342.40,312.61 L420.00,301.99 L451.04,312.61 L427.76,333.85 L280.32,344.47 L233.76,323.23 Z" fill="url(#stone)" stroke="none" stroke-width="1" stroke-linejoin="round" />
+</g>
+<g transform="translate(373.44,567.49) rotate(10)"><path d="M-10,7H9M0,7V-10L12,-5H0M12,-5V2l-2,2M-6,7L0,-8" fill="none" stroke="#4d5955" stroke-width="2.2" stroke-linejoin="round"/></g>
+<g transform="translate(357.92,503.77) rotate(16)"><path d="M-6,-8V8 M6,-8V8 M-6,-7H6M-6,-3H6M-6,1H6M-6,5H6" fill="none" stroke="#585e54" stroke-width="1.4"/></g>
+<g transform="translate(194.96,466.60) rotate(12)"><path d="M-8,1L-3,-5L3,-6L8,0L4,4L-3,5Z M-8,1L1,0L3,-6 M1,0L4,4" fill="#a7aa99" stroke="#66716a" stroke-width="1"/></g>
+<g transform="translate(233.76,450.67) rotate(7)"><path d="M-8,1L-3,-5L3,-6L8,0L4,4L-3,5Z M-8,1L1,0L3,-6 M1,0L4,4" fill="#a7aa99" stroke="#66716a" stroke-width="1"/></g>
+<g transform="translate(311.36,450.67) rotate(14)"><path d="M-9,-6H9V7H-9Z M-9,-6L0,-2L9,-6 M0,-2V7" fill="#b5ab8b" stroke="#515d52" stroke-width="1.4"/></g>
+<g transform="translate(536.40,333.85) rotate(0)"><circle r="5.5" fill="none" stroke="#4b615a" stroke-width="2.1"/></g>
+<g transform="translate(606.24,232.96) rotate(-16)"><path d="M-8,1L-3,-5L3,-6L8,0L4,4L-3,5Z M-8,1L1,0L3,-6 M1,0L4,4" fill="#a7aa99" stroke="#66716a" stroke-width="1"/></g>
+<g transform="translate(652.80,217.03) rotate(-20)"><path d="M-8,1L-3,-5L3,-6L8,0L4,4L-3,5Z M-8,1L1,0L3,-6 M1,0L4,4" fill="#a7aa99" stroke="#66716a" stroke-width="1"/></g>
+<g transform="translate(443.28,254.20) rotate(0)"><circle r="3.6" fill="#a08457" stroke="#4c4f43" stroke-width="1.4"/></g>
+<g transform="translate(466.56,259.51) rotate(0)"><circle r="3.6" fill="#a08457" stroke="#4c4f43" stroke-width="1.4"/></g>
+<path d="M295.84,673.69 L319.12,647.14 L326.88,604.66" fill="none" stroke="#f3efdc" stroke-width="6.1" stroke-opacity=".90" stroke-linecap="round" stroke-linejoin="round"/><path d="M295.84,673.69 L319.12,647.14 L326.88,604.66" fill="none" stroke="#1d686d" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="10 6"/>
+<path d="M326.88,604.66 L326.88,583.42 L342.40,530.32 L381.20,455.98 L420.00,434.74 L458.80,397.57 L513.12,376.33" fill="none" stroke="#f3efdc" stroke-width="6.1" stroke-opacity=".90" stroke-linecap="round" stroke-linejoin="round"/><path d="M326.88,604.66 L326.88,583.42 L342.40,530.32 L381.20,455.98 L420.00,434.74 L458.80,397.57 L513.12,376.33" fill="none" stroke="#704323" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M513.12,376.33 L590.72,365.71 L629.52,333.85 L621.76,301.99 L544.16,270.13" fill="none" stroke="#f3efdc" stroke-width="6.1" stroke-opacity=".90" stroke-linecap="round" stroke-linejoin="round"/><path d="M513.12,376.33 L590.72,365.71 L629.52,333.85 L621.76,301.99 L544.16,270.13" fill="none" stroke="#704323" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M544.16,270.13 L489.84,270.13 L482.08,243.58 L443.28,232.96 L381.20,259.51" fill="none" stroke="#f3efdc" stroke-width="6.1" stroke-opacity=".90" stroke-linecap="round" stroke-linejoin="round"/><path d="M544.16,270.13 L489.84,270.13 L482.08,243.58 L443.28,232.96 L381.20,259.51" fill="none" stroke="#704323" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M342.40,530.32 L264.80,540.94 L187.20,514.39 L140.64,477.22 L156.16,440.05 L218.24,413.50 L280.32,413.50 L350.16,429.43 L381.20,455.98" fill="none" stroke="#f3efdc" stroke-width="6.1" stroke-opacity=".90" stroke-linecap="round" stroke-linejoin="round"/><path d="M342.40,530.32 L264.80,540.94 L187.20,514.39 L140.64,477.22 L156.16,440.05 L218.24,413.50 L280.32,413.50 L350.16,429.43 L381.20,455.98" fill="none" stroke="#875131" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 5"/>
+<path d="M489.84,270.13 L451.04,312.61 L388.96,323.23 L288.08,328.54 L257.04,296.68 L311.36,275.44 L381.20,259.51" fill="none" stroke="#f3efdc" stroke-width="6.1" stroke-opacity=".90" stroke-linecap="round" stroke-linejoin="round"/><path d="M489.84,270.13 L451.04,312.61 L388.96,323.23 L288.08,328.54 L257.04,296.68 L311.36,275.44 L381.20,259.51" fill="none" stroke="#875131" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 5"/>
+<text x="691.6" y="183.9" fill="#455a55" font-family="Arial, 'Liberation Sans', sans-serif" font-size="12.5" text-anchor="middle" font-weight="bold" letter-spacing="1.25" stroke="#e6e9d8" stroke-linejoin="round" stroke-width="3.5" paint-order="stroke">QUARRY LIP</text>
+<text x="148.4" y="555.6" fill="#455a55" font-family="Arial, 'Liberation Sans', sans-serif" font-size="12.5" text-anchor="middle" font-weight="bold" letter-spacing="1.25" stroke="#e6e9d8" stroke-linejoin="round" stroke-width="3.5" paint-order="stroke">DRAG ROAD</text>
+<circle cx="326.88" cy="583.42" r="13" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="326.9" y="589.3" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="381.20" cy="455.98" r="13" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="381.2" y="461.9" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="513.12" cy="376.33" r="13" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="513.1" y="382.2" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="544.16" cy="270.13" r="13" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="544.2" y="276.0" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="381.20" cy="259.51" r="13" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="381.2" y="265.4" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="257.04" cy="296.68" r="13" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="257.0" y="302.6" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">6</text>
+</g>
+<rect x="32" y="148" width="776" height="531" fill="none" stroke="#1f3539" stroke-width="1.2"/>
+<text x="845.0" y="156.0" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="13" text-anchor="middle" font-weight="bold">N</text><path d="M845,161l-6,19 6,-4 6,4z" fill="#1f3539" stroke="#f4f0e4" stroke-width="1"/>
+<text x="875.0" y="174.0" fill="#1c5c61" font-family="Arial, 'Liberation Sans', sans-serif" font-size="14" text-anchor="start" font-weight="bold" letter-spacing="1.8">ON THE GROUND</text>
+<circle cx="845.00" cy="212.00" r="12.5" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="845.0" y="217.9" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">1</text>
+<text x="871.0" y="216.0" fill="#1f3539" font-family="Georgia, 'DejaVu Serif', serif" font-size="21" text-anchor="start" >Freight landing</text>
+<text x="872.0" y="238.0" fill="#465852" font-family="Arial, 'Liberation Sans', sans-serif" font-size="16.5" text-anchor="start" >Tackle over the maintenance boat</text>
+<circle cx="845.00" cy="279.00" r="12.5" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="845.0" y="284.9" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">2</text>
+<text x="871.0" y="283.0" fill="#1f3539" font-family="Georgia, 'DejaVu Serif', serif" font-size="21" text-anchor="start" >Kitchen on the turn</text>
+<text x="872.0" y="305.0" fill="#465852" font-family="Arial, 'Liberation Sans', sans-serif" font-size="16.5" text-anchor="start" >Stair hatch and cart-side pantry</text>
+<circle cx="845.00" cy="346.00" r="12.5" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="845.0" y="351.9" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">3</text>
+<text x="871.0" y="350.0" fill="#1f3539" font-family="Georgia, 'DejaVu Serif', serif" font-size="21" text-anchor="start" >Old Kiln</text>
+<text x="872.0" y="372.0" fill="#465852" font-family="Arial, 'Liberation Sans', sans-serif" font-size="16.5" text-anchor="start" >Die bench beside the cooling ledge</text>
+<circle cx="845.00" cy="413.00" r="12.5" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="845.0" y="418.9" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">4</text>
+<text x="871.0" y="417.0" fill="#1f3539" font-family="Georgia, 'DejaVu Serif', serif" font-size="21" text-anchor="start" >North Face</text>
+<text x="872.0" y="439.0" fill="#465852" font-family="Arial, 'Liberation Sans', sans-serif" font-size="16.5" text-anchor="start" >Head of the working repair line</text>
+<circle cx="845.00" cy="480.00" r="12.5" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="845.0" y="485.9" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">5</text>
+<text x="871.0" y="484.0" fill="#1f3539" font-family="Georgia, 'DejaVu Serif', serif" font-size="21" text-anchor="start" >Faulted gallery</text>
+<text x="872.0" y="506.0" fill="#465852" font-family="Arial, 'Liberation Sans', sans-serif" font-size="16.5" text-anchor="start" >Impression rack on the dry shelf</text>
+<circle cx="845.00" cy="547.00" r="12.5" fill="#f4f0e4" stroke="#1f3539" stroke-width="2"/><text x="845.0" y="552.9" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="17" text-anchor="middle" font-weight="bold">6</text>
+<text x="871.0" y="551.0" fill="#1f3539" font-family="Georgia, 'DejaVu Serif', serif" font-size="21" text-anchor="start" >Spare vent</text>
+<text x="872.0" y="573.0" fill="#465852" font-family="Arial, 'Liberation Sans', sans-serif" font-size="16.5" text-anchor="start" >Side circuit for a shorter stoppage</text>
+<path d="M32.00,706.00 L75.00,706.00" fill="none" stroke="#f3efdc" stroke-width="6.1" stroke-opacity=".90" stroke-linecap="round" stroke-linejoin="round"/><path d="M32.00,706.00 L75.00,706.00" fill="none" stroke="#704323" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" />
+<text x="85.0" y="710.0" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="16" text-anchor="start" >Footpath</text>
+<path d="M188.00,706.00 L231.00,706.00" fill="none" stroke="#f3efdc" stroke-width="6.1" stroke-opacity=".90" stroke-linecap="round" stroke-linejoin="round"/><path d="M188.00,706.00 L231.00,706.00" fill="none" stroke="#875131" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 5"/>
+<text x="241.0" y="710.0" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="16" text-anchor="start" >Alternate / conditional path</text>
+<path d="M500.00,706.00 L543.00,706.00" fill="none" stroke="#f3efdc" stroke-width="6.1" stroke-opacity=".90" stroke-linecap="round" stroke-linejoin="round"/><path d="M500.00,706.00 L543.00,706.00" fill="none" stroke="#1d686d" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="10 6"/>
+<text x="553.0" y="710.0" fill="#1f3539" font-family="Arial, 'Liberation Sans', sans-serif" font-size="16" text-anchor="start" >Boat passage</text>
+<path d="M32,728L1216,728" fill="none" stroke="#b7b3a3" stroke-width="1" />
+<text x="32.0" y="750.0" fill="#57655c" font-family="Arial, 'Liberation Sans', sans-serif" font-size="14" text-anchor="start" >North up  ·  Routes and footprints at blockout scale</text>
+<text x="1216.0" y="750.0" fill="#1c5c61" font-family="Arial, 'Liberation Sans', sans-serif" font-size="13" text-anchor="end" letter-spacing="1.4">SHELTERED FREIGHT WATER</text>
+</svg>
