@@ -127,4 +127,4 @@ An original UI language taken from survey slates, calibration collars and stampe
 - Stone-cut and causeway erosion: study real maritime retaining walls, old port gauges and quarry working methods. Commission or create wholly original concept material; do not import reference photographs or other games' concept art into shipped assets without rights.
 - Style comparison: the **readability and material finish** of premium isometric ARPGs is a bar, **not** a template for copying their UI silhouettes, costumes, iconography or VFX timings.
 
-**Concept approval:** 4 keyframes, 3 player silhouettes, 4 enemy silhouettes, 1 HUD combat mock and 1 inventory/detail mock; evaluate grayscale gameplay readability, original identity, historical logic, cost to build, and license provenance. No rendered beauty shot advances if its graybox cannot be played.
+**Imagery to explore next:** the four keyframes above, a recognizable silhouette for each worker profession, early enemy drawings, and a combat HUD that keeps information clear against dark stone. The images should make Alasia more concrete and playable, rather than merely decorative.

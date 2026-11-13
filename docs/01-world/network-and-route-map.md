@@ -76,4 +76,4 @@ Every arrow needs an *in-game reason* why the next stop becomes necessary. A fer
 5. If the sea is east, why is Orren southwest flooded? **The water level varies basin-wide; it is Orren's ground that fails**, plus storm surge through the east throat.
 6. If everything is on one graph, why not simply disconnect a line? **Existing receivers lose support and loaded collars may release dangerous stored strain.** Safe phased operations are the Act III challenge.
 
-**Before map lock:** create a measured plan showing undersea route lengths, the four islands' relative terrain tiers, drainage directions, high-/low-tide overlays, ferry durations, human settlement area and stormwall flow. A story map without those is only a diagram.
+**As the world map takes shape**, establish believable distances, terrain height, drainage, tides, ferry passages, settlement footprints and the routes of the fitted strain network. These details should strengthen the scenes instead of becoming another approval exercise.

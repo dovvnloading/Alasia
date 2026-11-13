@@ -106,16 +106,10 @@ The player cannot collect a thousand seamglass engines from a field of crabs wit
 
 ## 8. Long-tail temptation and strict restraint
 
-No procedural endless dungeon, live seasonal treadmill, sprawling crafting-tree simulation or monetization-driven reward cadence is approved. They could be researched after the campaign and item loop demonstrate quality. A polished 10-minute fight with mechanically interesting loot is more valuable now than a thousand meaningless drops.
+The early game centers on authored combat and a small set of meaningful items, rather than an endless dungeon, trading economy or enormous crafting tree. Those larger systems can be explored later if they strengthen the actual experience. A polished 10-minute fight with mechanically interesting loot is more valuable now than a thousand meaningless drops.
 
-## 9. Systems review questions
+## 9. The experience this system should create
 
-- Does a Shorer's crowd clear come from an actually different geometry than a Sounder's timed shock or a Linewright's line snap?
-- Can a player understand a fatal attack in a black-and-white capture at half-resolution?
-- Can a boss be beaten with starter gear by a skilled player and with reasonable assists by a newer player?
-- Does each loot item have a plausible origin *here* and a non-cosmetic reason to be exciting?
-- Are Held encounters humanly considered without making the combat feel like a lecture?
-- Do monsters remain dangerous because of behavior rather than stat inflation?
-- Does a class retain its identity without item sets or legendary drops?
+A new fitting should change how a player fights, not merely raise a number. An animal should look and behave like something living on these shores rather than a loot container. Even the hostile Held retain traces of the workers they were; force matters because someone is bearing its cost.
 
-If not, revise the systemic design before populating another zone.
+When combat is slow, chaotic or generic, the answer is better motion, enemy behavior and equipment interaction—not more levels, more stats or another list of monsters.
