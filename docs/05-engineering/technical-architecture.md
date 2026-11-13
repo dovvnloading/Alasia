@@ -2,7 +2,7 @@
 
 **ID:** ENG-001 · **Status:** WORKING / architecture hypothesis · **Version:** 0.1
 
-**This is a design specification. No engine, dependencies, runtime, shaders or server have been created yet.** Choose technology by measured evidence. Browser AAA quality is a constrained production engineering problem, not a matter of importing Three.js and adding particle effects.
+**Working specification for the action RPG.** [Market Steps](../../studies/market-steps.html) is a standalone browser study of movement, memory and evidence at Sere. Its turn-based chart runs in plain JavaScript and Canvas 2D. The proposed Three.js combat engine remains unimplemented. Choose technology by measured evidence. Browser AAA quality is a constrained production engineering problem, not a matter of importing Three.js and adding particle effects.
 
 ## 1. Target and initial architecture decisions
 

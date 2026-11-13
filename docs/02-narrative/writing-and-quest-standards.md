@@ -25,13 +25,15 @@ She copies the changed scope and stamp mark into her own book while the worker k
 
 At the exceptional ebb following the second high water, Ada gives the pilot directions without consulting a chart. She tells the player to keep a hand on the old railing until it turns. At the corner she reaches an arm's length into empty water. The next length of iron has gone. The player holds the boat off the exposed stone while she feels for the next footing with her heel.
 
-Ada is looking for the shore half of the third ferry's brass tally. In ordinary service a crew took one half away on a trip it owed and collected the other on its return. Have a League hand demonstrate the custom during boarding on Orren. At Sere the player waits for the wash to draw back and frees the tally at the Market Steps while Ada takes its position against a surviving survey mark. Ada pencils the number and the footing into her book before either of them tries to stand.
+Ada is looking for the shore half of the third ferry's brass tally. In ordinary service a crew took one half away on a trip it owed and collected the other on its return. Have a League hand demonstrate the custom during boarding on Orren. At Sere the player holds a sheet against the survey cut while Ada takes a rubbing and marks the tally in place. Wait for the wash to draw back, then ease the brass out together. Ada pencils the number beside the sketch before either of them tries to stand.
 
 > **Ada** — I used to stand up there for the boats.  
 > **Worker** — On the top step?  
 > **Ada** — On the rail. You could see the pastries coming off before the boys on the steps could.  
 > *She puts the tally in the worker's palm and closes the fingers herself.*  
 > **Ada** — Keep this hand out of the water.
+
+In the [playable crossing](../../studies/market-steps.html), a pilot can take the skiff up to the baker’s sill and rig a line for Ada or hold below the gutter and leave the crossing to the pair on shore. A broken chalk joint goes slack with the wash. The worker can cross between ridges or turn the loose stone at slack to get Ada past. Once the tally comes out, a length of the upper ledge falls. The pilot at the high sill has to drop back to the rail. The pilot below the gutter can hold her berth. Keep the state of the gutter on the walk back.
 
 Leave the place with a question the freight office can answer. The tally establishes an outstanding return. Who received the boat at another quay? Ada keeps custody of the list of waiting passengers and decides when it goes on the table.
 
@@ -96,7 +98,7 @@ At the controls the field-worker reads the undertaking back to the people who au
 
 - **The Forty-Sixth Place.** Restore the beached skiff during the Orren rescue. A further trip costs freight space. Recognize one of its passengers on the return from Keld, this time unloading bedding for the next arrivals.
 - **Cold Fittings.** At Keld, set a spare pressure vent so the shop can release its casting impression with a shorter stoppage. On the return boat, the player sees which replacement fittings the saved shift finished.
-- **The Open Roll.** After publication, Ada asks a dock steward to witness a particular household claim. Give them a quiet spot to compare a name used before relocation with one used for work in Verran. Their countersignature repairs that household's case. The hearing and crews' access to the originals belong to the main story.
+- **The Open Roll.** On Verran’s fourth watch, Kit asks for the page facing the Sen family deed. She and her mother rented the room behind the oven. The name on her first Verran pay packet differs from the one their steward knew on Sere. He is going on his break while Kit is halfway through unloading a sack. Take her place and she can catch him to witness both names. Pass on the job and Kit still writes her entry. A strip of sacking marks the space for the witness to come back to. Kit keeps her claim either way. No finding at the hearing and no family’s right to enter the roll depends on a side job.
 - **Above the Waterline.** During relief at Verran, open the handcart route while the powered hoist stands idle. Extra grain reaches the upper stores and an extra load comes off the ferry. Show the difference in the later queue. The residents still decide which ground they can give.
 
 ## Dialogue and encounter direction

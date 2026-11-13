@@ -18,7 +18,7 @@ All names here except **Alasia: Lost Isles** are provisional. One spelling per c
 | **Allocation** | A decision about which plate receives lift and which bears settlement | Not a generic magical spell |
 | **The Third Column** | The suppressed donor-settlement field in the Board's original work registers | Its records are hidden by people, not erased by sorcery |
 | **The Winter Allocation** | Decision to use inhabited Sere as donor, forty-one years before the campaign | A culpable choice made during a real emergency |
-| **Anset Trials** | Older, public experiments on a largely uninhabited low site | The precedent that normalized network use |
+| **Anset Trials** | Public transfer trials at a shoal with no resident households | Harbor gain and loss of the boat crews' beach both entered the public account |
 | **Held** | Injured workers whose damaged harnesses keep reapplying dangerous strain impulses | People first; not undead or inherently evil |
 | **Bridleshells** | Vibration-sensitive coastal shell fauna displaced by subsoil failures | Wildlife; no magic soul-puppets |
 | **Chalk colonies** | Calcium-forming fissure organisms amplified by repeated strain pulses | Ecological threat with constrained behavior |
@@ -31,7 +31,7 @@ All names here except **Alasia: Lost Isles** are provisional. One spelling per c
 | **Keld** | Northwest high quarry island; source of fitted seamglass and stonework | Supplies the material and labor; extracts at a cost |
 | **Orren** | Southwest low alluvial island; market farms, ferries, first crisis | The next living donor and slice setting |
 | **Selwick** | Eastern barrier island; exposed stormwall, gateway and main trunk controls | Controls outer surge and routing; climax needs its engineering |
-| **Anset** | Uninhabited test shoal, now submerged except at low water | Public proof of permitted transfer |
+| **Anset** | Former Selwick boat-careening beach and test shoal, usually underwater | First publicly acknowledged donor |
 | **Sere** | Former inhabited southern low isle, concealed after settlement | The human cost of the original transfer |
 | **The Outer Bar** | Broken shoal and tidal hazard east of Selwick | Shipping constraint, not a separate content continent |
 

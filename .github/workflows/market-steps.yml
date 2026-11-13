@@ -1,0 +1,28 @@
+name: Market Steps regression
+
+on:
+  pull_request:
+    paths:
+      - "studies/**"
+      - ".github/workflows/market-steps.yml"
+  push:
+    branches: [main]
+    paths:
+      - "studies/**"
+      - ".github/workflows/market-steps.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: |
+          for file in studies/*.js studies/*.cjs; do
+            node --check "$file"
+          done
+      - name: Check game-state and chart regressions
+        run: node --test studies/market-scene.test.cjs
