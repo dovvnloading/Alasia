@@ -108,7 +108,7 @@ Do not generate scaffolding for optional services at this stage. The smallest la
 
 **Accessibility:** keyboard navigable menus, screen-readable text where possible, controller focus cues, remappable gameplay controls, non-color-only warnings, reduced motion and captioned critical mechanics. Do not pack all crucial information into the GPU canvas when accessible DOM can carry it.
 
-## 10. Technical risks and explicit kill tests
+## 10. Practical technical considerations
 
 | Risk | Earliest proof / falsification | Fall-back if poor |
 | --- | --- | --- |
@@ -120,17 +120,10 @@ Do not generate scaffolding for optional services at this stage. The smallest la
 | WebGPURenderer compatibility differs | Renderer spike in specific target browsers | Keep WebGLRenderer baseline and preserve adapter |
 | Core sim tied to frame rate | Replay same encounter at 30/60/144 Hz presentation | Fix timestep/event authority before feature work |
 | Saved progress lost in browser | Quota, refresh, migration and context loss test | Explicit export and safe recovery flow |
-| Third-party art/license uncertainty | Provenance manifest gate before asset import | Replace asset / commission original; retain docs and owned code only |
+| Third-party art/license uncertainty | Track provenance for any imported asset | Replace asset / commission original; retain docs and owned code only |
 
-## 11. Engineering delivery order
+## 11. From fiction to a working Three.js scene
 
-**After G0 approval only:**
-1. Minimal TypeScript/Vite/Three.js renderer spike with a neutral authored room.
-2. Fixed-step simulation, single player controller, hit query, deterministic replay.
-3. One enemy telegraph, hit feedback, dodge and accessible cue test.
-4. Graybox each profession's *distinct input loop*; stop if mechanics do not differentiate.
-5. Graybox an Orren bridge/sluice environment with valid surfaces and occlusion.
-6. Benchmark before adding high-poly environments, procedural levels or network features.
-7. Add content validation, save/load and tooling while content is still small.
+When we start development, build an Orren space that can be navigated at a locked combat scale, with a controllable character, one enemy with readable attacks, and clear hit and dodge feedback. Give each profession one genuinely different interactive move. From there, add the South Cut fault, the gauge mystery, Tessa and the ferry, saving the world as a consistent playable state and not just a set of effects.
 
-**No code changes are implied by this document.** Delivery and sign-off live in [gates](../06-production/vertical-slice-and-gates.md).
+The code should grow alongside the design, not wait for a separate approval system. Measure browser responsiveness and adjust how assets, crowds and effects are rendered as the project becomes real. The [development outline](../06-production/development-outline.md) stays short and practical.

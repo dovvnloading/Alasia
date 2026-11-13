@@ -83,8 +83,6 @@ Enemy taxonomy and ethical handling: [enemies, loot and progression](../03-gamep
 - Sere's dead and displaced are not just quest tokens; their property, records and unresolved claims matter.
 - A critical world event must be witnessed or inferred in gameplay, not deposited only in a codex.
 
-## 8. Unresolved material-science questions (P0/P1 for prototype)
+## 8. Physical details to discover while designing
 
-**P0:** On-screen rule for how field tools receive and spend force, visually perceivable without a lecture. **P0:** Conservative simulation model for local terrain interaction, independent of real-world tectonics. **P1:** Measured relative elevations and tide amplitudes for specific harbors, after atlas graybox. **P1:** Exact compression/settlement relationship and what a failed collar looks/sounds like. **P1:** Whether seamglass deposits naturally regrow (default: **no**, making mining political). **P1:** Relationship between recurring chalk-colony blooms and industrial overuse, validated through creature design.
-
-Use only conservative, testable game rules until these are decided. Do not fabricate scientific numbers for flavor.
+Field tools need a visually understandable source of stored force; the art and mechanics should make the exchange visible without a physics lecture. Exact tide amplitudes, levels and collar geometry can be settled while drawing Orren and the connected Sound. Seamglass is scarce, and its deposits are not assumed to regrow. Avoid inventing impressive numbers that do not help the world feel real.

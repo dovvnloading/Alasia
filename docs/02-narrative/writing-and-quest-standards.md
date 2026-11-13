@@ -86,19 +86,8 @@ Every optional quest must connect to one of the following: **a main cast change,
 
 *Why it may work:* he admits a decision without being turned into a speechifying monster. *Risk:* stage the admission only after sufficient documentary proof; silence, timing and reaction matter more than cleverness.
 
-## 6. Scene revision pass
+## 6. Writing the scenes
 
-For every core scene:
-1. **Logic:** motivation, who knows what, who can physically attend, travel time, documented date and evidence chain.
-2. **Subtext:** each speaker wants an immediate, different outcome; remove any line spoken solely to educate the audience.
-3. **Voice:** remove interchangeable grand statements; test lines without speaker tags.
-4. **Play:** identify what the player can move, inspect, fight, choose, interrupt or witness.
-5. **Production:** camera readability, animation scope, VO/subtitle localization and number of unique props.
-6. **Ethics:** civilians are not disposable devices; no forced punitive choice masquerading as agency.
-7. **Continuity:** rerun [world rules](../01-world/seed-and-laws.md), [history](../01-world/history-and-daily-life.md) and [cast](cast-and-arcs.md).
+The best scene shows what a person wants *now* and why another person cannot simply give it to them. Write through actions: a boat count, an inspection, the sound of a settling stair, an old receipt laid beside a new chart. Characters should have distinctive vocabulary rooted in their work, and any revelation should alter a relationship or the next action.
 
-## 7. Acceptance for scripted content
-
-No scene enters VO or cinematic production without a **beat sheet, location blocking, evidence ownership, character objective map, revised dialogue, optional-state variants, localization notes, and contradiction review**. Leave a line unvoiced rather than pay for mediocre writing.
-
-No quest enters implementation without **completion/failure behavior, save/resume rules, noncombat pacing, accessibility affordances and exact state changes**. A design treatment is not a screenplay; it is a contract for one.
+The dialogue above is unfinished. It should become sharper as these scenes are written, performed aloud and placed into the world. The goal is not to complete a form before storytelling begins. The goal is to make the story worth playing.
