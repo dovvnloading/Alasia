@@ -64,7 +64,7 @@ The profession names and kits are **candidates that must win mechanical blind te
 | **Bell Break** · active | Counterpulse against an actively committed attack | Interrupts lesser foe; meaningful boss poise damage | Narrower timing, reading cost; no permanent stun chain |
 | **Underheard** · signature spend | Release a sequence of tuned impulses along a connected grounded surface | High clarity AoE on correctly read pack, concentrated boss pressure | Requires earned readings; breaks at water gap / unfitted surface |
 
-**Example 8-second engagement:** two Platebacks charge while a larger work-encrusted creature lifts a plate. The Sounder taps Take Sounding to see approach intervals, steps off the charge line, catches a Plateback on the weight's return, uses True Return on the large foe's committed lift, then times Bell Break before the plate drops. The encounter has **attention**, not an invisible rhythm meter.
+**Example 8-second engagement:** two Bridleshells charge while a larger work-encrusted creature lifts a plate. The Sounder taps Take Sounding to see approach intervals, steps off the charge line, catches a Bridleshell on the weight's return, uses True Return on the large foe's committed lift, then times Bell Break before the plate drops. The encounter has **attention**, not an invisible rhythm meter.
 
 **Intended strengths:** high single-target ceiling, reliable telegraph punish, graceful mid-range counterplay, information-rich enemy encounters. **Costs:** weak when forced into erratic blind firing; needs clear silhouettes and not merely numerical buffs; pressure on multiple flanks.
 
@@ -93,7 +93,7 @@ The profession names and kits are **candidates that must win mechanical blind te
 | **Cross-load** · active | Divert a bounded portion of one hit to another connected target | Rewards smart target choice and position | Damage does not recurse; caps prevent infinite duplication |
 | **Snap Cast** · signature spend | Release stored tension; line whips along a readable path | High-density finish or defensive cut | Consumes Tension and destroys affected edge(s) |
 
-**Example 8-second engagement:** attach a lead to the first charging Plateback, tie it to a stone foot on the opposite side of the path, use Reeve to relocate as the animal crosses, and spend tension to snap the edge through its pack. Then anchor a larger foe as an immovable pivot and pull small creatures toward it. The enemy's motion supplies the attack's shape.
+**Example 8-second engagement:** attach a lead to the first charging Bridleshell, tie it to a stone foot on the opposite side of the path, use Reeve to relocate as the animal crosses, and spend tension to snap the edge through its pack. Then anchor a larger foe as an immovable pivot and pull small creatures toward it. The enemy's motion supplies the attack's shape.
 
 **Intended strengths:** dynamic AoE routing, control of pursuit, fast reposition along chosen geometry, skill expression in target selection. **Costs:** weak in open, bare water with few anchors, lines susceptible to enemy cuts, higher spatial planning burden than Shorer.
 

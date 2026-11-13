@@ -10,7 +10,7 @@ Alasia's enemy density comes from converging pressures at **faults, tide gates, 
 
 | Family | Origin and behavior | Combat identity | Telegraph language | Where it belongs |
 | --- | --- | --- | --- | --- |
-| **Platebacks** | Territorial shell fauna disturbed by new ground pulses | Fast rushers, armored fronts, weaker sides; packs with one heavier charger | Shell crouch / scraped forward wedge; scraping audible + visible | Orren mudcuts, broken quay foundations |
+| **Bridleshells** | Territorial shell fauna disturbed by new ground pulses | Fast rushers, armored fronts, weaker sides; packs with one heavier charger | Shell crouch / scraped forward wedge; scraping audible + visible | Orren mudcuts, broken quay foundations |
 | **Chalk colonies** | Mineralizing fissure organisms growing under cyclic loading | Small linked bodies emerging along strain seams; area denial, vibration response | Pale branching ground cracks before emergence; porous collapses | South Cut, Keld galleries, Sere foundations |
 | **Held** | Workers trapped in failed harness response cycles, intermittently aware | Slow powerful repetitive strokes, dangerous proximity; possible disable interactions | Tool arm ratchets twice, local brace glows white at fracture | Maintenance chambers, unsafe historic rigs |
 | **Contract crews** | Paid guards and service workers protecting restricted controls | Formation defense, sappers, ranged bolted tools, shields with genuine limits | Hand signals, exposed winding gear, visible deployment | Verran archives, Selwick control routes |
@@ -18,7 +18,7 @@ Alasia's enemy density comes from converging pressures at **faults, tide gates, 
 
 ### Enemy design constraints
 
-**Platebacks:** not just crabs scaled to boss size. Design one locomotion grammar: heavy foreplates, flexible pale rear joints, fast lateral recovery, vibration-sensitive stance. Variants arise from biology (young flanking runner, mature plating, nest defender), not elemental color swaps. They may retreat or defend nests.
+**Bridleshells:** not just crabs scaled to boss size. The twin raised straps across the foreplate resemble a ferry bridle: this is the boat crews' name, not an invented ancient taxonomy. Design one locomotion grammar: heavy foreplates, flexible pale rear joints, fast lateral recovery, vibration-sensitive stance. Variants arise from biology (young flanking runner, mature plating, nest defender), not elemental color swaps. They may retreat or defend nests.
 
 **Chalk colonies:** not fungi with green poison clouds or skeletal undead. The colony is many rigid mineral threads grown around small living organisms; threatening motion is a coordinated **surface ripple** visible before eruption. A colony can lose its connection when a fitted surface is broken.
 
@@ -28,8 +28,8 @@ Alasia's enemy density comes from converging pressures at **faults, tide gates, 
 
 ## 2. The first encounter roster (candidate)
 
-- **Plateback Scout:** light charger; teaches dodge from a forward wedge; vulnerable after missing.
-- **Plateback Mason:** broad foreplate; flank or break its footing; first stagger tutorial.
+- **Bridleshell Scout:** light charger; teaches dodge from a forward wedge; vulnerable after missing.
+- **Bridleshell Mason:** broad foreplate; flank or break its footing; first stagger tutorial.
 - **Chalk Fissure:** several small organisms spring from a marked connected crack; teaches terrain observation.
 - **Chalk Crown:** stationary colony attachment projects a short traveling ridge; teaches lane changes.
 - **Overloaded Rig:** anchored maintenance frame with predictable alternating slam; destroy/vent fitting after opening.

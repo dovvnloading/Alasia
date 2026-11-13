@@ -75,7 +75,7 @@
 
 Class silhouette identifiers must read on black material in **0.3-second thumbnail recognition tests**; no reliance on helmet colors or full-screen VFX. Profession armor is protective workwear evolved into combat equipment, not generic knight/wizard/ranger costumes.
 
-**Platebacks:** low forward armored volume, distinctly softer tail joint, scrapes and weight shift as tell. **Chalk colonies:** fine pale branching surface patterns and clustered mineral forms that appear to breathe only when loaded. **Held:** readable damaged mechanical harness around a **recognizable person**, not a zombie. **Service crews:** working uniforms differentiated by tools, insignia and behavior, not black-red villain armor.
+**Bridleshells:** low forward armored volume, distinctly softer tail joint, scrapes and weight shift as tell. **Chalk colonies:** fine pale branching surface patterns and clustered mineral forms that appear to breathe only when loaded. **Held:** readable damaged mechanical harness around a **recognizable person**, not a zombie. **Service crews:** working uniforms differentiated by tools, insignia and behavior, not black-red villain armor.
 
 ## 6. Visual storytelling shots (concept briefs, not commissioned art yet)
 
