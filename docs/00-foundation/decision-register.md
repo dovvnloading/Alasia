@@ -10,7 +10,7 @@ This register records what was decided, **why**, the confidence level, and what 
 | D-002 | Single seed: lift at one shore entails settlement at another | WORKING / high | Generates geography, politics, power and narrative from one cause | Any unresolvable contradiction in story or playable physics |
 | D-003 | Four standing islands (Verran, Keld, Orren, Selwick), two lost sites (Anset, Sere) | WORKING / medium | Each serves a distinct causal function; no filler archipelago | Route/economy audit or map graybox |
 | D-004 | First campaign follows a deliberately concealed donor allocation | WORKING / high | Makes the title, crisis and antagonist legible | Narrative beat review |
-| D-005 | Protagonist is a licensed field-worker; three professions are Shorer, Sounder, Splicer | WORKING / medium | Competence without prophecy; differentiated combat verbs | Class prototyping and anti-clone review |
+| D-005 | Protagonist is a licensed field-worker; three professions are Shorer, Sounder, Linewright | WORKING / medium | Competence without prophecy; differentiated combat verbs | Class prototyping and anti-clone review |
 | D-006 | Desktop-first single-player authored campaign | WORKING / high | Achievable evidence of polish before online complexity | Audience research, staffing, production capacity |
 | D-007 | TypeScript + Three.js with explicit render/simulation boundary | WORKING / high | Tooling fit and portable web rendering | Render benchmark and runtime spike |
 | D-008 | Begin with WebGL2-compatible rendering; evaluate WebGPU separately | WORKING / medium | Browser reach and stable fallback | Benchmark actual target browsers |

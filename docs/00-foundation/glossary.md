@@ -54,7 +54,7 @@ All names here except **Alasia: Lost Isles** are provisional. One spelling per c
 | --- | --- | --- |
 | **Shorer** | **Bear → return** | Catch impacts in placed braces, redirect load through the ground |
 | **Sounder** | **Read → answer** | Measure enemy intervals and strike during real openings |
-| **Splicer** | **Connect → redistribute** | Route force along deliberately positioned physical lines |
+| **Linewright** | **Connect → redistribute** | Route force along deliberately positioned physical lines |
 
 ## Naming constraints
 

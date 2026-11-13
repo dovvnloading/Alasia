@@ -68,7 +68,7 @@ If answers 1, 2 and 3 are thin, it is not worldbuilding yet.
 - **Form:** single-player authored campaign, top-down 3D browser game for desktop first. Co-op, live service, trading economy and procedural endgame are explicit **not-in-first-slice** items.
 - **Audience:** players who want fast, challenging ARPG combat and authored narrative rather than a passive lore codex.
 - **Scope:** four standing islands and two lost sites are *world geography*, not a promise of four giant explorable maps. One Orren district is the first vertical slice.
-- **Three starter professions:** Shorer, Sounder and Splicer. They share the setting's physical technology; they do not share interchangeable gameplay.
+- **Three starter professions:** Shorer, Sounder and Linewright. They share the setting's physical technology; they do not share interchangeable gameplay.
 - **Story:** one coherent campaign spine with constrained consequential divergence and honest downstream cost. No fictionalized unlimited-branch promise.
 - **Accessibility:** remappable controls, legible telegraphs independent of color and sound, subtitle support, scalable UI and assist options are first-order design concerns.
 
