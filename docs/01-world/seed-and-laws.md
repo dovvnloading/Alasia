@@ -53,7 +53,7 @@ The story's mystery is not “what occult creature did it?” It is **who signed
 
 ## 5. Material ecology and violence
 
-A failure at a sill spreads a chain of effects: fracture and rapid ground movement → flooded burrows and ruptured storage caverns → displaced **Platebacks** and pulse-fed **chalk colonies** → attacks in narrow evacuation corridors → contract crews contesting repair controls → injured, overloaded **Held** who must be restrained or their harnesses carefully disabled.
+A failure at a sill spreads a chain of effects: fracture and rapid ground movement → flooded burrows and ruptured storage caverns → displaced **Bridleshells** and pulse-fed **chalk colonies** → attacks in narrow evacuation corridors → contract crews contesting repair controls → injured, overloaded **Held** who must be restrained or their harnesses carefully disabled.
 
 This supports ARPG combat density without requiring the population to inexplicably turn into monsters overnight. Most hazards are concentrated near *work sites, flooded cuts, abandoned foundations and active conduits*. Normal fields, houses and markets should not be endless combat arenas.
 

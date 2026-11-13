@@ -20,7 +20,7 @@ All names here except **Alasia: Lost Isles** are provisional. One spelling per c
 | **The Winter Allocation** | Decision to use inhabited Sere as donor, forty-one years before the campaign | A culpable choice made during a real emergency |
 | **Anset Trials** | Older, public experiments on a largely uninhabited low site | The precedent that normalized network use |
 | **Held** | Injured workers whose damaged harnesses keep reapplying dangerous strain impulses | People first; not undead or inherently evil |
-| **Platebacks** | Vibration-sensitive coastal shell fauna displaced by subsoil failures | Wildlife; no magic soul-puppets |
+| **Bridleshells** | Vibration-sensitive coastal shell fauna displaced by subsoil failures | Wildlife; no magic soul-puppets |
 | **Chalk colonies** | Calcium-forming fissure organisms amplified by repeated strain pulses | Ecological threat with constrained behavior |
 
 ## Places (map orientation)

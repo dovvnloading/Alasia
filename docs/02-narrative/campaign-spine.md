@@ -26,7 +26,7 @@ Every critical beat includes **(a) physical event**, **(b) new verifiable fact**
 
 **In ten to fifteen authored minutes, the player must:**
 1. Learn a tactile base move while crossing a buckling quay.
-2. Fight displaced Platebacks while protecting a physically usable boat route.
+2. Fight displaced Bridleshells while protecting a physically usable boat route.
 3. Compare two waterlines and hear a character dispute the cause.
 4. Choose a *local rescue order* with visible capacity costs, not a permanent moral alignment.
 5. Reach a work door stamped with the latest Board maintenance seal.
@@ -35,7 +35,7 @@ Every critical beat includes **(a) physical event**, **(b) new verifiable fact**
 
 ### Act I — Orren: **The next donor**
 
-**A1 · Hold the quay.** Tessa Rul makes the player clear the Gauge Steps rather than hunt a rumored culprit. **Obstacle:** waves force Platebacks out of collapsed banks and block embarkation. **Evidence:** private stones show an abnormal ground drop. **Cost:** exhausted crew capacity; some goods are abandoned. **Leads to:** a route into South Cut.
+**A1 · Hold the quay.** Tessa Rul makes the player clear the Gauge Steps rather than hunt a rumored culprit. **Obstacle:** waves force Bridleshells out of collapsed banks and block embarkation. **Evidence:** private stones show an abnormal ground drop. **Cost:** exhausted crew capacity; some goods are abandoned. **Leads to:** a route into South Cut.
 
 **A2 · Read the cut.** The player enters South Cut to stabilize a repeating pressure pulse. **Obstacle:** failing collars, chalk-colony growth and a rig whose stroke cannot be stopped without timing. **Evidence:** the donor valve has been *opened*, not accidentally ruptured; its inspected collar is recent. **Cost:** a safe operating window is consumed, putting distant embankments under stress. **Leads to:** identifying the fitting's maker.
 
