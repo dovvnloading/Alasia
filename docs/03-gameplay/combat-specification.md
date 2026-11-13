@@ -55,7 +55,7 @@ These are **prototype ranges**, not dates or requirements to ship a particular n
 
 **Candidate damage families:** **Impact** (blunt contact/displacement), **Shear** (cuts, fissures, broken lines), **Resonance** (timed transfer through connected material). These describe behavior and defense interactions rather than a rainbow of magic elements. Status states derive from physical consequences: **Unseated** (lost footing), **Bound** (limited movement through a line), **Fractured** (temporary armor vulnerability), **Out of Phase** (exposed timing opening). No arbitrary poison/frost/shock list on day one.
 
-**Poise:** enemies have a stagger budget with per-ability contribution and recovery; large enemies cannot be infinitely disabled by precise Sounder hits or Splicer pulls. Small enemies react strongly to clear class fantasy. Boss vulnerability is earned by mechanic timing, not permanently chained CC.
+**Poise:** enemies have a stagger budget with per-ability contribution and recovery; large enemies cannot be infinitely disabled by precise Sounder hits or Linewright pulls. Small enemies react strongly to clear class fantasy. Boss vulnerability is earned by mechanic timing, not permanently chained CC.
 
 **Hit reliability:** collision uses intent-centered sweeps and clear projected footprints. Any miss must correspond to visible position/cover. Projectile ownership and path are authoritative to simulation, not inferred from a VFX particle. Line-of-sight rules documented per skill; environment never grants free global reach.
 

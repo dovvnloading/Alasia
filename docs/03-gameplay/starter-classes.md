@@ -10,9 +10,9 @@ The profession names and kits are **candidates that must win mechanical blind te
 | --- | --- | --- | --- | --- | --- |
 | **Shorer** | Shoreline bracing engineer | **Bear → return** | Counterload (stored response to contact) | *Where can I establish and move footing?* | Catch a dangerous commitment, reroute its impact, then collapse the bracing geometry offensively |
 | **Sounder** | Tide and foundation surveyor | **Read → answer** | Readings (per-enemy tuned intervals) | *Where is the next opening and what surface carries my return?* | Recognize several enemy beats, strike during windows and convert precision into controlled crowd breaks |
-| **Splicer** | Ferry-line, conduit and salvage rigger | **Connect → redistribute** | Tension (force in a temporary line network) | *Whom or what should I connect, and where will they move?* | Make moving enemies drive damage and control through linked physical lines |
+| **Linewright** | Ferry-line, conduit and salvage rigger | **Connect → redistribute** | Tension (force in a temporary line network) | *Whom or what should I connect, and where will they move?* | Make moving enemies drive damage and control through linked physical lines |
 
-**Anti-clone test:** a Shorer with a sword and “rage” fails. A Sounder with wand projectiles and “mana” fails. A Splicer with stealth, traps and bow combos fails. Their *input decisions* must remain distinct even with all meshes replaced by gray cylinders.
+**Anti-clone test:** a Shorer with a sword and “rage” fails. A Sounder with wand projectiles and “mana” fails. A Linewright with stealth, traps and bow combos fails. Their *input decisions* must remain distinct even with all meshes replaced by gray cylinders.
 
 ## 1. Shorer — a frontline mechanic who weaponizes support
 
@@ -72,13 +72,13 @@ The profession names and kits are **candidates that must win mechanical blind te
 
 **Skill ceiling / failure mode:** if Sounder does no meaningful damage unless the player succeeds at an onerous QTE, reject it. If a Sounder can simply spam wide AoE on cooldown, reject it. In silent-mode playtests, timing cues must still be obvious.
 
-## 3. Splicer — combat as a live, destructible connection
+## 3. Linewright — combat as a live, destructible connection
 
-**Professional logic:** ferry lines and buried conductive routes need riggers who can join, shorten, cross and release cable under load. A Splicer is a salvage specialist capable of making *other actors' movement become the engine of the fight*. They do not summon minions, vanish into shadow or plant passive minefields.
+**Professional logic:** ferry lines and buried conductive routes need riggers who can join, shorten, cross and release cable under load. A Linewright is a salvage specialist capable of making *other actors' movement become the engine of the fight*. They do not summon minions, vanish into shadow or plant passive minefields.
 
 **Object language:** coiled flat cable, paired lead hooks, spool crank, ceramic guide rings, knife for emergency severance. Clear thread silhouette between hand and terrain; motion emphasizes horizontal sweeps and rapid reeling. Lines are industrial materials and physically anchored, not magical lasers.
 
-**Exclusive relational mechanic — Working line:** up to **three nodes** and **two live edges** (candidates). A node can attach to valid terrain or an enemy with a mass limit; edges have actual line of sight, a defined maximum length, and clear cut/break behavior. The Splicer can use one edge to matter in under a second; three-node setups are optional mastery, not mandatory prep.
+**Exclusive relational mechanic — Working line:** up to **three nodes** and **two live edges** (candidates). A node can attach to valid terrain or an enemy with a mass limit; edges have actual line of sight, a defined maximum length, and clear cut/break behavior. The Linewright can use one edge to matter in under a second; three-node setups are optional mastery, not mandatory prep.
 
 **Resource — Tension (candidate 0–100):** generate as connected targets move against a taut line, as the player traverses an edge, or with deliberate reeling and basic attacks. Spend on pulls, force split and snap. A fixed boss may be an anchor but does not get dragged. Physical force transfer respects mass and an explicit diminishing cap.
 
@@ -107,7 +107,7 @@ The profession names and kits are **candidates that must win mechanical blind te
 - **Everyone can face:** a mobile enemy, armored enemy, swarm and machine set piece without class-exclusive story locks.
 - **No player needs:** a specific legendary to make their starter loop function, a pet micromanager, a universal rage bar, five stacked currencies or compulsory long setup.
 - **Shared gear families:** implement, harness, collar, fittings and travel pieces, but the same fitting tag can express differently within each profession. See [loot](enemies-loot-and-progression.md).
-- **Player readability:** Shorer = support edges and wide grounded cracks; Sounder = interval ticks on opponent silhouettes and precise weighted returns; Splicer = actual taut physical lines between nodes. A screenshot with no labels should distinguish them.
+- **Player readability:** Shorer = support edges and wide grounded cracks; Sounder = interval ticks on opponent silhouettes and precise weighted returns; Linewright = actual taut physical lines between nodes. A screenshot with no labels should distinguish them.
 
 ## 5. Starter progression, not predetermined skill-tree bloat
 
@@ -137,6 +137,6 @@ A class **fails** if any of these remain true after a revision:
 
 **Sounder** could become a renamed ranged spellcaster or frustrating rhythm class. Preserve per-target *observation/response*, physical plumb range, and non-audio tells. No AoE beam from nowhere.
 
-**Splicer** could become a generic trapper/rogue or a technical control nightmare. Preserve direct *connections between moving actors*, immediate first line and visible force flow. No stealth, endless traps or infinite recursive damage.
+**Linewright** could become a generic trapper/rogue or a technical control nightmare. Preserve direct *connections between moving actors*, immediate first line and visible force flow. No stealth, endless traps or infinite recursive damage.
 
 Names themselves remain **provisional**, even if the mechanics pass. Before approval, conduct language/genre/trademark searches and an external blind read; “good enough” is not approval. See [critique register](../06-production/critique-register.md).

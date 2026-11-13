@@ -45,7 +45,7 @@ The **Orren slice** should make 3–4 of these excellent rather than ship an ent
 3. **Vent:** the machine exposes a damageable fitting; attacks and class signatures punish it.
 4. **Failure escalation:** one safe shoulder collapses, reshaping the next cycle—not an arbitrary one-hit cutscene.
 
-A Splicer can use pylons as route points, a Shorer can catch a stroke to redirect Counterload, a Sounder can read timing; **all** can damage and interact with the exposed vent. No profession gate. Successful combat buys a *temporary hold*, not a magical cure.
+A Linewright can use pylons as route points, a Shorer can catch a stroke to redirect Counterload, a Sounder can read timing; **all** can damage and interact with the exposed vent. No profession gate. Successful combat buys a *temporary hold*, not a magical cure.
 
 **Final boss — the Sixth Jack, Outer Sill:** a multi-part lift assembly under overload while defending crews and displaced organisms complicate access. Phase transition visibly changes exactly which receiving/donor circuit is engaged, causing changing arena geometry. Between phases, the player must vent or reset real collars. The final plan is enacted **after** the fight by people and procedure, not by gaining the boss's soul.
 
@@ -74,7 +74,7 @@ Every affix/fitting is tagged to a **verb or material behavior**: **hold**, **re
 | --- | --- | --- | --- |
 | **Sliding Heel** | Shorer can drag a stake through one turn without resetting it | Stored Counterload cap reduced | Mobile offensive Shorer |
 | **Narrow Mouth** | Sounder True Return passes through a second correctly read target on same line | Shorter read duration | Pack precision |
-| **Hard Reeve** | Splicer lines survive one heavy impact and can be used for a quicker second traversal | Lower damage transferred through line | Mobile Splicer |
+| **Hard Reeve** | Linewright lines survive one heavy impact and can be used for a quicker second traversal | Lower damage transferred through line | Mobile Linewright |
 | **Dry Collar** | Common tool fitting resists short water interruption once | Longer recovery after discharge | Route planning across classes |
 | **Cross-grained Foot** | Firm footing on soft stone but reduced peak force | Lower burst capacity | Class-specific terrain adaptation |
 
@@ -110,7 +110,7 @@ No procedural endless dungeon, live seasonal treadmill, sprawling crafting-tree 
 
 ## 9. Systems review questions
 
-- Does a Shorer's crowd clear come from an actually different geometry than a Sounder's timed shock or a Splicer's line snap?
+- Does a Shorer's crowd clear come from an actually different geometry than a Sounder's timed shock or a Linewright's line snap?
 - Can a player understand a fatal attack in a black-and-white capture at half-resolution?
 - Can a boss be beaten with starter gear by a skilled player and with reasonable assists by a newer player?
 - Does each loot item have a plausible origin *here* and a non-cosmetic reason to be exciting?

@@ -15,7 +15,7 @@
 **Individual class entry hooks:**
 - **Shorer:** contracted to inspect a quay brace that should not be loaded at the current tide. First clue comes from a bent bearing foot.
 - **Sounder:** hired to verify conflicting gauge signals; reads an impossible interval in a staircase that has settled.
-- **Splicer:** replacing a ferry-line anchor; discovers new tension in an abandoned donor cable.
+- **Linewright:** replacing a ferry-line anchor; discovers new tension in an abandoned donor cable.
 
 All lead to the same South Cut failure. No class-only exclusive “true ending.”
 
