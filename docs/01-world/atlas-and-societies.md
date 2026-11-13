@@ -66,7 +66,7 @@ At **Washhouse Steps**, below the ridge on a separate strip of shore from the su
 - **Reedward:** fields and terraced cottages cut by newly flooded ditches; civilians and displaced fauna.
 - **South Cut:** maintenance sluice and illegally opened donor valve; multi-stage combat encounter and first incontrovertible work order.
 
-**Structural arc:** water displaces fauna → the player clears a real route → a faulty collar reveals intentional donor routing → saving a group consumes boat time needed elsewhere → the evidence identifies a handoff to higher authorities.
+Water drives Bridleshells from their burrows. Clearing one berth first decides what the last shallow ferry can carry. Afterward the damaged collar at South Cut and the stamped dispatch stub put the worker’s own clearance in question. [The long board](../03-gameplay/orren-field-sequence.md) gives the walk between the two berths and the return after Keld.
 
 **Removed and what breaks:** the player lacks a lived, inhabited first consequence; the central political accusation would remain abstract.
 
@@ -86,9 +86,11 @@ Inside the wall at **Net Yard**, crews spread their nets on short hooks to pick 
 
 ## 6. Two lost places, each with a different purpose
 
-**Anset — the accepted test.** A small, mostly uninhabited shoal with experimental stone rings and a former warning beacon. Public engineering accounts and visible foundation plates establish that the ancient trade-off was once transparent. Its submersion demonstrates the system's capacity limit. **Not** another hidden massacre, not a full dungeon city.
+**Anset · Where they turned the boats over.** No household lived on the shoal. Before the trials a long, sloping bed of small shell made a good place to beach a workboat, roll her on one side and recaulk the seam that leaked under the rower's heel. The Selwick crews did their bottoms there before the winter launches. When the engineers brought people over to see the first draw, a caulker drove her spare iron into the beach beside a test ring. She could grip the handle with dry fingers at low water. A month later, at a matching tide, she had to push her arm in almost to the elbow to fetch it back. The engineer's public account gives the harbor gain. Beside it, in another hand, is the depth over the caulker's iron. In later years the beach went under even at an ordinary low.
 
-**Sere — the denied cost.** Forty-one years ago Sere had lived-in quay steps, property parcels, public burial marks and registered fishing families. The Board rerouted settlement there after a winter storm damaged Verran's harbor defenses. Inundation and rapid subsidence destroyed homes. Survivors carried documents and traditions to Orren and Verran. At exceptional ebb only portions of the **Market Steps** and workshop foundations emerge. Ada remembers where the ferry crew kept their brass tallies. The challenge is reaching the steps while they are exposed and getting the shore half back to Verran before the hearing.
+At Selwick a workboat now lies on two padded timber cradles for the same job. Two strips of planking stay hidden against the pads. On the walk from the service landing to Net Yard, pass a caulker looking up at the job. A chalk line along the seam she was working disappears under each cradle and comes out the other side. The boat will need to go up in the slings a second time. She waits for her mate to come back from unloading the service boat. At exceptional ebb the trial rings and the foot of the warning beacon still show at Anset.
+
+**Sere — the denied cost.** Forty-one years ago Sere had lived-in quay steps, property parcels, public burial marks and registered fishing families. The Board rerouted settlement there after a winter storm damaged Verran's harbor defenses. Inundation and rapid subsidence destroyed homes. Survivors carried documents and traditions to Orren and Verran. At exceptional ebb only portions of the **Market Steps** and workshop foundations emerge. Ada remembers where the ferry crew kept their brass tallies. You can still trace how the bakers and fish sellers reached the same ferry. One way ran above the stalls along the oven sill. The other sloped through a stone gutter so a woman filleting a catch could sweep the boards clean on the ebb. On market mornings the two trades argued about that gutter. The fishwives liked a good fall on it. The baker asked them to wait until his youngest had carried the flour up. Both ways met at the empty sockets below the survey cut. Walk them with Ada in [Market Steps](../../studies/market-steps.html).
 
 **Distinct storytelling roles:** Anset proves the rule. Sere proves the abuse. Orren proves that the abuse continues. **No third lost island unless a new causal role passes review.**
 
@@ -116,5 +118,7 @@ Inside the wall at **Net Yard**, crews spread their nets on short hooks to pick 
 ## 9. Growing the atlas
 
 Further locations should emerge from the routes, stone, food and choices already established here. We don't need another island simply to introduce another biome. A new place is worthwhile when it changes people's lives, the campaign, or the ways the player moves and fights.
+
+At the [three working landings](island-life.md), a kitchen serves both levels of a quarry road, two Verran tenants keep opposite watches in one bed, and a Selwick family tries to fit a winter net into its proposed new shed.
 
 Art direction: [visual and audio](../04-presentation/visual-and-audio-direction.md). Story routing: [campaign](../02-narrative/campaign-spine.md).

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efebdf">
+  <title>Market Steps · Alasia</title>
+  <link rel="stylesheet" href="market-steps.css">
+  <script defer src="market-scene.js"></script>
+  <script defer src="market-chart.js"></script>
+  <script defer src="market-view.js"></script>
+</head>
+<body>
+  <a class="skip" href="#sceneHeading">Skip to the current scene</a>
+  <main class="folio">
+    <header class="mast">
+      <span class="wordmark">Alasia</span>
+      <div class="mast-copy"><span class="place-title">Market Steps</span><span id="watch">Sere · Ebb after second high</span></div>
+    </header>
+    <div class="spread" id="spread">
+      <section class="scene" id="scene" aria-labelledby="sceneHeading">
+        <h1 id="sceneHeading" tabindex="-1" aria-describedby="narrative">Off the Market Steps</h1>
+        <p id="narrative" class="narrative"></p>
+      </section>
+      <aside id="companion" aria-label="Chart and field notes">
+        <figure id="chartFigure" class="chart">
+          <canvas id="chart" width="1600" height="880" role="img" aria-describedby="chartDesc">The walking routes and current conditions appear below the chart.</canvas>
+          <figcaption><span id="chartPlace">Sere</span><span id="mapCaption">The old ferry approach</span></figcaption>
+        </figure>
+        <p id="chartDesc" class="sr"></p>
+        <dl id="observations" class="observations"></dl>
+        <div id="documents" class="documents" hidden></div>
+      </aside>
+      <div class="actions" id="actions" aria-label="Available actions"></div>
+    </div>
+    <noscript><p>Enable JavaScript to play this scene.</p></noscript>
+  </main>
+</body>
+</html>

@@ -46,6 +46,8 @@ The diagram shows the working connections on the opening tide. For the two emerg
 | Shared Settlement | Two short relief spurs already reach Verran's **Washhouse Steps** and Selwick's **Net Yard**. Both were laid after Y-41 to test loads on narrow margins. Keld's crews bring replacement collars and fit them at the existing heads. The trunk serves fewer berths at reduced lift. | Each authorized stroke spends ground at both sites. Permission ends after twelve high waters. If either site withdraws earlier, or fresh assent is missing at expiry, the watch closes both feeds before another draw. It bleeds the load already held over successive cycles. |
 | Phased Trunk Release | Crews unload the Sixth Jack under control and bring down support for the lower harbor in stages. The Selwick masonry wall stands on its footings and the tide gearing still turns its gates. | Verran loses lower berths as their approaches flood. Upper stores still exist, but small boats and hand carriage cannot replace a deep, working grain quay. |
 
+At each shared stroke the watch at each spur seats its collar during the slack interval. Two indicators at Selwick answer to strain through the existing fittings. The common drive stays out until **both** return. The jack resets them on every return stroke. A silence can mean a withdrawn agreement, a runner delayed, or a fitting broken. In all three cases a fresh draw must wait. Crews bleed down the load already held. The next boat can bring an explanation.
+
 Both settings leave the **Verran Ropewalk** out. Its occupiers refuse the use of their strip of working shore. A pin through the closed branch at the Ropewalk gives them a way to see that their answer holds.
 
 ## 3. The crossings after South Cut
@@ -66,7 +68,7 @@ The [campaign](../02-narrative/campaign-spine.md) follows the boats and the fami
 ## 4. Geography contradiction checks
 
 1. If Verran receives lift from Selwick's main trunk, why does the dangerous donor lie south? **Because connected fitted routes traverse the Sound; the undersea links are finite, mapped and maintained.** Mark them in future level plans.
-2. If Anset is under water, why did early engineers accept the test? **It was publicly uninhabited and designated expendable by emergency authorities**, though ecological harms should not be erased.
+2. Why did the first trial use Anset? There were no homes on the shoal, and the trial could secure a working harbor. The people who beached their boats there for repairs measured the settlement alongside the engineers. Selwick crews now lift their boats on timber cradles.
 3. If Sere is “lost,” why can people visit it? **Much is below ordinary high tide; a few built thresholds emerge at exceptional low ebb.** Lost = lost habitable ground and legal recognition, not magically inaccessible.
 4. If Keld's rock is high, why not use it as donor at Y-41? **Its major high beds were poorly connected and its quarry fittings vital to repairs.** Today's short relief spurs at Washhouse Steps and Net Yard postdate the Winter Allocation. Keld supplies the fitters and collars.
 5. If the sea is east, why is Orren southwest flooded? **The water level varies basin-wide; it is Orren's ground that fails**, plus storm surge through the east throat.

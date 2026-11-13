@@ -2,7 +2,7 @@
 
 *A dark, story-driven, top-down action RPG for the web.*
 
-**Alasia is a world in development, not a checklist awaiting permission to exist.** This repository begins with its fiction, geography, cast, combat concepts and art direction. The game is not implemented yet. The project title is established; the remaining creative material can deepen and evolve as we write, design and build.
+**Alasia is a world in development, not a checklist awaiting permission to exist.** This repository begins with its fiction, geography, cast, combat concepts and art direction. The main action RPG is in design. A short browser study lets you make the Sere crossing and follow one claim into Verran. The project title is established; the remaining creative material can deepen and evolve as we write, design and build.
 
 ## The premise
 
@@ -11,6 +11,12 @@ The islands of Alasia keep their grain ports above the tide by transferring the 
 The story is about survival purchased at someone else's expense, the memories that official charts cannot erase, and the people who must live with the consequences of a new decision. It is *not* a chosen-one prophecy or an invasion by a generic ancient evil.
 
 **Experience:** swift, impactful combat; a dark medieval-to-early-mechanistic maritime world; distinct specialist classes; consequential characters; equipment that changes how players fight. Diablo and Path of Exile are references for *pace and visual finish*, never material to reproduce.
+
+## Play Market Steps
+
+On GitHub, choose **Code → Download ZIP**, extract it and open [studies/market-steps.html](studies/market-steps.html) in a browser. It runs offline. You arrive at an exceptional ebb with Ada Sen, who worked the landing when there was still a town here. Pick where the pilot should put the skiff, get Ada across the old market, and bring home one half of a passage tally. In Verran you can find out where the missing ferry went and what became of a family who rented a room behind the oven. Use the action buttons with a pointer or Tab and Enter.
+
+For the opening on Orren, read [The long board](docs/03-gameplay/orren-field-sequence.md). For the working settlements across the Sound, read [Three landings in the Inner Sound](docs/01-world/island-life.md).
 
 ## The foundation — organized by discipline
 
@@ -31,4 +37,4 @@ The first playable area is envisioned on **Orren**: Low Quay, Gauge Steps, Reedw
 
 The existing repository [LICENSE](LICENSE) is AGPL-3.0; music, art, fonts, commissioned work and other assets will need appropriate rights. No third-party game assets or UI designs are to be copied.
 
-**Current state:** creative documentation; no application source code or game assets yet.
+The Sere study uses an illustrated, turn-based chart. Orren’s combat, the three professions and the full Three.js campaign remain design work.
