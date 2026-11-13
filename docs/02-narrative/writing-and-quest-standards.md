@@ -4,22 +4,22 @@ NAR-003 · Working scenes and dialogue · v0.2
 
 ## Low Quay and South Cut · The repair order
 
-At the landing the Shorer tests the bearing foot, the Sounder measures the interval and the Linewright tests the ferry anchor. A hand walks a test load across the board. The worker writes **Landing only** on the upper return and presses a self-inking stamp through the two slips. Tessa tears them apart. The stamp has taken on the lower dispatch stub. Its scope box is empty. There's time to see it. The runner holds out a hand. The woman waiting to board needs the worker's elbow while the gangplank is level.
+At the landing the Shorer tests the bearing foot, the Sounder measures the interval and the Linewright tests the ferry anchor. A hand walks a test load across the board. The worker writes **Landing only** on the upper return and inks a worn brass stamp onto each slip in turn. Tessa separates them. The lower dispatch stub bears the same small nick in the stamp's edge, and its scope box is empty. There's time to see it. The runner holds out a hand. The woman waiting to board needs the worker's elbow while the gangplank is level.
 
 > **Tessa** — Three hulls. Forty-six places if they sit on the sacks.  
 > **Worker** — Where's the north ferry?  
 > **Tessa** — Verran. She's ours again at the third high. This one goes on the bell.
 
-Let the player put the stub in the runner's hand while the scope box is still blank, pocket their own upper return, and give the passenger an elbow. The runner takes the short dry stair to the duty desk above South Cut. There the clerk traces the field stamp into the route sheet under Eran's standing order. One departure bell sounds while Tessa loads. When the masonry shears, the deck climbs past the step under the woman's foot. Tessa calls the boats in a different order. Carry the player's first rescue order through to the next time they land here. Let them walk past the bedding they saved or helped hang up to dry.
+Let the player put the stub in the runner's hand while the scope box is still blank, pocket their own upper return, and give the passenger an elbow. This lapse is a fixed event in the worker's story, not a false moral-choice prompt; the player's decisions concern whom they rescue and what they do when they discover the abuse. The runner takes the short dry stair to the duty desk above South Cut. There the clerk fills the blank scope box on the already stamped stub with **Whole route** and fastens it to Eran's standing route order. One departure bell sounds while Tessa loads. When the masonry shears, the deck climbs past the step under the woman's foot. Tessa calls the boats in a different order. Carry the player's first rescue order through to the next time they land here. Let them walk past the bedding they saved or helped hang up to dry.
 
-At South Cut the player works forward through short piston strokes to brace the side channel. Once the piston settles, a service hand unlocks the dry side of the gallery and turns over the route sheet for the person she takes to be its signatory. The worker recognizes the nick along one edge of their stamp. Lay the landing return over the sheet. The impressions coincide. Lift the upper sheet and the words above the stamp change from the landing to the whole working route. The player can lift either sheet again. The hand watches their face.
+At South Cut the player works forward through short piston strokes to brace the side channel. Once the piston settles, a service hand unlocks the dry side of the gallery and turns over the route sheet for the person she takes to be its signatory. The worker recognizes the nick along one edge of their stamp on the attached stub. Lay the landing return beside it: the two ink marks match. Point to the distinct scopes—**Landing only** on the worker's copy, **Whole route** on the Board's stub. The player can inspect both slips again. The hand watches their face.
 
 > **Service hand** — I told my girl you walked the line.  
 > **Worker** — I saw her onto the boat. That was as far as I went.  
 > **Service hand** — Who filled in the rest?  
 > **Worker** — There was a box for me to do. I sent it up empty.
 
-She takes the upper sheet out of the worker's hand and copies the changed wording into her own book. The independently kept copy can travel even if Iven takes the original into custody. Outside, show the side brace take the load. Put the sixth high water against the deadline in the worker's folio. Cross off a high water when the journey or work in the campaign actually takes one. Dying in a fight or reading a document leaves the clock where the scene began.
+She copies the changed scope and stamp mark into her own book while the worker keeps their landing return. The independently kept copy can travel even if Iven takes the original into custody. Outside, show the side brace take the load. Put the sixth high water against the deadline in the worker's folio. Cross off a high water when the journey or work in the campaign actually takes one. Dying in a fight or reading a document leaves the clock where the scene began.
 
 ## Sere · The return trip
 
