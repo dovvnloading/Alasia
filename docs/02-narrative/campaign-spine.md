@@ -80,15 +80,11 @@ The player sees the new chart: observed height, scheduled work **and donor settl
 - **Eran** cannot be killed to close the moral question. He is confronted with the difference between a one-time emergency and forty-one years of concealment.
 - **The player** does not single-handedly command an entire archipelago. They create proof, win operating access, coordinate crews and enact an accountable emergency decision.
 
-## 4. Failure conditions for the draft
+## 4. Where the story needs its deepest writing
 
-1. **If Eran was secretly justified in every respect**, the core conflict evaporates. Preserve genuine foregone alternatives and unlawful concealment.
-2. **If simply stopping the machines has no cost**, the climax is trivial. Demonstrate the dependency at the North Granary and Outer Sill long before the choice.
-3. **If the harmed people do not appear alive and organized**, the lost-island story becomes tragedy wallpaper.
-4. **If every main beat is a battle**, the game cannot earn the weight of its revelations. The player must also negotiate, rescue, inspect and witness consequences.
-5. **If the final choice has no visible world-state effect**, it is false agency.
-6. **If class selection changes what historical truth is possible to discover**, the campaign fractures. Different approaches reveal the same core facts.
-7. **If the story names the culprit in a speech before the player sees proof**, it discards its distinctive narrative gameplay.
+The Winter Allocation must not be an elaborate device for making the audience select an obvious moral answer. Eran's emergency reason is real, but the earlier alternatives and forty-one years of continued concealment are real too. The last two plans must each injure a place the player has come to know. Sere's displaced people must be alive, organized and capable of deciding what justice looks like, rather than a memory placed there to motivate the hero.
+
+The campaign should move between violent infrastructure failures, the material culture of working islanders, the tension of testimony, and the quieter cost of evacuation. A manuscript of clever administrative twists is not enough. The player has to make space safe, hold difficult ground and see how their decisions alter the next day. That is how lore becomes drama.
 
 ## 5. Tracking flags (illustrative, not code yet)
 
@@ -96,6 +92,6 @@ The player sees the new chart: observed height, scheduled work **and donor settl
 
 **Local state:** boats_readied, grain_moved, crew_confidence, claims_reconciled, relief_losses. Optional actions adjust epilogue detail or encounter support within bounded ranges. No hidden random morality stat and no mandatory grinding to unlock a humane choice.
 
-**Narrative deliverables needed before script approval:** complete beat sheet with scene durations, route map, timeline continuity check, NPC objective/knowledge matrix, evidence ledger, decision-state diagram, and revised dialogue sample for each lead. The treatment is **not** a finished screenplay.
+**The next writing work:** turn the treatment into continuous scenes, dialogue, physical blocking and character interaction. The geography and history can evolve with those scenes as long as their consequences remain legible. This is a treatment, not the finished screenplay.
 
-See [cast](cast-and-arcs.md), [writing standards](writing-and-quest-standards.md), [slice gates](../06-production/vertical-slice-and-gates.md).
+See [cast](cast-and-arcs.md), [writing standards](writing-and-quest-standards.md), [development outline](../06-production/development-outline.md).

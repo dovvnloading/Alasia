@@ -117,19 +117,11 @@ Each profession should support **three viable build intentions** (survival/contr
 
 **Class origin scenes:** profession-specific observation/line of dialogue and unique tutorial prop, then merge into the same canonical emergency. Armor and silhouette are tied to work history, not fantasy gender stereotypes.
 
-## 6. Comparative prototype gauntlet
+## 6. How they should feel different to play
 
-A class **fails** if any of these remain true after a revision:
-1. With a neutral avatar/cube tool, 7/10 first-time testers describe its loop as only “melee tank,” “mage,” or “ranged rogue” and cannot state its unique verb.
-2. More than 25% of intended active-fight time is spent placing setup pieces without meaningful damage, movement or defense.
-3. An average practiced player cannot clear the same benchmark mob composition at viable speed relative to the others, or one class trivializes the test boss.
-4. The chosen control scheme makes essential actions unreliable without pixel-precision mouse movements.
-5. It only works if damage numbers hide unreadable interactions.
-6. Its strongest skill requires breaking an invariant of seamglass.
-7. Its failure state cannot be recovered through good play.
-8. A fitted item creates a strictly superior version of another profession's exclusive loop.
+A Shorer is most interesting when the battlefield shifts around two moving support points; standing still and waiting to be struck would drain the class of identity. A Sounder should make a dangerous enemy's rhythm *understandable* and let the player answer it without turning combat into a rhythm-game exam. A Linewright should make a connection useful immediately, then let mastery reveal surprising routes and moving-target combinations.
 
-**Test battery:** 30-second no-tutorial combat, 3-minute practice, mixed pack, armored duelist, moving boss, failing South Cut floor, keyboard+mouse, simulated controller, silence and low-VFX modes. Observe **what players do**, not whether they say the concept sounds cool.
+These ideas belong in the hands of players with simple prototype models as soon as development begins. The essential question is whether a player *makes different decisions* with each profession—not whether three character sheets use different names.
 
 ## 7. Known originality risks — deliberately not disguised
 
@@ -139,4 +131,4 @@ A class **fails** if any of these remain true after a revision:
 
 **Linewright** could become a generic trapper/rogue or a technical control nightmare. Preserve direct *connections between moving actors*, immediate first line and visible force flow. No stealth, endless traps or infinite recursive damage.
 
-Names themselves remain **provisional**, even if the mechanics pass. Before approval, conduct language/genre/trademark searches and an external blind read; “good enough” is not approval. See [critique register](../06-production/critique-register.md).
+Names remain provisional as the world is written and the classes begin to move. Avoid associations with established games, and change any name or ability that turns out ordinary, unclear or derivative.

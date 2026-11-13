@@ -121,6 +121,6 @@ All lead to the same South Cut failure. No class-only exclusive â€œtrue ending.â
 - No one conveniently changes their deepest belief because the protagonist completes a fetch quest.
 - Exposition cannot duplicate the same secret three times. Each character knows a **different kind of fact**: Tessa capacities, Iven levels, Ada claims, Eran allocations.
 - Check all ages against Y-41 and Y-7.
-- Prepare relationship beat charts, voice sheets, subtext passes and actor-read dialogue. None has passed that gate yet.
+- Develop relationship scenes, distinctive speaking rhythms, subtext and dialogue as the campaign is written. These characters are still being authored.
 
 Story sequence: [campaign](campaign-spine.md). Writing procedure: [quest and dialogue](writing-and-quest-standards.md).

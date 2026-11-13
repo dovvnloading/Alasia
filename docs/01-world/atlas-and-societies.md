@@ -109,8 +109,8 @@ The world begins with **one interdependent basin**, not a continent filled with 
 - Residents know when floodwater is normal; a silent drop in land while the tide remains on schedule is terrifying precisely because it is **abnormal**.
 - Local folklore can be contradictory, but physical laws remain consistent. A fisher may call a cracking seamglass wall “angry”; the world does not certify that the stone has a god inside it.
 
-## 9. Atlas critique gate
+## 9. Growing the atlas
 
-Every proposed additional locale requires: its **geological function**, its **food/material/people flows**, its **seasonal hazard**, its **route access**, its **institutional motive**, its **main playable verb**, its **story consequence** and an answer to **“why can this not be integrated into an existing place?”** Fail one of the first four = reject or fold into an existing district.
+Further locations should emerge from the routes, stone, food and choices already established here. We don't need another island simply to introduce another biome. A new place is worthwhile when it changes people's lives, the campaign, or the ways the player moves and fights.
 
 Art direction: [visual and audio](../04-presentation/visual-and-audio-direction.md). Story routing: [campaign](../02-narrative/campaign-spine.md).
