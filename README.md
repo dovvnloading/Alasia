@@ -10,6 +10,8 @@
 
 A rapid, weighty, high-readability, top-down 3D ARPG in a rain-cut, pre-industrial island society: close enough to the *genre* of Diablo III/IV and Path of Exile to deliver satisfying combat cadence, item discovery and threatening encounters; deliberately independent in its **world mechanics, class verbs, imagery, story, characters, terminology and interface**. We do not copy protected game art, UI layouts, enemy likenesses, narrative beats, names or skill implementations.
 
+**Three experimental starter professions:** Shorer (bear/return force through mobile brace footing), Sounder (read an opponent's attack phase and answer it), and Linewright (connect moving targets with force-carrying lines). They are deliberately not fighter/mage/rogue reskins; their distinctiveness still requires graybox testing.
+
 The founding law is **no shore rises for free**. An engineered network routes subsurface strain through a rare mineral. The law explains the physical crisis, economy, class professions, geography and the argument at the heart of the story. See the [creative constitution](docs/00-foundation/creative-constitution.md) before expanding any area.
 
 ## Documentation — reading order
@@ -18,7 +20,7 @@ The founding law is **no shore rises for free**. An engineered network routes su
 | --- | --- | --- |
 | Foundation | [Creative constitution](docs/00-foundation/creative-constitution.md) | Premise, design pillars, hard constraints, originality bar |
 | Governance | [Decision register](docs/00-foundation/decision-register.md) · [Glossary](docs/00-foundation/glossary.md) | Scope and canon control, terminology |
-| World | [Seed and laws](docs/01-world/seed-and-laws.md) · [Atlas and societies](docs/01-world/atlas-and-societies.md) · [History and daily life](docs/01-world/history-and-daily-life.md) | Causal worldbuilding, not biome filler |
+| World | [Seed and laws](docs/01-world/seed-and-laws.md) · [Atlas and societies](docs/01-world/atlas-and-societies.md) · [History and daily life](docs/01-world/history-and-daily-life.md) · [Connected route and network schematics](docs/01-world/network-and-route-map.md) | Causal worldbuilding, not biome filler |
 | Story | [Campaign spine](docs/02-narrative/campaign-spine.md) · [Cast and arcs](docs/02-narrative/cast-and-arcs.md) · [Writing and quest standards](docs/02-narrative/writing-and-quest-standards.md) | Plot, character motivations, playable scenes |
 | Systems | [Combat specification](docs/03-gameplay/combat-specification.md) · [Starter classes](docs/03-gameplay/starter-classes.md) · [Enemies, loot and progression](docs/03-gameplay/enemies-loot-and-progression.md) | Moment-to-moment fun and build expression |
 | Presentation | [Visual and audio direction](docs/04-presentation/visual-and-audio-direction.md) | World-specific visual grammar, sound, UI |

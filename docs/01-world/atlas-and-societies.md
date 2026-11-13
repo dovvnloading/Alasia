@@ -70,7 +70,7 @@ The world begins with **one interdependent basin**, not a continent filled with 
 
 ## 5. Selwick — the necessary control point
 
-**Why here:** a narrow island at the Sound's eastern mouth constricts tidal flow. The engineers can harvest surge with mills and protect the inner islands behind an expensive stormwall. This makes it the only plausible home for the largest pressure-routing assembly.
+**Why here:** a narrow island at the Sound's eastern mouth constricts tidal flow. The engineers can harvest surge with mills and protect the inner islands behind an expensive stormwall. This makes it the only plausible home for the largest pressure-routing assembly. The **Outer Sill** has six numbered load jacks: five form the normal working array, and the sixth is a reserve/overflow shunt. Repeated misuse of that sixth unit explains its overload at the campaign climax. Its number is stamped on service plates; it is not a legendary title.
 
 **Economy:** tide machinery, pilotage, salvage, stormwall maintenance, lighthouse service. Food imports mean crew loyalties are mixed; closing the main trunk can save one shore and ruin the port workers' own homes.
 

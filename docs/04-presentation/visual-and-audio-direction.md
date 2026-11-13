@@ -85,7 +85,7 @@ Class silhouette identifiers must read on black material in **0.3-second thumbna
 
 **Keyframe K3 — Sere at low water:** a former market corner barely clears the tidal mud; Ada is knee-deep beside a tax mark, not posed atop a monumental ruin. The horizon is mostly water. *Story information:* an inhabited place was administratively removed, not mythically vanished.
 
-**Keyframe K4 — Sixth Jack:** broad central piston and two secondary load paths, the arena floor giving way in **legible staged sectors**; thin white stress lines and one amber control station. *Story information:* the machine is dangerous but understandable. The opponent is a system, not a demon wearing industrial skin.
+**Keyframe K4 — Sixth Jack:** numbered frames across a six-jack working array; the reserve sixth jack is the active runaway machine, with a broad central piston and two secondary load paths in view, the arena floor giving way in **legible staged sectors**; thin white stress lines and one amber control station. *Story information:* the machine is dangerous but understandable. The opponent is a system, not a demon wearing industrial skin.
 
 ## 7. Interface — information as instrumentation
 

@@ -47,7 +47,7 @@ The **Orren slice** should make 3–4 of these excellent rather than ship an ent
 
 A Linewright can use pylons as route points, a Shorer can catch a stroke to redirect Counterload, a Sounder can read timing; **all** can damage and interact with the exposed vent. No profession gate. Successful combat buys a *temporary hold*, not a magical cure.
 
-**Final boss — the Sixth Jack, Outer Sill:** a multi-part lift assembly under overload while defending crews and displaced organisms complicate access. Phase transition visibly changes exactly which receiving/donor circuit is engaged, causing changing arena geometry. Between phases, the player must vent or reset real collars. The final plan is enacted **after** the fight by people and procedure, not by gaining the boss's soul.
+**Final boss — the Sixth Jack, Outer Sill:** the overloaded reserve/overflow jack in Selwick's six-numbered assembly. The other five regulate normal transfer; this one has been repeatedly forced into emergency work. The fight centers on a multi-part lift assembly under overload while defending crews and displaced organisms complicate access. Phase transition visibly changes exactly which receiving/donor circuit is engaged, causing changing arena geometry. Between phases, the player must vent or reset real collars. The final plan is enacted **after** the fight by people and procedure, not by gaining the boss's soul.
 
 **Boss acceptance:** first death can be explained by an intelligible tell; readable patterns under 60fps; tactical counterplay for all three professions; failure not dependent on recognizing one unmarked safe pixel; phase transitions do not reset the physical rules.
 
