@@ -12,6 +12,10 @@ The story is about survival purchased at someone else's expense, the memories th
 
 **Experience:** swift, impactful combat; a dark medieval-to-early-mechanistic maritime world; distinct specialist classes; consequential characters; equipment that changes how players fight. Diablo and Path of Exile are references for *pace and visual finish*, never material to reproduce.
 
+## Explore the Inner Sound
+
+Open the [playable world atlas](docs/01-world/playable-world-atlas.md) for the basin chart, six illustrated shore plans and close-ups of Gauge Steps, South Cut and the Outer Sill. Each district follows the ground players can cross and what changes on their way back.
+
 ## Play Market Steps
 
 On GitHub, choose **Code → Download ZIP**, extract it and open [studies/market-steps.html](studies/market-steps.html) in a browser. It runs offline. You arrive at an exceptional ebb with Ada Sen, who worked the landing when there was still a town here. Pick where the pilot should put the skiff, get Ada across the old market, and bring home one half of a passage tally. In Verran you can find out where the missing ferry went and what became of a family who rented a room behind the oven. Use the action buttons with a pointer or Tab and Enter.
