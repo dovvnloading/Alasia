@@ -252,3 +252,42 @@ test('the quartermaster pays for recovered ground parts once, on successful retu
   const rich = P.finishRun(ticket, true, { salvageCollected: 2 });
   assert.equal(rich.lastResult.fieldSalvage, 6);
 });
+
+test('technique is earned at level three and remembered per profession, independently of fitting and mastery', () => {
+  let p = P.newProfile('shorer', 27);
+  assert.equal(P.getBuild(p).technique, 'standard');
+  const ids = { shorer: 'split-heel', sounder: 'narrow-mouth', linewright: 'hard-splice' };
+  assert.deepEqual(P.getTechniques(p).map(t => [t.id, t.unlocked]), [['standard', true], ['split-heel', false]]);
+  assert.equal(P.setTechnique(p, ids.shorer), p);
+  p = run(p, 'quay');
+  assert.equal(p.level, 2);
+  assert.equal(P.setTechnique(p, ids.shorer), p);
+  p = run(p, 'cut');
+  assert.equal(p.level, 3);
+  for (const [id, technique] of Object.entries(ids)) {
+    p = P.setClass(p, id);
+    assert.equal(P.getBuild(p).technique, 'standard');
+    p = P.setTechnique(p, technique);
+    assert.equal(P.getBuild(p).technique, technique);
+    assert.equal(P.getBuild(p, p.lastResult.item).technique, technique);
+  }
+  const foreign = P.setTechnique(p, ids.sounder);
+  assert.equal(foreign, p);
+  const active = P.startRun(p, P.getContracts(p)[0].id);
+  assert.equal(P.setTechnique(active, 'standard'), active);
+  const store = memory();
+  assert.ok(P.save(store, active));
+  assert.deepEqual(P.load(store).techniques, ids);
+  assert.equal(P.getBuild(P.load(store)).technique, ids.linewright);
+  p = P.setTechnique(p, 'standard');
+  p = P.setClass(p, 'shorer');
+  assert.equal(P.getBuild(p).technique, ids.shorer);
+  assert.equal(p.techniques.linewright, 'standard');
+  const raw = JSON.parse(store.getItem(P.SAVE_KEY));
+  delete raw.techniques;
+  store.setItem(P.SAVE_KEY, JSON.stringify(raw));
+  assert.ok(P.CLASS_IDS.every(id => P.load(store).techniques[id] === 'standard'));
+  raw.techniques = { ...ids, shorer: 'narrow-mouth' };
+  store.setItem(P.SAVE_KEY, JSON.stringify(raw));
+  assert.equal(P.load(store), null);
+});

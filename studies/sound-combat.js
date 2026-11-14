@@ -43,6 +43,9 @@
       damage: 13
     }
   };
+  const ALTERNATE_TECHNIQUE = {
+    shorer: "split-heel", sounder: "narrow-mouth", linewright: "hard-splice"
+  };
   const FOES = {
     scout: {
       name: "Bridleshell scout",
@@ -105,10 +108,7 @@
   const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
   const angleTo = (a, b) => Math.atan2(b.y - a.y, b.x - a.x);
   const angleDiff = (a, b) => Math.abs(Math.atan2(Math.sin(a - b), Math.cos(a - b)));
-  const point = (x, y) => ({
-    x,
-    y
-  });
+  const point = (x, y) => ({ x, y });
 
   function bounded(body, radius) {
     body.x = clamp(body.x, BANK.left + radius, BANK.right - radius);
@@ -135,14 +135,9 @@
 
   function intersects(shape, body, radius = 8) {
     if (shape.type === "line") {
-      const {
-        x,
-        y,
-        length,
-        angle,
-        width
-      } = shape;
-      return segmentDistance(body, shape, point(x + length * Math.cos(angle), y + length * Math.sin(angle))) <= width / 2 + radius;
+      const {x, y, length, angle, width} = shape;
+      const end = point(x + length * Math.cos(angle), y + length * Math.sin(angle));
+      return segmentDistance(body, shape, end) <= width / 2 + radius;
     }
     const d = dist(shape, body);
     return d <= shape.radius + radius && (shape.type !== "ring" || d >= shape.inner - radius);
@@ -180,23 +175,25 @@
     build = {},
     workOrder = null,
     currentHealthRatio = 1,
-    watchDepth = 1
+    watchDepth = 0
   } = {}) {
     const classId = Object.hasOwn(CLASSES, build.classId) ? build.classId : "shorer";
     const style = ["reach", "force", "flow"].includes(build.style) ? build.style : "standard";
     const maxHp = Math.max(1, Number(build.maxHp) || 100);
+    const depth = clamp(Math.floor(watchDepth) || 0, 0, 6);
     const s = {
       seed,
       rng: seedNumber(seed),
       site: ["quay", "cut", "sill"].includes(site) ? site : "quay",
       modifier,
       secondaryModifier,
-      watchDepth: clamp(Math.floor(watchDepth) || 1, 1, 6),
-      deepDamage: 1 + 0.10 * (clamp(Math.floor(watchDepth) || 1, 1, 6) - 1),
+      watchDepth: depth,
+      deepDamage: 1 + 0.10 * Math.max(0, depth - 1),
       modifiers: [...new Set([modifier, secondaryModifier].filter(m => ["surge", "haste", "armored"].includes(m)))],
       tier: clamp(Math.floor(Number(tier) || 1), 1, 6),
       classId,
       style,
+      technique: build.technique === ALTERNATE_TECHNIQUE[classId] ? build.technique : "standard",
       power: clamp(Number(build.power) || 1, 0.2, 10),
       recovery: clamp(Number(build.recovery) || 1, 0.4, 6),
       status: "active",
@@ -205,6 +202,9 @@
       waveCount: 3,
       waveTime: 0,
       kills: 0,
+      waveKills: 0,
+      pickups: [],
+      salvageCollected: 0,
       nextId: 1,
       workOrder: workOrder && Number.isFinite(workOrder.x) && Number.isFinite(workOrder.y) ? {
         ...workOrder,
@@ -267,10 +267,7 @@
       boss,
       x,
       y,
-      angle: angleTo({
-        x,
-        y
-      }, s.player),
+      angle: angleTo({ x, y }, s.player),
       hp: maxHp,
       maxHp,
       radius: data.radius,
@@ -294,6 +291,7 @@
 
   function spawnWave(s) {
     s.wave++;
+    s.waveKills = 0;
     s.waveTime = 0;
     const sides = [
       [720, 235],
@@ -313,7 +311,7 @@
         quay: "matron",
         cut: "shunt",
         sill: "jack"
-      } [s.site];
+      }[s.site];
       const loc = s.site === "quay" ? sides[first] : [635, 265];
       spawnFoe(s, boss, loc[0], loc[1], true);
       roster = s.tier >= 3 ? [s.site === "quay" ? "scout" : "chalk"] : [];
@@ -321,24 +319,27 @@
         quay: "Turn the Breakwater Mason",
         cut: "Vent the donor shunt",
         sill: "Free the return guide"
-      } [s.site];
+      }[s.site];
     } else {
-      const pick = (list) => list[Math.floor(random(s) * list.length)];
-      if (s.site === "quay") roster = s.wave === 1 ? ["scout", "scout", "mason"] : ["mason", "scout",
-        pick(["scout", "mason"]), "scout"
-      ];
-      if (s.site === "cut") roster = s.wave === 1 ? ["chalk", "scout", "chalk"] : ["crown", "mason", pick(
-        ["chalk", "scout"]), "chalk"];
-      if (s.site === "sill") roster = s.wave === 1 ? ["crown", "chalk", "scout"] : ["crown", "scout",
-        pick(["chalk", "crown"]), "mason"
-      ];
+      const pick = list => list[Math.floor(random(s) * list.length)];
+      if (s.wave === 1) {
+        roster = {
+          quay: ["scout", "scout", "mason"],
+          cut: ["chalk", "scout", "chalk"],
+          sill: ["crown", "chalk", "scout"]
+        }[s.site];
+      } else {
+        if (s.site === "quay") roster = ["mason", "scout", pick(["scout", "mason"]), "scout"];
+        if (s.site === "cut") roster = ["crown", "mason", pick(["chalk", "scout"]), "chalk"];
+        if (s.site === "sill") roster = ["crown", "scout", pick(["chalk", "crown"]), "mason"];
+      }
       if (s.wave === 2) {
         // A second group pushes in from the open bank once the first formation breaks.
         const relief = {
           quay: ["scout", "mason", "scout"],
           cut: ["chalk", "crown", "scout"],
           sill: ["chalk", "crown", "mason"]
-        } [s.site];
+        }[s.site];
         if (s.tier >= 4) relief.push(s.site === "quay" ? "mason" : "crown");
         const bearing = sides[(first + 3) % sides.length];
         s.reinforcement = {
@@ -353,16 +354,13 @@
         quay: ["Clear the mudcut", "Open the upper landing"],
         cut: ["Open the intake", "Break the chalk seam"],
         sill: ["Clear the approach", "Reach the guide bed"]
-      } [s.site][s.wave - 1];
+      }[s.site][s.wave - 1];
     }
     roster.forEach((kind, i) => {
       const base = sides[(first + turn * i + sides.length * 2) % sides.length];
       let x = base[0] + (random(s) - 0.5) * 62,
         y = base[1] + (random(s) - 0.5) * 54;
-      if (dist({
-          x,
-          y
-        }, s.player) < 115) {
+      if (dist({ x, y }, s.player) < 115) {
         x = WIDTH - x;
         y = HEIGHT - y;
       }
@@ -374,9 +372,9 @@
     if (s.classId !== "sounder") s.player.resource = Math.min(s.player.maxResource, s.player.resource + value);
   }
 
-  function read(e, value) {
+  function read(s, e, value) {
     e.reading = Math.min(60, e.reading + value);
-    e.readTime = 6;
+    e.readTime = s.technique === "narrow-mouth" ? 4 : 6;
   }
 
   function updateReadings(s) {
@@ -389,7 +387,10 @@
     const plated = ["mason", "matron"].includes(e.kind) || s.modifiers.includes("armored");
     // A loaded machine shelters the return fitting. During its vent all classes get a clean opening.
     const machine = e.kind === "jack" || e.kind === "shunt";
-    const reduction = e.opened ? (machine ? 1.65 : 1.5) : machine ? 0.27 : plated && facing ? 0.69 : 1;
+    let reduction = 1;
+    if (e.opened) reduction = machine ? 1.65 : 1.5;
+    else if (machine) reduction = 0.27;
+    else if (plated && facing) reduction = 0.69;
     const value = Math.max(1, Math.round(amount * s.power * reduction));
     const previousHp = e.hp;
     e.hp = Math.max(0, e.hp - value);
@@ -404,7 +405,7 @@
         matron: "Rear plate split · watch the sweep",
         shunt: "Second piston taking load",
         jack: "Cross guide taking load"
-      } [e.kind]);
+      }[e.kind]);
     }
     e.hit = 0.14;
     if (impulse && !e.boss && e.mode !== "charge") {
@@ -421,6 +422,16 @@
     }, 0.48);
     if (!e.hp) {
       s.kills++;
+      s.waveKills++;
+      const eligible = (s.wave === 1 && s.waveKills === 1) ||
+        (s.wave === 2 && (s.waveKills === 1 || s.waveKills === 3));
+      if (s.watchDepth === 0 && eligible) {
+        const isColony = e.kind === "chalk" || e.kind === "crown";
+        s.pickups.push({
+          x: e.x, y: e.y,
+          label: isColony ? "Seamglass chip" : "Bridle plate"
+        });
+      }
       addEffect(s, "break", {
         x: e.x,
         y: e.y,
@@ -430,9 +441,16 @@
     }
   }
 
-  function targets(s, reach, arc) {
+  function targets(s, reach, arc, direction = s.player.angle) {
     const p = s.player;
-    return s.enemies.filter(e => e.hp > 0 && dist(e, p) <= reach + e.radius && (dist(e, p) < e.radius + 9 || angleDiff(p.angle, angleTo(p, e)) <= arc + Math.asin(Math.min(1, e.radius / (dist(e, p) || 1))))).sort((a, b) => dist(a, p) - dist(b, p));
+    const inSweep = s.enemies.filter(enemy => {
+      const distance = dist(enemy, p);
+      if (enemy.hp <= 0 || distance > reach + enemy.radius) return false;
+      if (distance < enemy.radius + 9) return true;
+      const silhouetteAngle = Math.asin(Math.min(1, enemy.radius / distance));
+      return angleDiff(direction, angleTo(p, enemy)) <= arc + silhouetteAngle;
+    });
+    return inSweep.sort((a, b) => dist(a, p) - dist(b, p));
   }
 
   function nodePosition(s, n) {
@@ -446,16 +464,15 @@
     if (s.nodes.length > 3) s.nodes.shift();
   }
 
+  function maxCableLength(s) {
+    return s.technique === "hard-splice" ? 250 : 345;
+  }
+
   function edges(s) {
     const nodes = s.nodes.map(n => nodePosition(s, n)).filter(Boolean);
     if (nodes.length === 1) nodes.unshift(s.player);
-    return nodes.slice(1).map((b, i) => ({
-      a: nodes[i],
-      b
-    })).filter(({
-      a,
-      b
-    }) => dist(a, b) <= 345);
+    return nodes.slice(1).map((b, i) => ({ a: nodes[i], b }))
+      .filter(({ a, b }) => dist(a, b) <= maxCableLength(s));
   }
 
   function primary(s) {
@@ -483,8 +500,8 @@
     for (const e of list) {
       const bonus = s.mastery === "followthrough" && e.opened;
       follow ||= bonus;
-      if (s.classId === "sounder" && bonus) read(e, 8);
-      if (s.classId === "sounder") read(e, e.mode === "windup" || e.opened ? 40 : 20);
+      if (s.classId === "sounder" && bonus) read(s, e, 8);
+      if (s.classId === "sounder") read(s, e, e.mode === "windup" || e.opened ? 40 : 20);
       if (s.classId === "linewright") appendNode(s, {
         enemy: e.id
       });
@@ -522,7 +539,7 @@
       let count = 0;
       for (const e of s.enemies)
         if (e.hp > 0 && dist(e, p) <= 205 + e.radius) {
-          read(e, e.mode === "windup" ? 44 : 20);
+          read(s, e, e.mode === "windup" ? 44 : 20);
           count++;
         }
       addEffect(s, "sounding", {
@@ -546,7 +563,11 @@
   function spendHint(s) {
     const p = s.player;
     if (p.skillCooldown > 0) return "Recovering";
-    if (p.resource < p.skillCost) return s.classId === "sounder" ? "Read an enemy twice" : s.classId === "linewright" ? "Stretch a line or land hooks" : "Land strikes or catch a stroke";
+    if (p.resource < p.skillCost) {
+      if (s.classId === "sounder") return "Read an enemy twice";
+      if (s.classId === "linewright") return "Stretch a line or land hooks";
+      return "Land strikes or catch a stroke";
+    }
     if (s.classId === "sounder" && !targets(s, 290, .40).some(e => e.reading >= p.skillCost)) return "Aim at a read target";
     if (s.classId === "linewright" && !edges(s).length) return "Hook a target or set a guide";
     return "";
@@ -559,19 +580,48 @@
     if (s.classId === "sounder") {
       const e = targets(s, 290, 0.40).find(e => e.reading >= p.skillCost);
       if (!e) return false;
-      const timed = e.mode === "windup" || e.opened;
-      e.reading -= p.skillCost;
-      addEffect(s, "return", {
-        x: p.x,
-        y: p.y,
-        endX: e.x,
-        endY: e.y
-      }, 0.24);
-      hit(s, e, (timed ? 66 : 42) * force);
-      if (timed && !e.boss && e.mode === "windup") recover(e, 0.65);
-      cue(s, timed ? "True interval" : "Return");
+      const narrow = s.technique === "narrow-mouth";
+      const answers = [e];
+      if (narrow) {
+        // Continue the first reading’s axis and choose the nearest charged target behind it.
+        const axis = angleTo(p, e);
+        const ux = Math.cos(axis), uy = Math.sin(axis);
+        let second = null, nearest = Infinity;
+        for (const other of s.enemies) {
+          if (other === e || other.hp <= 0 || other.reading < p.skillCost) continue;
+          const dx = other.x - e.x, dy = other.y - e.y;
+          const forward = dx * ux + dy * uy;
+          const lateral = Math.abs(dx * uy - dy * ux);
+          if (forward > 0 && forward <= 130 && forward < nearest && lateral <= other.radius + 7) {
+            nearest = forward;
+            second = other;
+          }
+        }
+        if (second) answers.push(second);
+      }
+      let origin = p;
+      let precise = false;
+      for (const target of answers) {
+        const timed = target.mode === "windup" || target.opened;
+        target.reading -= p.skillCost;
+        addEffect(s, "return", { x: origin.x, y: origin.y, endX: target.x, endY: target.y }, 0.24);
+        hit(s, target, (timed ? 66 : 42) * force * (narrow ? 0.80 : 1));
+        if (timed && !target.boss && target.mode === "windup") recover(target, 0.65);
+        precise ||= timed;
+        origin = target;
+      }
+      cue(s, answers.length === 2 ? "Second interval carried" : precise ? "True interval" : "Return");
     } else if (s.classId === "shorer") {
-      const caught = new Set(targets(s, 138, 1.28));
+      const split = s.technique === "split-heel";
+      const radius = split ? 184 : 138;
+      const sweep = split ? 15 * Math.PI / 180 : 1.28;
+      const offset = 35 * Math.PI / 180;
+      const directions = split ? [p.angle - offset, p.angle + offset] : [p.angle];
+      const caught = new Set();
+      for (const angle of directions) {
+        for (const target of targets(s, radius, sweep, angle)) caught.add(target);
+        addEffect(s, "shearFan", { x: p.x, y: p.y, angle, radius, sweep }, 0.26);
+      }
       let a = p;
       for (const b of s.stakes) {
         if (dist(a, b) <= 300) {
@@ -586,31 +636,20 @@
         }
         a = b;
       }
-      addEffect(s, "shearFan", {
-        x: p.x,
-        y: p.y,
-        angle: p.angle,
-        radius: 138
-      }, 0.26);
       for (const e of caught) hit(s, e, 47 * force, 18);
       p.resource -= p.skillCost;
     } else {
       const lines = edges(s);
       if (!lines.length) return false;
       const caught = new Set();
-      for (const {
-          a,
-          b
-        }
-        of lines) {
+      const whipWidth = s.technique === "hard-splice" ? 50 : 27;
+      for (const { a, b } of lines) {
         addEffect(s, "snap", {
-          x: a.x,
-          y: a.y,
-          endX: b.x,
-          endY: b.y
+          x: a.x, y: a.y, endX: b.x, endY: b.y, whipWidth
         }, 0.32);
-        for (const e of s.enemies)
-          if (segmentDistance(e, a, b) <= e.radius + 27) caught.add(e);
+        for (const e of s.enemies) {
+          if (segmentDistance(e, a, b) <= e.radius + whipWidth) caught.add(e);
+        }
       }
       for (const e of caught) {
         hit(s, e, 53 * force);
@@ -784,7 +823,9 @@
         // Crowns grow ridges from the rear while a scout circles off the Mason's lead.
         const retreat = e.kind === "crown" && d < 112;
         const flank = e.kind === "scout" && d > e.reach && s.enemies.some(other => other.kind === "mason" && other.hp > 0);
-        const bearing = retreat ? forward + Math.PI : flank ? forward + (e.id % 2 ? 0.42 : -0.42) : forward;
+        let bearing = forward;
+        if (retreat) bearing += Math.PI;
+        else if (flank) bearing += e.id % 2 ? 0.42 : -0.42;
         const room = retreat ? 112 - d : d - (e.kind === "crown" ? 154 : e.radius + 12);
         const travel = Math.max(0, Math.min(room, e.speed * dt));
         e.x += Math.cos(bearing) * travel;
@@ -820,7 +861,10 @@
         e.contact = true;
       }
       if (!e.struckShell) {
-        const shell = s.enemies.find(other => other !== e && other.hp > 0 && ["mason", "matron"].includes(other.kind) && other.mode !== "charge" && intersects(swept, other, other.radius));
+        const shell = s.enemies.find(other =>
+          other !== e && other.hp > 0 && other.mode !== "charge" &&
+          ["mason", "matron"].includes(other.kind) && intersects(swept, other, other.radius)
+        );
         if (shell) {
           e.struckShell = true;
           recover(shell, shell.boss ? 0.95 : 1.25);
@@ -905,7 +949,10 @@
   }
 
   function ventAvailable(s) {
-    return s.enemies.some(e => e.boss && e.kind !== "matron" && e.opened && !e.vented && e.hp > 0 && dist(s.player, e) <= e.radius + 50);
+    return s.enemies.some(e =>
+      e.boss && e.kind !== "matron" && e.opened && !e.vented &&
+      e.hp > 0 && dist(s.player, e) <= e.radius + 50
+    );
   }
 
   function workFitting(s) {
@@ -939,22 +986,23 @@
     });
     s.stakes = s.stakes.filter(f => f.time > 0);
     s.cueTime = Math.max(0, s.cueTime - dt);
-    for (const key of ["attackCooldown", "toolCooldown", "skillCooldown", "dodgeCooldown", "invulnerable", "hit", "swing"]) p[key] = Math.max(0, p[key] - dt);
+    const timers = ["attackCooldown", "toolCooldown", "skillCooldown", "dodgeCooldown", "invulnerable", "hit", "swing"];
+    for (const key of timers) p[key] = Math.max(0, p[key] - dt);
     // Snapshot endpoints before either the player or a hooked enemy takes a step.
-    const oldEdges = s.classId === "linewright" ? edges(s).map(({
-      a,
-      b
-    }) => ({
-      a,
-      b,
-      length: dist(a, b)
-    })) : [];
+    const oldEdges = s.classId === "linewright"
+      ? edges(s).map(({ a, b }) => ({ a, b, length: dist(a, b) }))
+      : [];
     const moveX = clamp(Number(input.x) || 0, -1, 1),
       moveY = clamp(Number(input.y) || 0, -1, 1);
     const moving = Math.hypot(moveX, moveY);
-    if (Number.isFinite(input.aimX) && Number.isFinite(input.aimY)) p.angle = angleTo(p, point(input.aimX, input.aimY));
-    else if (s.enemies.length) p.angle = angleTo(p, s.enemies.reduce((a, b) => dist(a, p) < dist(b, p) ? a : b));
-    else if (moving) p.angle = Math.atan2(moveY, moveX);
+    if (Number.isFinite(input.aimX) && Number.isFinite(input.aimY)) {
+      p.angle = angleTo(p, point(input.aimX, input.aimY));
+    } else if (s.enemies.length) {
+      const nearest = s.enemies.reduce((a, b) => dist(a, p) < dist(b, p) ? a : b);
+      p.angle = angleTo(p, nearest);
+    } else if (moving) {
+      p.angle = Math.atan2(moveY, moveX);
+    }
     const workPressed = Boolean(input.interact) && !s.previous.interact;
     s.previous.interact = Boolean(input.interact);
     for (const key of ["dodge", "skill", "tool"]) {
@@ -1008,13 +1056,19 @@
     separate(s);
     for (const before of oldEdges) {
       const now = dist(before.a, before.b);
-      if (now > 40 && now <= 345 && now > before.length) gain(s, Math.min(9, now - before.length) * 0.30);
+      if (now > 40 && now <= maxCableLength(s) && now > before.length) gain(s, Math.min(9, now - before.length) * 0.30);
     }
     updateHazards(s, dt);
     s.enemies = s.enemies.filter(e => e.hp > 0);
     s.nodes = s.nodes.filter(n => !n.enemy || nodePosition(s, n));
     updateReadings(s);
     if (s.status !== "active") return;
+    s.pickups = s.pickups.filter(piece => {
+      if (dist(p, piece) > 46) return true;
+      s.salvageCollected++;
+      cue(s, piece.label + " recovered");
+      return false;
+    });
     if (s.reinforcement && s.enemies.length <= 1) {
       const r = s.reinforcement;
       if (r.timer === null) {

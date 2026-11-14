@@ -127,3 +127,27 @@ test("reload keeps the camp, chosen build and seeded entrance; stale or malforme
   }
   assert.equal(D.save({getItem(){return null;},setItem(){throw new Error("quota");}},first),false);
 });
+
+test("deep checkpoints lock the chosen class technique and recover pre-technique entries", () => {
+  const source = commission(), locker = storage();
+  const chosen = P.getTechniques(source).find(t => t.id !== "standard");
+  const p = P.setTechnique(source, chosen.id);
+  const run = D.start(D.create(p), p, 1);
+  assert.equal(run.active.build.technique, chosen.id);
+  assert.ok(D.save(locker, run));
+  const changedAtPort = P.setTechnique(p, "standard");
+  assert.equal(D.encounter(D.load(locker,changedAtPort)).build.technique, chosen.id);
+  const [[key, raw]] = locker.data;
+  const legacy = JSON.parse(raw);
+  delete legacy.active.build.technique;
+  locker.setItem(key, JSON.stringify(legacy));
+  assert.equal(D.encounter(D.load(locker,p)).build.technique, "standard");
+  const foreign = P.getTechniques({...p, classId: "shorer"}).find(t => t.id !== "standard");
+  for (const invalid of [foreign.id, null, "unlisted", {}]) {
+    const data = JSON.parse(raw);
+    data.active.build.technique = invalid;
+    locker.setItem(key, JSON.stringify(data));
+    assert.equal(D.load(locker, p), null);
+    assert.equal(D.save(locker, run), false);
+  }
+});

@@ -166,7 +166,9 @@
     say("active-class",titleCase(profile.classId));
     say("class-line",professionNotes[profile.classId][0]);
     const item = profile.inventory.find(i => i.id === profile.equipped);
-    say("equipped-line",item.name + "  ·  " + P.getMasteries(profile).find(m => m.id === profile.mastery).name);
+    const mastery = P.getMasteries(profile).find(m => m.id === profile.mastery);
+    const equippedTechnique = P.getTechniques(profile).find(t => t.id === profile.techniques[profile.classId]);
+    say("equipped-line",[item.name, equippedTechnique.name, mastery.name].join("  ·  "));
   }
   function compare(item) {
     const before = P.getBuild(profile), after = P.getBuild(profile,item);
@@ -183,8 +185,8 @@
   }
   function drawWorkshop() {
     const locked = Boolean(profile.active || deep.active);
-    const pp = $("professions"), mm = $("masteries"), ll = $("locker"), rr = $("recipes");
-    [pp,mm,ll,rr].forEach(e => e.replaceChildren());
+    const pp = $("professions"), tt = $("techniques"), mm = $("masteries"), ll = $("locker"), rr = $("recipes");
+    [pp,tt,mm,ll,rr].forEach(e => e.replaceChildren());
     const mutate = (fn,id) => {
       const focused = document.activeElement?.closest(".options")?.id;
       const previousText = document.activeElement?.querySelector("strong")?.textContent;
@@ -193,6 +195,11 @@
       if (focused) Array.from($(focused).querySelectorAll("button")).find(b => !b.disabled && b.querySelector("strong")?.textContent === previousText)?.focus();
     };
     P.CLASS_IDS.forEach(id => choice(pp,titleCase(id),professionNotes[id][0], [C.CLASSES[id].primary,C.CLASSES[id].tool,C.CLASSES[id].skill].join(" · "),() => mutate(P.setClass,id), id===profile.classId, locked));
+    const selectedTechnique = profile.techniques[profile.classId];
+    for (const t of P.getTechniques(profile)) {
+      const status = t.unlocked ? (selectedTechnique === t.id ? "Active" : "Fit technique") : "Opens at level " + t.level;
+      choice(tt,t.name,t.description,status,() => mutate(P.setTechnique,t.id),selectedTechnique === t.id,locked || !t.unlocked);
+    }
     P.getMasteries(profile).forEach(m => choice(mm,m.name,m.description, m.unlocked ? (profile.mastery === m.id ? "Active" : "Select mastery") : "Opens at level "+m.level, () => mutate(P.setMastery,m.id),m.id===profile.mastery,locked || !m.unlocked));
     profile.inventory.forEach(i => choice(ll,i.name,i.description,(i.id===profile.equipped?"Equipped":"Equip · "+compare(i))+" · "+i.gradeName,()=>mutate(P.equip,i.id),i.id===profile.equipped,locked));
     P.getRecipes(profile).forEach(r => choice(rr,r.name,r.description,r.owned?"In locker":!r.unlocked?"Clear "+r.siteName+" to learn":r.cost+" salvage · "+r.item.gradeName+" · "+compare(r.item),()=>mutate(P.craft,r.id),null,locked || r.owned || !r.unlocked || !r.affordable));
@@ -254,8 +261,18 @@
     say("field-title",ticket.name);
     say("field-grade",activeLeg?"Deep Watch "+deep.active.depth+" / Leg "+(deep.active.leg+1)+" / "+ticket.modifierText:"Grade "+ticket.tier+" / "+ticket.modifierName);
     say("resource-name",C.CLASSES[build.classId].resource);
-    say("technique",professionNotes[build.classId][1]);
+    const technique = P.getTechniques({...profile,classId:build.classId}).find(t => t.id === (build.technique || "standard"));
+    say("technique",professionNotes[build.classId][1]+" "+technique.description);
     buildSkills(build.classId);
+    const firstHint = $("first-help");
+    firstHint.hidden = profile.clears > 0 || Boolean(activeLeg);
+    if (!firstHint.hidden) {
+      const kit=C.CLASSES[build.classId];
+      const touch = matchMedia("(pointer:coarse)").matches;
+      firstHint.textContent = touch
+        ? "Drag the pad to move. Hold " + kit.primary + " to strike, then tap " + kit.skill + ". Tap Evade to clear the painted rush."
+        : "Click an enemy to close and strike, or move with WASD and hold J. E · " + kit.tool + ". Q · " + kit.skill + ". Evade the painted rush with Space.";
+    }
     $("field").scrollIntoView({block:"start"}); $("arena").focus({preventScroll:true});
     soundStart();
     drawHud(); window.SoundArena.draw($("arena"),field,{reducedMotion:reducedMotion.matches});
@@ -449,7 +466,7 @@
     if(targetId && !enemy){targetId=null;pointerAim=null;}
     let aim=enemy || pointerAim;
     if(rx || ry) aim={x:p.x+220*rx,y:p.y+220*ry};
-    else if(pad && (x||y||actions.size)) aim=enemy || null;
+    else if(pad && (axis(pad.axes[0]) || axis(pad.axes[1]) || padActions.some(([i]) => pad.buttons[i]?.pressed))) aim=enemy || null;
     const goal=enemy || destination;
     if(goal) {
       const dx=goal.x-p.x,dy=goal.y-p.y,d=Math.hypot(dx,dy);
@@ -489,7 +506,10 @@
     const order=field.workOrder;
     const vent=C.ventAvailable?.(field);
     const close=Math.hypot(p.x-order.x,p.y-order.y)<=C.WORK_REACH;
-    say("work-order",vent?"The return is exposed. Work the fitting now (R).":order.done?order.doneText:order.description+(close?" Press R to work.":" Work the marked winch for up to 10 health."));
+    let orderText = order.description + (close ? " Press R to work." : " Work the marked winch for up to 10 health.");
+    if (order.done) orderText = order.doneText;
+    if (vent) orderText = "The return is exposed. Work the fitting now (R).";
+    say("work-order",orderText);
     const obj="Pack "+field.wave+"/"+field.waveCount+" · "+field.objective;
     const haul=activeLeg?"":" · "+(field.salvageCollected || 0)+"/3 parts";
     say("objective",obj+haul+(field.cueTime>0?" · "+field.cue:""));
@@ -498,7 +518,12 @@
       const action=b.dataset.action;
       const time=p[{primary:"attackCooldown",skill:"skillCooldown",tool:"toolCooldown",dodge:"dodgeCooldown"}[action]] || 0;
       const hint=action==="skill"?C.spendHint?.(field):"";
-      const txt=action==="skill"&&p.resource<p.skillCost?String(p.skillCost)+" needed":time>.25 ? time.toFixed(1)+"s" : action==="interact" && vent?"Vent":action==="interact" && order.done?"Hauled":"";
+      let txt = "";
+      if (action === "skill" && p.resource < p.skillCost) txt = p.skillCost + " needed";
+      else if (time > .25) txt = time.toFixed(1) + "s";
+      else if (action === "interact" && vent) txt = "Vent";
+      else if (action === "interact" && order.done) txt = "Hauled";
+      else if (action === "skill" && hint) txt = hint;
       b.dataset.cooling=String(time>.25 || action==="skill" && Boolean(hint));b.title=hint || "";
       if(b.lastElementChild.textContent!==txt)b.lastElementChild.textContent=txt;
     }

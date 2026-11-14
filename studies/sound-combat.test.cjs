@@ -213,3 +213,97 @@ test('cart ruts on Gauge Steps catch a Mason’s committed rush and expose its h
   assert.ok(mason.timer>1.5);
   assert.match(state.cue,/cart ruts/);
 });
+
+test('ground salvage stays at the defeated enemy, can be collected once, and is absent from Deep Watch', () => {
+  for (const depth of [0, 2]) {
+    const { state, enemy, player } = fixture('sounder', {watchDepth: depth});
+    Object.assign(enemy, {x: player.x + 160, hp: 1, kind: 'chalk'});
+    Combat.step(state, {primary: true});
+    assert.equal(state.salvageCollected, 0);
+    if (depth > 0) {
+      assert.deepEqual(state.pickups, []);
+      continue;
+    }
+    assert.equal(state.pickups[0].label, 'Seamglass chip');
+    assert.equal(state.pickups[0].x, enemy.x);
+    advance(state, 1.5);
+    assert.equal(state.wave, 2);
+    assert.equal(state.pickups.length, 1);
+    player.x = enemy.x - 42;
+    Combat.step(state);
+    assert.equal(state.salvageCollected, 1);
+    assert.equal(state.pickups.length, 0);
+    advance(state, .2);
+    assert.equal(state.salvageCollected, 1);
+  }
+});
+
+test('a Bridleshell commits to the marked line and deals contact damage only along its actual rush', () => {
+  for (const sidestep of [false, true]) {
+    const { state, enemy, player } = fixture('shorer');
+    Object.assign(enemy, { x: player.x + 80, reach: 150, timer: 0, hp: 35 });
+    Combat.step(state);
+    assert.equal(enemy.action, 'rush');
+    const warning = {...enemy.shapes[0]};
+    assert.ok(Combat.intersects(warning, player));
+    if (sidestep) player.y += 80;
+    const start = player.hp;
+    advance(state, .65);
+    assert.equal(player.hp, start);
+    advance(state, .6);
+    if (sidestep) assert.equal(player.hp, start);
+    else assert.ok(player.hp < start);
+    assert.equal(enemy.opened, true);
+  }
+});
+
+test('Split Heel swaps the broad fan for longer flanking wedges with a gap ahead', () => {
+  for (const technique of ['standard', 'split-heel']) {
+    const {state, enemy, player} = fixture('shorer', {build:{technique}});
+    const offset = 35 * Math.PI / 180;
+    const flank = {...enemy, id: 94, x: player.x + 173 * Math.cos(offset), y: player.y + 173 * Math.sin(offset)};
+    enemy.x = player.x + 120;
+    state.enemies.push(flank);
+    player.resource = 56;
+    Combat.step(state, {skill:true, aimX:player.x+340, aimY:player.y});
+    assert.equal(enemy.hp < 500, technique === 'standard');
+    assert.equal(flank.hp < 500, technique === 'split-heel');
+    const wedges = state.effects.filter(effect => effect.type === 'shearFan');
+    assert.equal(wedges.length, technique === 'split-heel' ? 2 : 1);
+  }
+});
+
+test('Narrow Mouth answers a second charged target behind the first and trades front damage and reading lifetime', () => {
+  for (const technique of ['standard', 'narrow-mouth']) {
+    const {state, enemy, player} = fixture('sounder', {build:{technique}});
+    const rear = {...enemy, id: 83, x: enemy.x + 97, reading: 40, readTime: 2};
+    const offAxis = {...enemy, id: 84, x: enemy.x + 56, y: enemy.y + 62, reading: 40, readTime: 2};
+    state.enemies.push(rear,offAxis);
+    Combat.step(state,{tool:true});
+    assert.ok(enemy.readTime <= (technique === 'narrow-mouth' ? 4 : 6));
+    assert.ok(enemy.readTime > (technique === 'narrow-mouth' ? 3.9 : 5.9));
+    enemy.reading = 60;
+    Combat.step(state, {skill:true, aimX:enemy.x, aimY:enemy.y});
+    assert.equal(500 - enemy.hp, technique === 'standard' ? 42 : 34);
+    assert.equal(500 - rear.hp, technique === 'standard' ? 0 : 34);
+    assert.equal(offAxis.hp,500);
+    assert.equal(state.effects.filter(effect => effect.type === 'return').length, technique === 'standard' ? 1 : 2);
+    if(technique === 'narrow-mouth') assert.equal(rear.reading,32);
+  }
+});
+
+test('Hard Splice shortens the maximum live cable and sweeps a wider on-screen band', () => {
+  for (const technique of ['standard', 'hard-splice']) {
+    const {state,enemy,player} = fixture('linewright', {build:{technique}});
+    state.nodes=[{enemy:enemy.id}];
+    enemy.x=player.x+291;
+    assert.equal(Combat.edges(state).length, technique === 'standard' ? 1 : 0);
+    enemy.x=player.x+155;
+    const flank={...enemy,id:151,x:player.x+78,y:player.y+51};
+    state.enemies.push(flank);
+    player.resource=50;
+    Combat.step(state,{skill:true, aimX:enemy.x, aimY:enemy.y});
+    assert.equal(flank.hp < 500, technique === 'hard-splice');
+    assert.equal(state.effects.find(effect => effect.type === 'snap').whipWidth, technique === 'hard-splice' ? 50 : 27);
+  }
+});

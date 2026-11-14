@@ -522,11 +522,7 @@
       stake(c, b.x, b.y);
       a = b;
     }
-    for (const {
-        a,
-        b
-      }
-      of root.SoundCombat.edges(s)) {
+    for (const { a, b } of root.SoundCombat.edges(s)) {
       line(c, [
         [a.x, a.y],
         [b.x, b.y]
@@ -534,7 +530,7 @@
       line(c, [
         [a.x, a.y],
         [b.x, b.y]
-      ], "#e8c992", 2);
+      ], "#e8c992", s.technique === "hard-splice" ? 3.3 : 2);
     }
     for (const n of s.nodes)
       if (!n.enemy) stake(c, n.x, n.y);
@@ -904,10 +900,13 @@
           [f.endX, f.endY]
         ],
         heavy = f.type !== "cast";
+      if (f.type === "snap") {
+        line(c, pts, "#f3ca852a", 2 * f.whipWidth);
+      }
       line(c, pts, "#2e3c3bd9", heavy ? 6 : 3);
       line(c, pts, f.type === "return" ? "#c2f2de" : heavy ? "#ffe2a2" : "#ebd9ae", heavy ? 3.2 : 1.5);
     } else if (f.type === "arc" || f.type === "shearFan") {
-      const sweep = f.type === "arc" ? .93 : 1.28,
+      const sweep = f.type === "arc" ? .93 : f.sweep,
         rad = f.radius * (reduced ? .85 : .68 + .32 * v);
       c.beginPath();
       c.moveTo(f.x, f.y);
@@ -941,9 +940,26 @@
     c.restore();
   }
 
-  function draw(canvas, s, {
-    reducedMotion = false
-  } = {}) {
+  function loosePart(ctx, part, reducedMotion, time) {
+    const { x, y, label } = part;
+    const rise = reducedMotion ? 0 : Math.sin(3 * time + x) * 1.5;
+    oval(ctx, x, y + 6, 8, 3, "#1c302c66");
+    poly(ctx, [[x - 6, y + rise], [x, y - 6 + rise], [x + 6, y + rise], [x, y + 6 + rise]],
+      "#e5bc6c", "#4c4938", 1.7);
+    line(ctx, [[x, y - 12 + rise], [x, y - 7 + rise]], "#fae9ba", 1.5);
+    ctx.save();
+    ctx.textAlign = "center";
+    ctx.font = "600 11px system-ui";
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = "#253b36";
+    const tx = Math.max(44, Math.min(W - 44, x));
+    ctx.strokeText(label, tx, y + 18);
+    ctx.fillStyle = "#f0db9f";
+    ctx.fillText(label, tx, y + 18);
+    ctx.restore();
+  }
+
+  function draw(canvas, s, { reducedMotion = false } = {}) {
     if (!canvas || !s) return;
     const width = Math.max(1, Math.round((canvas.clientWidth || W) * Math.min(root.devicePixelRatio || 1, 2)));
     const height = Math.round(width * H / W);
@@ -957,10 +973,11 @@
     c.lineCap = "round";
     c.drawImage(terrain(canvas, s), 0, 0, W, H);
     work(c, s);
+    for (const piece of s.pickups) loosePart(c, piece, reducedMotion, s.elapsed);
     classGeometry(c, s);
     if (s.reinforcement && s.reinforcement.timer !== null) {
       const r = s.reinforcement;
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < r.roster.length; i++) {
         const x = r.x + (i - 1) * 36,
           y = r.y + 20 * (i % 2);
         c.save();
@@ -973,19 +990,25 @@
         c.restore();
       }
     }
-    for (const h of s.hazards) tell(c, h.shape, 1 - h.timer / h.duration);
-    for (const e of s.enemies)
-      if (e.mode === "windup")
-        for (const sh of e.shapes) tell(c, sh, 1 - e.timer / e.duration);
-    for (const f of s.effects)
-      if (f.type === "impact") effect(c, f, reducedMotion);
+    for (const hazard of s.hazards) {
+      tell(c, hazard.shape, 1 - hazard.timer / hazard.duration);
+    }
+    for (const enemy of s.enemies) {
+      if (enemy.mode !== "windup") continue;
+      const progress = 1 - enemy.timer / enemy.duration;
+      for (const shape of enemy.shapes) tell(c, shape, progress);
+    }
+    for (const fx of s.effects) {
+      if (fx.type === "impact") effect(c, fx, reducedMotion);
+    }
     const units = [...s.enemies, s.player].sort((a, b) => a.y - b.y);
     for (const unit of units) {
       if (unit === s.player) worker(c, s, s.elapsed, reducedMotion);
       else actor(c, unit, s.elapsed, reducedMotion, s.modifiers.includes("armored"));
     }
-    for (const f of s.effects)
-      if (f.type !== "impact") effect(c, f, reducedMotion);
+    for (const fx of s.effects) {
+      if (fx.type !== "impact") effect(c, fx, reducedMotion);
+    }
   }
   root.SoundArena = {
     draw

@@ -14,13 +14,13 @@ Download the repository ZIP from **Code → Download ZIP**, extract it, and open
 | Sounder | Read a target as it commits. Strike its recovery with True Return. |
 | Linewright | Hook a pursuer and lay a guide. Pull the cable across the next enemy and snap it. |
 
-Gauge Steps, South Cut and the Outer Sill have different packs, hazards, bosses and fitting patterns. A clear pays XP, salvage and a fitting or duplicate parts. The workshop can commission a chosen stamp after its site is cleared. Clear two different sites to open the next grade. Clear all three at grade VI to earn the Standing Watch Collar.
+Gauge Steps, South Cut and the Outer Sill have different packs, hazards, bosses and fitting patterns. Move through fallen bridle plates and seamglass chips to bring back extra salvage. A clear pays XP, salvage and a fitting or duplicate parts. At level 3 each profession unlocks a second technique that changes how its signature lands. The workshop can commission a chosen stamp after its site is cleared. Clear two different sites to open the next grade. Clear all three at grade VI to earn the Standing Watch Collar.
 
 The collar opens **Deep Watches**. Carry one build and its remaining health across three sites with paired conditions. At each camp choose repairs or stronger attacks for the rest of the expedition. Completing a depth rotates its itinerary and opens the next of six depths. The highest depth and site clear times are saved. A recalled crew can retry the same conditions. Regular contracts remain available between expeditions.
 
 ## The premise
 
-The islands of Alasia keep their grain ports above the tide by transferring the strain into another shore. Forty-one years ago the Board of Sills used inhabited **Sere** to hold up Verran’s harbor. Its families kept receiving tax bills after the island vanished from the public chart. Now a field-worker signs off on a ferry landing at **Orren** and finds their stamp on the order that lowered the island beneath it. Publishing the two papers together will strand the boat Orren needs to bring its people home.
+The islands of Alasia keep their grain ports above the tide by transferring the strain into another shore. Forty-one years ago the Board of Sills used inhabited **Sere** to hold up Verran’s harbor. Its families kept receiving tax bills after the island vanished from the public chart. Now a field-worker signs off on a ferry landing at **Orren** and finds their stamp on the order that lowered the island beneath it. When the order surfaces, the worker can warn the departing launch or ring the bell in time to save Bela’s rye from the rain.
 
 The story is about survival purchased at someone else's expense, the memories that official charts cannot erase, and the people who must live with the consequences of a new decision. It is *not* a chosen-one prophecy or an invasion by a generic ancient evil.
 

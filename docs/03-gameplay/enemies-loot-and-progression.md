@@ -118,6 +118,14 @@ At the field station, take a watch, work through two packs and face the fault ho
 
 **Character progression.** The station tracks ten levels. A new worker can equip Bearing to take a harder hit. Level two opens Follow-through for timing primary attacks against a recovering enemy. Level four opens Quickstep for turning a resource spend into an earlier evade. The equipped mastery and fitting can both change between watches. Switching profession at the workshop gives the worker the new combat kit immediately and keeps their locker, bench stamps and standing.
 
+**Profession technique.** At level three each worker can have their implement refitted to change the shape of its signature. The workshop remembers each profession's choice separately, alongside its shared mastery and fitting. Either technique is free to fit between runs.
+
+| Profession | Starting technique | Alternative | Decision in combat |
+| --- | --- | --- | --- |
+| Shorer | Broad Heel | Split Heel | The broad central fan becomes two longer narrow wedges. Point between two packs or set a brace edge across the gap. |
+| Sounder | Long Reading | Narrow Mouth | A well-aligned pair can take a single return down the line. Each needs a reading of its own. Each strike retains 80% force and the readings expire two seconds sooner. |
+| Linewright | Open Splice | Hard Splice | Snap Cast catches a much wider swath beside the cable. Only shorter edges stay live, so setting the peg closer changes which foes the line can reach. |
+
 **High water.** Two different sites cleared at one grade open the next grade. The crew can still take a lower-grade call to try a fitting or complete its record. Higher grades introduce denser packs and added boss pressure as well as harder hits. Each call advertises its working condition. Crosswash marks a lane ahead of an eruption, Set Plates rewards flanking or attacking during recovery, and Short Tide shortens the time before moving enemies reach you. Clearing all three sites at grade VI earns the Standing Watch Collar once. Every site and grade keeps a local best clear time. A failed watch preserves the same offer and equipment for a rematch.
 
 **Deep Watch.** The three crews' commission opens a six-depth expedition. Commit a profession and fitting at the station. Each leg visits a different site under two simultaneous working conditions. Remaining health travels with the crew. At the two camps, choose a repair worth up to 40% of maximum health or a tune worth 14% of starting damage for the rest of that expedition. Finishing the third site records the depth and opens the next. A failed expedition keeps its route for a fresh attempt. Completing the depth rotates its itinerary. The campaign's public orders stay in force while crews work these later tides.

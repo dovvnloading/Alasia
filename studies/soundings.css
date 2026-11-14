@@ -102,3 +102,6 @@ footer i{margin-left:.35rem}
 .deep-panel{margin:1.2rem 0;padding:clamp(1rem,2vw,1.7rem);border:1px solid var(--line);background:var(--panel)}
 .deep-panel h2{font-size:2rem}.deep-panel ol{padding-left:1.4rem;display:grid;gap:.3rem;color:var(--light);font-size:.92rem}
 .deep-panel li[aria-current="step"]{color:var(--brass);font-weight:600}.deep-panel p:not(.eyebrow){font-size:.9rem;color:var(--light)}
+@media(min-width:840px){.bench-skills{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.brass:disabled{background:#39473d;border-color:var(--line);color:var(--muted)}
+.first-help{background:var(--panel);border-left:2px solid var(--brass);padding:.5rem .7rem;margin-top:.5rem;color:var(--light);font-size:.8rem}

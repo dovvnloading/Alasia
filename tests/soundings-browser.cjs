@@ -2,7 +2,7 @@
 // Chrome on PATH (or CHROME_BIN=/path/to/chrome). No browser-driver packages.
 const assert = require("node:assert/strict");
 const { spawn } = require("node:child_process");
-const { existsSync, mkdtempSync, rmSync } = require("node:fs");
+const { existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } = require("node:fs");
 const { tmpdir } = require("node:os");
 const path = require("node:path");
 const { pathToFileURL } = require("node:url");
@@ -67,6 +67,7 @@ async function navigate(query) {
 // The harness advances the real frame callback on a fixed clock. The renderer
 // observer exposes positions to a keyboard pilot. No combat objects are changed.
 function setupHarness() {
+  if (location.protocol === "about:") return;
   const frames = new Map();
   let next = 0, clock = 1000;
   window.requestAnimationFrame = callback => {frames.set(++next, callback); return next;};
@@ -151,14 +152,35 @@ async function smoke() {
   await navigate("?settlement=shared&bell=now");
   const click = (selector,text)=>evaluate("smoke.click("+JSON.stringify(selector)+","+JSON.stringify(text||"")+")");
   const text = id=>evaluate("document.getElementById("+JSON.stringify(id)+").textContent");
+  async function capture(name) {
+    const dir=process.env.SOUNDINGS_CAPTURE_DIR;
+    if (!dir) return;
+    mkdirSync(dir,{recursive:true});
+    const image=await command("Page.captureScreenshot",{format:"png"});
+    writeFileSync(path.join(dir,name+".png"),Buffer.from(image.data,"base64"));
+  }
   const liveProfile=()=>evaluate("SoundProgression.load(localStorage)");
   const win=()=>evaluate("("+fight.toString()+")()");
+  const haul = () => evaluate(`{
+    const h=smoke,p=h.field.player,w=h.field.workOrder;
+    for(let i=0; i<130 && !w.done; i++) {
+      const dx=w.x-p.x,dy=w.y-p.y;
+      for(const [code,on] of [["KeyA",dx< -5],["KeyD",dx>5],["KeyW",dy< -5],["KeyS",dy>5],["KeyR",true]])h.key(code,on);
+      h.frame();
+    }
+    for(const code of ["KeyA","KeyD","KeyW","KeyS","KeyR"])h.key(code,false);
+    for(let i=0;i<4;i++)h.frame();
+    if(!w.done)throw Error("Dispatch winch did not accept the haul");
+  }`);
+
 
   // Fix the opening board seed while retaining the normal fresh-character build.
   await evaluate("SoundProgression.save(localStorage,SoundProgression.newProfile('sounder',12018))");
   await navigate("?settlement=shared&bell=now");
+  await capture("station");
   await click("#launch");
   assert.match(await text("work-order"), /net crates|menders/i);
+  await capture("active");
   const first=await liveProfile();
   const before=await evaluate("smoke.field.player.x");
   await evaluate('smoke.key("KeyD",true); for(let i=0;i<8;i++)smoke.frame(); smoke.key("KeyD",false)');
@@ -168,6 +190,10 @@ async function smoke() {
   const stopped=await evaluate("smoke.field.elapsed");
   await evaluate("smoke.frame();smoke.frame()");
   assert.equal(await evaluate("smoke.field.elapsed"),stopped);
+  await click("#resume");
+  await haul();
+  assert.match(await text("work-order"),/crates are aboard/i);
+  await click("#pause");
   await click("#withdraw");
   assert.match(await text("result-title"), /recalled/i);
   await click("#result-actions button","Retry");
@@ -181,17 +207,8 @@ async function smoke() {
   assert.equal((await liveProfile()).equipped,equipped);
   await click("#launch");
   assert.match(await text("work-order"),/western winch|hand landing/i);
-  // Work this dispatch through the keyboard route before returning to port.
-  await evaluate(`{
-    const h=smoke,p=h.field.player,w=h.field.workOrder;
-    for(let i=0; i<130 && !w.done; i++) {
-      const dx=w.x-p.x,dy=w.y-p.y;
-      for(const [code,on] of [["KeyA",dx< -5],["KeyD",dx>5],["KeyW",dy< -5],["KeyS",dy>5],["KeyR",true]])h.key(code,on);
-      h.frame();
-    }
-    for(const code of ["KeyA","KeyD","KeyW","KeyS","KeyR"])h.key(code,false);
-    if(!w.done)throw Error("Release winch did not accept the haul");
-  }`);
+  await haul();
+  assert.match(await text("work-order"),/rye sling reached/i);
   await click("#pause");await click("#withdraw");
 
   // Skip the ordinary grade climb via public progression transitions. All
@@ -222,8 +239,62 @@ async function smoke() {
   assert.match(await text("deep-outcome"),/Depth 1 charted/);
   await navigate("");
   assert.match(await text("deep-record"),/Best depth 1/);
+  // Build and fit an earned recipe using the same controls as a regular player.
+  await click("#open-workshop");
+  await click("#professions button","Shorer");
+  await click("#techniques button","Split Heel");
+  const recipe=await evaluate(`(() => {
+    const p=SoundProgression.load(localStorage);
+    const r=SoundProgression.getRecipes(p).find(r=>r.unlocked && !r.owned && r.affordable);
+    if(!r)throw Error("Expected at least one affordable, uncommissioned fitting");
+    return {name:r.name,id:r.id,cost:r.cost,salvage:p.salvage};
+  })()`);
+  await click("#recipes button",recipe.name);
+  assert.equal((await liveProfile()).salvage,recipe.salvage-recipe.cost);
+  await click("#locker button",recipe.name);
+  await click("#return-board");
+  assert.match(await text("equipped-line"),/Split Heel/);
+  assert.ok((await text("equipped-line")).includes(recipe.name));
+
+  await command("Emulation.setDeviceMetricsOverride",{
+    width:390,height:844,deviceScaleFactor:1,mobile:true,screenWidth:390,screenHeight:844
+  });
+  await command("Emulation.setTouchEmulationEnabled",{enabled:true,maxTouchPoints:5});
+  await navigate("");
+  const cleanWidth=()=>evaluate("Math.max(document.documentElement.scrollWidth,document.body.scrollWidth) <= 390");
+  assert.equal(await evaluate('matchMedia("(pointer: coarse)").matches'),true);
+  assert.equal(await cleanWidth(),true,"The mobile board overflows horizontally");
+  assert.equal((await liveProfile()).classId,"shorer");
+  assert.equal((await liveProfile()).equipped,recipe.id);
+  assert.match(await text("equipped-line"),/Split Heel/);
+  await capture("mobile-board");
+  await click("#launch");
+  assert.equal(await evaluate("smoke.field.technique"),"split-heel");
+  assert.equal(await cleanWidth(),true,"The mobile field overflows horizontally");
+  // Bring the two touch controls into view together and use the real browser
+  // input path. setPointerCapture() must accept both touch identifiers.
+  await evaluate('document.querySelector(".controls").scrollIntoView({block:"center"})');
+  const contacts=await evaluate(`(() => {
+    const point=(selector, fraction, id)=>{
+      const box=document.querySelector(selector).getBoundingClientRect();
+      const x=box.left+box.width*fraction,y=box.top+box.height/2;
+      if(!document.elementFromPoint(x,y)?.closest(selector))throw Error("Touch control offscreen: "+selector);
+      return {x,y,id};
+    };
+    return [point("#stick",.84,1),point('#skills [data-action="primary"]',.5,2)];
+  })()`);
+  const startX=await evaluate("smoke.field.player.x");
+  await command("Input.dispatchTouchEvent",{type:"touchStart",touchPoints:[contacts[0]]});
+  await command("Input.dispatchTouchEvent",{type:"touchStart",touchPoints:contacts});
+  await evaluate("for(let i=0;i<5;i++)smoke.frame()");
+  assert.ok(await evaluate("smoke.field.player.x")>startX+10,"Touch pad must move the character");
+  assert.ok(await evaluate("smoke.field.player.attackCooldown")>0,"Touch action must strike while moving");
+  await command("Input.dispatchTouchEvent",{type:"touchEnd",touchPoints:[]});
+  await capture("mobile-field");
+  await click("#pause");
+  await click("#withdraw");
   assert.deepEqual(exceptions,[]);
-  console.log("Chromium passed movement, pause, withdrawal, same-seed retry, combat, gear, reload, campaign dispatches and three Deep Watch legs.");
+  console.log("Chromium passed movement, pause, withdrawal, same-seed retry, combat, gear, techniques, craft, reload, campaign dispatches, three Deep Watch legs and a 390px touch layout.");
 }
 
 const watchdog=setTimeout(()=>child.kill("SIGKILL"),105000);

@@ -50,7 +50,8 @@
       </div>
       <section id="workshop" hidden aria-label="Workshop">
         <div class="work-top"><h2>Workshop</h2><button type="button" id="return-board" class="outline">Back to contracts</button></div>
-        <div class="bench-grid"><section><h3>Profession</h3><div id="professions" class="options"></div></section>
+        <div class="bench-grid bench-skills"><section><h3>Profession</h3><div id="professions" class="options"></div></section>
+          <section><h3>Technique</h3><div id="techniques" class="options"></div></section>
           <section><h3>Mastery</h3><div id="masteries" class="options"></div></section></div>
         <div class="bench-grid"><section><h3>Fitting locker</h3><div id="locker" class="options"></div></section>
           <section><h3>Commission a fitting</h3><div id="recipes" class="options"></div></section></div>
@@ -64,11 +65,12 @@
         <canvas id="arena" width="960" height="540" tabindex="0" aria-label="Live combat arena. Keyboard controls and tactical readout follow."></canvas>
         <div id="overlay" class="overlay" hidden><div role="group" aria-labelledby="overlay-title"><p class="eyebrow" id="overlay-label"></p><h2 id="overlay-title"></h2><p id="overlay-copy"></p><div class="button-row"><button id="resume" class="brass" type="button">Resume watch</button><button id="withdraw" type="button" class="outline">Withdraw to port</button></div></div></div>
       </div>
-      <div class="hud"><div class="meter"><div><span>Health</span><b id="health-text"></b></div><progress id="health" value="1" max="1"></progress></div><div class="meter resource"><div><span id="resource-name"></span><b id="resource-text"></b></div><progress id="resource" value="0" max="100"></progress></div>
+      <p id="first-help" class="first-help" hidden></p>
+      <div class="hud"><div class="meter"><div><span>Health</span><b id="health-text"></b></div><progress id="health" aria-label="Health" value="1" max="1"></progress></div><div class="meter resource"><div><span id="resource-name"></span><b id="resource-text"></b></div><progress id="resource" aria-labelledby="resource-name" value="0" max="100"></progress></div>
         <div class="watch-status" id="objective"></div></div>
       <p id="work-order" class="order"></p>
       <div class="controls"><div class="stick" id="stick" aria-label="Touch movement pad"><span></span></div><div id="skills" class="skills"></div></div>
-      <details class="help"><summary>Controls and profession technique</summary><p id="technique"></p><p>Move with WASD or arrows, or click the ground. Click an enemy to close and strike. Hold Shift and click to strike in place. Right-click releases your signature. J, E and Q work with keyboard aim. Space evades. R works the marked haul point. On touch, drag the movement pad and hold an action.</p><p>With a standard controller, move with the left stick, aim with the right, strike with the right trigger, set your tool with X, release with Y, evade with A, and work with B. Start pauses.</p></details>
+      <details class="help"><summary>Controls and profession technique</summary><p id="technique"></p><p>Move with WASD or arrows, or click the ground. Click an enemy to close and strike. Hold Shift and click to strike in place. Right-click releases your signature. J, E and Q work with keyboard aim. Space evades. R works the marked winch or vents an exposed machine fitting. Collect loose bridle plate and seamglass by moving close. On touch, drag the movement pad and hold an action.</p><p>With a standard controller, move with the left stick, aim with the right, strike with the right trigger, set your tool with X, release with Y, evade with A, and work with B. Start pauses.</p></details>
       <p id="announcer" class="sr" role="status"></p>
     </section>
     <noscript><p>Enable JavaScript to play Soundings.</p></noscript>

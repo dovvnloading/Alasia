@@ -102,6 +102,8 @@
 
   function validBuild(build) {
     return build && progression.CLASS_IDS.includes(build.classId) &&
+      (build.technique === undefined || progression.getTechniques({classId: build.classId, level: progression.MAX_LEVEL})
+        .some(technique => technique.id === build.technique)) &&
       ["bearing", "followthrough", "quickstep"].includes(build.mastery) &&
       ["standard", "force", "reach", "flow"].includes(build.style) &&
       Number.isFinite(build.power) && build.power >= 1 && build.power <= 2 &&
@@ -139,8 +141,11 @@
   function decode(raw, seed) {
     if (typeof raw !== "string" || raw.length > 4096) return null;
     const state = JSON.parse(raw);
-    return valid(state) && state.seed === seed && typeof state.saveToken === "string" &&
-      state.saveToken.length > 0 && state.saveToken.length < 100 ? state : null;
+    if (!valid(state) || state.seed !== seed || typeof state.saveToken !== "string" ||
+        !state.saveToken.length || state.saveToken.length >= 100) return null;
+    // Pre-technique routes always used the original profession actions.
+    if (state.active && state.active.build.technique === undefined) state.active.build.technique = "standard";
+    return state;
   }
 
   function load(storage, profile) {

@@ -43,6 +43,21 @@
     { id: 'quickstep', name: 'Quickstep', level: 4, description: 'Each spender takes half a second off the remaining dodge cooldown.' }
   ];
 
+  const techniques = {
+    shorer: [
+      { id: 'standard', name: 'Broad Heel', level: 1, description: 'Return Stroke drives one broad fan straight ahead. Brace edges carry the release through enemies along their length.' },
+      { id: 'split-heel', name: 'Split Heel', level: 3, description: 'Return Stroke sends two longer, narrow wedges 35° to either side. Aim between two packs. The centre stays open unless a brace edge crosses it.' }
+    ],
+    sounder: [
+      { id: 'standard', name: 'Long Reading', level: 1, description: 'Readings last six seconds. True Return spends a reading to deliver its full force to one target.' },
+      { id: 'narrow-mouth', name: 'Narrow Mouth', level: 3, description: 'True Return can pass through to a second aligned target. Each target needs its own reading and takes 80% of the normal strike. Readings expire in four seconds.' }
+    ],
+    linewright: [
+      { id: 'standard', name: 'Open Splice', level: 1, description: 'Work a long cable between hook and peg. Snap Cast catches enemies in a close band along the cable.' },
+      { id: 'hard-splice', name: 'Hard Splice', level: 3, description: 'Snap Cast catches enemies across a band almost twice as wide. Working cable length falls to about three quarters. Set your pegs closer together.' }
+    ]
+  };
+
   function bounded(value, min, max) {
     return Number.isSafeInteger(value) && value >= min && value <= max;
   }
@@ -77,6 +92,16 @@
     return masteries.map(m => ({ ...m, unlocked: profile.level >= m.level }));
   }
 
+  function getTechniques(profile) {
+    return techniques[profile.classId].map(t => ({ ...t, unlocked: profile.level >= t.level }));
+  }
+
+  function setTechnique(profile, id) {
+    const classId = profile.classId;
+    if (profile.active || profile.techniques[classId] === id || !getTechniques(profile).some(t => t.id === id && t.unlocked)) return profile;
+    return { ...profile, techniques: { ...profile.techniques, [classId]: id } };
+  }
+
   function baseItem() {
     return { id: STARTER, name: 'Dock Issue', rank: 0, style: 'standard', stamp: 'plain', stampName: 'Plain',
       gradeName: 'Workshop issue', description: 'Standard reach, return and dodge. Your original fitting is always in the locker.' };
@@ -109,7 +134,7 @@
     if (item.stamp === 'ward') maxHp += 4 + item.rank * 3;
     if (item.id === COMMISSION) { recovery += 0.15; maxHp += 16; }
     if (item.style === 'flow') maxHp *= 0.85;
-    return { classId: profile.classId, mastery: profile.mastery, power, maxHp: Math.round(maxHp), recovery,
+    return { classId: profile.classId, mastery: profile.mastery, technique: profile.techniques?.[profile.classId] || 'standard', power, maxHp: Math.round(maxHp), recovery,
       style: item.style, spill: item.style === 'reach' && item.rank >= 4 };
   }
 
@@ -121,7 +146,7 @@
     }
     return { version: 1, saveToken: null, seed: seed >>> 0, classId: CLASS_IDS.includes(classId) ? classId : 'shorer',
       xp: 0, level: 1, salvage: 0, tier: 1, clears: 0, record, bests, inventory: [baseItem()], equipped: STARTER,
-      mastery: 'bearing', active: null, lastResult: null };
+      mastery: 'bearing', techniques: Object.fromEntries(CLASS_IDS.map(id => [id, 'standard'])), active: null, lastResult: null };
   }
 
   function getGradeProgress(profile, tier = profile.tier) {
@@ -265,7 +290,7 @@
   // values. Reconstruct contracts/items from their stable identifiers on load.
   function pack(profile, token) {
     return { version: 1, token, seed: profile.seed, classId: profile.classId, xp: profile.xp,
-      salvage: profile.salvage, record: profile.record, bests: profile.bests, mastery: profile.mastery, equipped: profile.equipped,
+      salvage: profile.salvage, record: profile.record, bests: profile.bests, mastery: profile.mastery, techniques: profile.techniques, equipped: profile.equipped,
       pieces: profile.inventory.map(i => [i.id, i.rank]),
       ticket: profile.active && [profile.active.id, profile.active.tier],
       receipt: profile.lastResult && { won: profile.lastResult.won, site: profile.lastResult.site, tier: profile.lastResult.tier,
@@ -298,6 +323,14 @@
     p.xp = data.xp;
     p.level = levelFor(p.xp);
     p.salvage = data.salvage;
+    if (data.techniques !== undefined) {
+      if (!data.techniques || typeof data.techniques !== 'object' || Array.isArray(data.techniques)) return null;
+      for (const classId of CLASS_IDS) {
+        const id = data.techniques[classId];
+        if (!techniques[classId].some(t => t.id === id && t.level <= p.level)) return null;
+        p.techniques[classId] = id;
+      }
+    }
     for (let grade = 1; grade <= MAX_TIER; grade++) {
       const row = data.record[grade];
       if (!row || !SITES.every(s => bounded(row[s], 0, 100000000))) return null;
@@ -387,7 +420,7 @@
   }
 
   const api = { SAVE_KEY, CLASS_IDS, GRADES, MAX_TIER, MAX_LEVEL, MAX_FIELD_PIECES, newProfile, getLevelProgress, getMasteries,
-    getBuild, getContracts, getGradeProgress, startRun, finishRun, equip, setMastery, setClass, getRecipes, craft, save, load };
+    getBuild, getContracts, getGradeProgress, startRun, finishRun, equip, setMastery, getTechniques, setTechnique, setClass, getRecipes, craft, save, load };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   if (typeof window !== 'undefined') window.SoundProgression = api;
 })();
