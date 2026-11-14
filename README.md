@@ -6,9 +6,9 @@
 
 Siv walks out onto the ferry plank you mended and gives a little bounce. The passengers laugh. Minutes later, she is down under the quay with her hand knotted in another worker's belt, holding his mouth above the water. Something in the wall keeps lifting his arm. Your stamp is on the order that let the sea in.
 
-Across the Sound, a ship full of grain has come safely into port. For seven years Verran has kept its deep berth level by pushing Orren lower with every tide. Forty-one years ago it did the same to Sere. The man who sent Sere's last promised ferry for grain still runs the harbor. The girl who told the passengers to wait for it has spent forty-one years tracing that missing boat. At low water she can still find the rail where she left them.
+Across the Sound a grain ship is unloading in Verran. Its harbor stays level because the great jacks at Selwick drive the strain through the rock into Orren. Every sling the crew takes ashore costs the island beneath your feet. You have six high waters before the repair at South Cut gives way.
 
-You have six high waters to get the load off Orren. Follow the old fittings through the quarry at Keld, go with Ada Sen to the drowned Market Steps, and cross the five moving jacks at Selwick to reach the one that will not let go.
+The last time a shore went under, Ada Sen was the girl at the ferry rail. People had started uphill. She called them back. A boat was coming, and she had a brass tally to prove it. On one exceptional ebb you can go down with her to the ruined Market Steps and put your hand in the socket where she left it.
 
 Read [The Fourth Bell, the complete three-act campaign](docs/02-narrative/campaign-spine.md). The [scene scripts](docs/02-narrative/writing-and-quest-standards.md) and [principal cast](docs/02-narrative/cast-and-arcs.md) accompany the manuscript. Alasia is in narrative preproduction. An earlier short browser study follows Ada's crossing to Sere.
 
