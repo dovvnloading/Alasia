@@ -4,7 +4,7 @@ At Gauge Steps the ferry crew and the surveyor have different ways to measure th
 
 ## Orren · The long board
 
-![A passenger takes a worker’s elbow to step onto wet planks. Tessa watches her boot. Two cuts in the stone on the right sit at different heights.](shore-studies/orren-gauge-steps.webp)
+![A passenger takes a worker’s elbow to step onto wet planks. Tessa watches her boot. Two cuts in the stone on the right sit at different heights.](shore-studies/orren-gauge-steps.png)
 
 The passenger tests the plank with her heel before she gives it her weight. Tessa keeps her eye on the heel. The passenger has her eye on the rope ring. It is still round the heron's toe, and that throw counted.
 
