@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b1b">
+  <title>The Pay Bell · Alasia</title>
+  <link rel="stylesheet" href="pay-bell.css">
+  <script defer src="pig-door.js"></script>
+  <script defer src="pay-bell.js"></script>
+</head>
+<body>
+  <a class="skip" href="#title">Skip to the encounter</a>
+  <main>
+    <header class="mast">
+      <span class="wordmark">Alasia</span>
+      <span class="harbor" id="place">Verran</span>
+      <nav aria-label="Encounters">
+        <a href="#pay-bell" data-encounter="pay-bell" aria-current="page">The Pay Bell</a>
+        <a href="#pig-door" data-encounter="pig-door">The Pig Door</a>
+      </nav>
+    </header>
+    <div class="encounter">
+      <div class="plate">
+        <img id="payPortrait" src="pay-bell.webp" alt="Drail slides a tray of used collars across his scales. Below the salt wheel, a hand grips a hanging line." width="1128" height="752">
+        <img id="pigPortrait" src="pig-door.webp" alt="Agnes tests the dry barley in a salt-stained sack. Meg watches the sale while a pig noses the sill." width="1128" height="752" hidden>
+      </div>
+      <section class="reading" aria-labelledby="title">
+        <p id="scene"></p>
+        <h1 id="title" tabindex="-1" aria-describedby="narrative">The Pay Bell</h1>
+        <div id="narrative"></div>
+        <p id="evidence"></p>
+        <div id="actions" role="group" aria-label="Your choices"></div>
+      </section>
+      <dl id="status" aria-label="Equipment and counter stock"></dl>
+    </div>
+    <noscript>Enable JavaScript to play these encounters.</noscript>
+  </main>
+</body>
+</html>

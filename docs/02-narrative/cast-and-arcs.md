@@ -74,4 +74,4 @@ At Ropewalk the occupiers refuse their ground. The crews strike that site from t
 
 On the first sailing afterward, Tessa still needs Bela's freight figures. Bela asks for the number of passenger places Tessa actually has. Let the player see who gets to write each number in the book.
 
-[Campaign](campaign-spine.md) · [Quest and dialogue scenes](writing-and-quest-standards.md) · [Vara Pike and Jory Vale](people-on-the-return.md) · [Tarn, Eve and Len Cett](shops-of-the-inner-sound.md) · [Nell and Ruth at the Odd Shoe](../../studies/market-steps.html#odd-shoe)
+[Campaign](campaign-spine.md) · [Quest and dialogue scenes](writing-and-quest-standards.md) · [Drail and Pell at the Pay Bell](../../studies/pay-bell.html) · [Agnes and Meg at the Pig Door](shops-of-the-inner-sound.md)

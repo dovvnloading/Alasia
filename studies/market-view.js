@@ -2,7 +2,7 @@
   "use strict";
 
   const model = window.MarketSteps;
-  const state = window.location.hash === "#odd-shoe" ? model.startAtShop() : model.start();
+  const state = model.start();
   const element = name => document.getElementById(name);
   const heading = element("sceneHeading");
   const chart = element("chart");
@@ -59,18 +59,15 @@
     target.append(group);
   }
 
-  function drawActions(options, shop) {
+  function drawActions(options) {
     const target = element("actions");
     target.replaceChildren();
-    if (shop) {
-      listActions(target, shop.actionTitle, options, "");
-      return;
-    }
     if (state.phase === "verran" && !state.receipt) return; // Each slip is its own choice.
     if (state.phase === "done") {
-      const list = make("div", "action-list");
-      list.append(...options.map(actionButton));
-      target.append(list);
+      target.append(...options.map(actionButton));
+      const nightMarket = make("a", "night-market", "Visit Drail at the Pay Bell");
+      nightMarket.href = "pay-bell.html";
+      target.append(nightMarket);
       return;
     }
     if (state.phase === "relief" || state.phase === "verran") {
@@ -135,19 +132,13 @@
     parent.append(paper);
   }
 
-  function drawFolio(options, shop) {
+  function drawFolio(options) {
     element("chartFigure").hidden = true;
     element("chartDesc").textContent = "";
     element("observations").hidden = true;
     const folio = element("documents");
     folio.hidden = false;
     folio.replaceChildren();
-    if (shop) {
-      element("companion").setAttribute("aria-label", shop.shelfTitle);
-      folio.append(make("h2", "paper-heading", shop.shelfTitle));
-      for (const item of shop.items) record(folio, item.title, item.lines);
-      return;
-    }
     element("companion").setAttribute("aria-label", "Papers at Verran");
     if (state.phase === "relief" || state.phase === "done") {
       folio.append(make("h2", "paper-heading", "Ada’s household roll"));
@@ -177,22 +168,15 @@
 
   function render(focus) {
     const sea = state.phase === "approach" || state.phase === "return";
-    const shop = state.phase === "shop" ? model.shopView(state) : null;
     const options = model.choices(state);
-    const studyTitle = shop ? "The Odd Shoe" : "Market Steps";
-    document.title = studyTitle + " · Alasia";
-    element("studyTitle").textContent = studyTitle;
-    heading.textContent = shop ? shop.heading : sceneHeading();
-    element("studyTitle").hidden = heading.textContent === studyTitle;
-    element("narrative").replaceChildren(...state.text.split(/\n+/).map(line => make("p", "", line)));
-    element("watch").textContent = shop ? shop.location : watchLabel();
+    heading.textContent = sceneHeading();
+    element("narrative").textContent = state.text;
+    element("watch").textContent = watchLabel();
     element("spread").classList.toggle("at-hearing", !sea);
-    document.body.classList.toggle("at-counter", Boolean(shop));
-    element("shoePortrait").hidden = !shop || Boolean(state.shop?.order) || state.shop?.place === "outside";
     positionActions();
-    drawActions(options, shop);
+    drawActions(options);
     if (sea) drawSea();
-    else drawFolio(options, shop);
+    else drawFolio(options);
     if (focus) heading.focus();
   }
 

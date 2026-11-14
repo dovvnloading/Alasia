@@ -25,4 +25,4 @@ jobs:
             node --check "$file"
           done
       - name: Check game-state and chart regressions
-        run: node --test studies/market-scene.test.cjs
+        run: node --test studies/*.test.cjs
