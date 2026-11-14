@@ -79,6 +79,8 @@ Class silhouette identifiers must read on black material in **0.3-second thumbna
 
 ## 6. Visual storytelling shots (concept briefs, not commissioned art yet)
 
+[Four scenes from the Inner Sound](four-scenes-from-the-inner-sound.md) pairs generated concept paintings of Orren, Keld, Sere and Selwick with notes on framing, light and what the player needs to see.
+
 **Keyframe K1 — Gauge Steps.** A cut runs across the stair cheek and the adjoining bedrock post. The cut on the stair has dropped a course. Frame the join from the gangplank so a passenger reaching for the worker’s elbow crosses the gap in the same shot. Tessa looks from the passenger’s foot to the boat, judging whether she can take the next person.
 
 **Keyframe K2 — North Face, Keld:** a casting die sits beside its new identical impression; opposite walls show white stress cracks beneath repaired supports; bright warm kiln light only at the edge. *Story information:* the technology came from skill and labor, and evidence persists in matter.
