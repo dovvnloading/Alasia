@@ -1,16 +1,16 @@
 # Alasia: Lost Isles
 
-*A dark, story-driven, top-down action RPG for the web.*
+*A maritime dark-fantasy action RPG.*
 
-Alasia is in narrative preproduction. The current work is the campaign manuscript: who signed off on Orren’s landing, what happened to Sere’s third ferry, and what each shore stands to lose. The [campaign treatment](docs/02-narrative/campaign-spine.md) follows the worker from the gangplank at Low Quay to the return to Orren. An earlier short browser study explores Ada’s crossing to Sere.
+## The Fourth Bell
 
-## The premise
+Siv walks out onto the ferry plank you mended and gives a little bounce. The passengers laugh. Minutes later, she is down under the quay with her hand knotted in another worker's belt, holding his mouth above the water. Something in the wall keeps lifting his arm. Your stamp is on the order that let the sea in.
 
-The islands of Alasia keep their grain ports above the tide by transferring the strain into another shore. Forty-one years ago the Board of Sills used inhabited **Sere** to hold up Verran’s harbor. Its families kept receiving tax bills after the island vanished from the public chart. Now a field-worker signs off on a ferry landing at **Orren** and finds their stamp on the order that lowered the island beneath it. Publishing the two papers together stops the hoist and strands the loaded ferry Orren needs. Before the bell, two of its hands have time to pull Bela’s rye out of the rain or clear the passenger gangway and catch the launch home.
+Across the Sound, a ship full of grain has come safely into port. For seven years Verran has kept its deep berth level by pushing Orren lower with every tide. Forty-one years ago it did the same to Sere. The man who sent Sere's last promised ferry for grain still runs the harbor. The girl who told the passengers to wait for it has spent forty-one years tracing that missing boat. At low water she can still find the rail where she left them.
 
-The story is about survival purchased at someone else's expense, the memories that official charts cannot erase, and the people who must live with the consequences of a new decision. It is *not* a chosen-one prophecy or an invasion by a generic ancient evil.
+You have six high waters to get the load off Orren. Follow the old fittings through the quarry at Keld, go with Ada Sen to the drowned Market Steps, and cross the five moving jacks at Selwick to reach the one that will not let go.
 
-**Experience:** swift, impactful combat; a dark medieval-to-early-mechanistic maritime world; distinct specialist classes; consequential characters; equipment that changes how players fight. Diablo III and IV and Path of Exile inform the intended combat pace, build choices and reasons to revisit a shore after its story ends. Those systems are design proposals.
+Read [The Fourth Bell, the complete three-act campaign](docs/02-narrative/campaign-spine.md). The [scene scripts](docs/02-narrative/writing-and-quest-standards.md) and [principal cast](docs/02-narrative/cast-and-arcs.md) accompany the manuscript. Alasia is in narrative preproduction. An earlier short browser study follows Ada's crossing to Sere.
 
 ## Explore the Inner Sound
 
