@@ -104,9 +104,13 @@ The player cannot collect a thousand seamglass engines from a field of crabs wit
 
 **Trading or live player-to-player markets are not in the first slice.** Balancing against a future online economy prematurely would consume time better spent on combat quality and authored gear.
 
-## 8. Long-tail temptation and strict restraint
+## 8. Proposed progression after the handover
 
-The early game centers on authored combat and a small set of meaningful items, rather than an endless dungeon, trading economy or enormous crafting tree. Those larger systems can be explored later if they strengthen the actual experience. A polished 10-minute fight with mechanically interesting loot is more valuable now than a thousand meaningless drops.
+The campaign can end when Tessa writes the landing’s name on both copies. Work after that scene would start with a new question from a shore we already know. After shared settlement, where can the Net Yard menders lay out a whole winter net now that their floor is under water? After phased release, how do people unloading rye at the upper landing get it across the ridge before rain? Either crew could pay the worker in fittings from the same workshops. The player’s signature would determine who needs a hand and why. Neither community would have to give up ground for access to better equipment.
+
+Tide and cargo could change a familiar journey. At low water, a survey party could walk under a landing to inspect the footings. At the next high, the underside would be out of reach, and a crew carrying a spare collar would need the upper approach cleared. Finishing one job could open a neighboring reach of the Sound. A later voyage could ask the worker to keep two such passages open with the tools they took aboard.
+
+A Sounder seeking the Narrow Mouth fitting in §5 could ask a Keld fitter which gallery supplies the interval plates and take work there. With the new mouth fitted, two scouts in line would be worth drawing together. At a single armored target, the short readings would demand an earlier commitment. A bench that lets the worker refit the original mouth would let them choose for the next voyage. That is a reason to come back with a different build even after the island’s story is settled.
 
 ## 9. The experience this system should create
 
