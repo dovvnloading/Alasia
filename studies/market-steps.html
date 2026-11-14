@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#efebdf">
   <title>Market Steps · Alasia</title>
   <link rel="stylesheet" href="market-steps.css">
+  <script defer src="odd-shoe.js"></script>
   <script defer src="market-scene.js"></script>
   <script defer src="market-chart.js"></script>
   <script defer src="market-view.js"></script>
@@ -15,12 +16,12 @@
   <main class="folio">
     <header class="mast">
       <span class="wordmark">Alasia</span>
-      <div class="mast-copy"><span class="place-title">Market Steps</span><span id="watch">Sere · Ebb after second high</span></div>
+      <div class="mast-copy"><span id="studyTitle" class="place-title">Market Steps</span><span id="watch">Sere · Ebb after second high</span></div>
     </header>
     <div class="spread" id="spread">
       <section class="scene" id="scene" aria-labelledby="sceneHeading">
         <h1 id="sceneHeading" tabindex="-1" aria-describedby="narrative">Off the Market Steps</h1>
-        <p id="narrative" class="narrative"></p>
+        <div id="narrative" class="narrative"></div>
       </section>
       <aside id="companion" aria-label="Chart and field notes">
         <figure id="chartFigure" class="chart">
@@ -29,6 +30,7 @@
         </figure>
         <p id="chartDesc" class="sr"></p>
         <dl id="observations" class="observations"></dl>
+        <img id="shoePortrait" class="shoe-portrait" src="odd-shoe.webp" width="1080" height="720" alt="Ruth paints laces on a wool stocking drawn over her foot. Nell watches from her cobbler’s bench. The red shoes wait on the windowsill." hidden>
         <div id="documents" class="documents" hidden></div>
       </aside>
       <div class="actions" id="actions" aria-label="Available actions"></div>

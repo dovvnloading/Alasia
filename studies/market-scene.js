@@ -13,7 +13,7 @@
     return {
       phase: "approach", position: 0, ada: 0, moored: null, pulse: 0,
       secured: false, quiet: false, marked: false, tally: false, exit: false,
-      memory: { sill: false, gutter: false }, receipt: false, witnessed: false,
+      memory: { sill: false, gutter: false }, receipt: false, witnessed: false, shop: null,
       text: "Ada sits in the stern with the pilot, sighting over her shoulder. You came south from Orren to find the brass half a ferry crew left at Sere forty-one years ago. The ebb after the second high has brought a few courses of the old market out of the Sound. Ada touches the pilot’s wrist. “Let her slide. There was a railing here.”"
     };
   }
@@ -36,7 +36,8 @@
   ];
 
   function choices(s) {
-    if (s.phase === "done") return [choice("restart", "Make another crossing")];
+    if (s.phase === "shop") return window.OddShoe.choices(s);
+    if (s.phase === "done") return [choice("visitShop", "Visit the odd-shoe counter"), choice("restart", "Make another crossing")];
     if (s.phase === "relief") return [choice("spell", "Take Kit’s place on the carrying line"), choice("pass", "Leave the roll with Kit and Ada")];
     if (s.phase === "verran") {
       if (!s.receipt) return slips.map((slip, i) => choice("slip" + i, "Lay down the " + slip.name.toLowerCase()));
@@ -90,6 +91,8 @@
     if (!choices(s).some(option => option.id === id)) return false;
     const nextWash = () => { s.pulse = (s.pulse + 1) % 3; };
     if (id === "restart") { Object.assign(s, start()); return true; }
+    if (id === "visitShop") { window.OddShoe.enter(s); return true; }
+    if (s.phase === "shop") { window.OddShoe.act(s, id); return true; }
     if (id.startsWith("go")) {
       const to = Number(id.slice(2));
       if (hazard(s.position, to) && s.pulse === 2 && !s.quiet) {
@@ -174,5 +177,11 @@
     }
     return true;
   }
-  window.MarketSteps = { start, act, choices, neighbors, places, slips };
+  function startAtShop() {
+    const state = start();
+    window.OddShoe.enter(state);
+    return state;
+  }
+
+  window.MarketSteps = { start, startAtShop, act, choices, neighbors, places, slips, shopView: window.OddShoe.view };
 })();

@@ -5,6 +5,7 @@ const { join } = require("node:path");
 const { runInNewContext } = require("node:vm");
 
 const window = {};
+runInNewContext(readFileSync(join(__dirname, "odd-shoe.js"), "utf8"), { window });
 runInNewContext(readFileSync(join(__dirname, "market-scene.js"), "utf8"), { window });
 const { start, act, choices } = window.MarketSteps;
 
@@ -30,7 +31,7 @@ test("every reachable state can finish the crossing without a restart", () => {
     const from = stateKey(state);
     if (state.phase === "done") finished.push(from);
     for (const { id } of choices(state)) {
-      if (id === "restart") continue;
+      if (id === "restart" || id === "visitShop") continue;
       const next = structuredClone(state);
       doWork(next, id);
       const to = stateKey(next);
@@ -130,4 +131,35 @@ test("the chart draws the skiff at the pilot's actual berth", () => {
   assert.ok(translations.some(([x, y]) => x === 465 && y === 351),
     "low-berth skiff must stay in the gutter");
   assert.deepEqual([canvas.width, canvas.height], [1600, 880]);
+});
+
+test("Nell pays one fitting fee, and a visit survives a walk round the stair", () => {
+  const state = window.MarketSteps.startAtShop();
+  assert.equal(act(state, "heel"), false);
+  doWork(state, "fit", "cut");
+  assert.equal(state.shop.fit, "open");
+  doWork(state, "square", "outside", "counter", "cord");
+  assert.equal(act(state, "heel"), false);
+  assert.equal(act(state, "fit"), false);
+  doWork(state, "ruth", "stocking", "buttons", "witness", "window", "outside", "counter");
+  assert.equal(state.shop.order, "window");
+  assert.equal(state.shop.purchase, "cord");
+  assert.equal(act(state, "stairs"), false);
+  doWork(state, "outside", "restart");
+  assert.equal(stateKey(state), stateKey(start()));
+});
+
+test("either household entry can lead to the shop, and Ruth needs no purchase", () => {
+  for (const ending of ["spell", "pass"]) {
+    const state = start();
+    doWork(state, "go1", "moorGutter", "go3");
+    waitForPulse(state, 0);
+    doWork(state, "unseat", "guide", "go4", "go5", "rub", "go4", "take", "go3", "leave",
+      "slip0", "order1", ending, "visitShop", "ruth", "buttons", "stairs");
+    assert.equal(state.witnessed, ending === "spell");
+    assert.equal(state.shop.fit, "open");
+    assert.equal(state.shop.order, "stairs");
+    doWork(state, "fit", "square", "heel");
+    assert.equal(act(state, "cord"), false);
+  }
 });

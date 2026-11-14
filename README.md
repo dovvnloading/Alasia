@@ -20,7 +20,15 @@ Open the [playable world atlas](docs/01-world/playable-world-atlas.md) for the b
 
 On GitHub, choose **Code → Download ZIP**, extract it and open [studies/market-steps.html](studies/market-steps.html) in a browser. It runs offline. You arrive at an exceptional ebb with Ada Sen, who worked the landing when there was still a town here. Pick where the pilot should put the skiff, get Ada across the old market, and bring home one half of a passage tally. In Verran you can find out where the missing ferry went and what became of a family who rented a room behind the oven. Use the action buttons with a pointer or Tab and Enter.
 
+After Kit enters her family in the roll, visit **The Odd Shoe** on Verran’s ridge stair. Fit a carrier from the rack of single boots or sit with the sisters who dress the dead. To begin at their counter, open the extracted study with `#odd-shoe` at the end of its address.
+
 For the opening on Orren, read [The long board](docs/03-gameplay/orren-field-sequence.md). For the working settlements across the Sound, read [Three landings in the Inner Sound](docs/01-world/island-life.md).
+
+## People behind the counter
+
+At Keld, a flour merchant has paid a deposit on a piece of stone. The mason turns it over and finds his mother’s lettering. At Selwick, Len has found the coat he made a secret pocket for. A stranger is coming to claim it. Both shops have stock to handle, work to pay for and a second visit. [The Second Fit and the Effects Window](docs/02-narrative/shops-of-the-inner-sound.md)
+
+At South Cut, Vara has kept the sleeve of a man she saw wave shortly before they brought him out dead. In Verran you can meet the man inside the other sleeve. [Someone in the sleeve](docs/02-narrative/people-on-the-return.md)
 
 ## The foundation — organized by discipline
 
