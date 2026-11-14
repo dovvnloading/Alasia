@@ -12,12 +12,6 @@ function doWork(state, ...actions) {
   for (const id of actions) assert.equal(act(state, id), true, id);
 }
 
-function sail(signature = "limit") {
-  const state = start();
-  doWork(state, signature, "sail");
-  return state;
-}
-
 function waitForPulse(state, pulse) {
   for (let i = 0; i < 3 && state.pulse !== pulse; i++) doWork(state, "wait");
   assert.equal(state.pulse, pulse);
@@ -57,7 +51,7 @@ test("every reachable state can finish the crossing without a restart", () => {
 });
 
 test("the high mooring buys the handline and loses its landing on the return", () => {
-  const high = sail();
+  const high = start();
   doWork(high, "go1", "moorSill");
   assert.equal(high.secured, true);
   assert.equal(high.position, 2);
@@ -75,7 +69,7 @@ test("the high mooring buys the handline and loses its landing on the return", (
 });
 
 test("the low mooring needs a way across for Ada and preserves its berth", () => {
-  const low = sail();
+  const low = start();
   doWork(low, "go1", "moorGutter", "go3");
   assert.equal(low.ada, 1);
   assert.equal(act(low, "lookGutter"), false);
@@ -91,49 +85,14 @@ test("the low mooring needs a way across for Ada and preserves its berth", () =>
   doWork(low, "slip0", "order2");
   assert.equal(low.phase, "verran");
   doWork(low, "order1");
-  assert.equal(low.phase, "publication");
-  doWork(low, "warn");
   assert.equal(low.phase, "relief");
   for (const [action, witnessed] of [["spell", true], ["pass", false]]) {
     const ending = structuredClone(low);
     doWork(ending, action);
-    assert.equal(ending.phase, "roll");
-    assert.equal(ending.witnessed, witnessed);
-    doWork(ending, "terms", "release", "set");
     assert.equal(ending.phase, "done");
+    assert.equal(ending.witnessed, witnessed);
     doWork(ending, "restart");
     assert.equal(stateKey(ending), stateKey(start()));
-  }
-});
-
-test("both inspection choices reach independent evidence and both public costs", () => {
-  for (const [action, signature] of [["limit", "limited"], ["hand", "blank"]]) {
-    const state = sail(action);
-    assert.equal(state.signature, signature);
-    doWork(state, "go1", "moorSill", "go4", "go5", "rub", "go4", "take");
-    waitForPulse(state, 0);
-    doWork(state, "go3", "go1", "leave", "slip0", "order1");
-    assert.match(state.text, signature === "limited" ? /rider/ : /duplicate empty/);
-    for (const bell of ["now", "warn"]) {
-      const copy = structuredClone(state);
-      doWork(copy, bell);
-      assert.equal(copy.bell, bell);
-      assert.match(copy.text, bell === "now" ? /launch leave/ : /Rain gets through/);
-      doWork(copy, "pass", "terms");
-      assert.equal(act(copy, "shared"), false);
-      for (const path of [[], ["keys"], ["keys", "net"]]) {
-        const release = structuredClone(copy);
-        doWork(release, ...path, "release", "set");
-        assert.equal(release.settlement, "release");
-        assert.match(release.text, /old room stays dry/);
-      }
-      doWork(copy, "keys");
-      assert.equal(act(copy, "shared"), false);
-      doWork(copy, "net", "shared", "set");
-      assert.equal(copy.settlement, "shared");
-      assert.match(copy.text, /fitting slack/);
-      assert.equal(copy.phase, "done");
-    }
   }
 });
 
@@ -156,7 +115,7 @@ test("the chart draws the skiff at the pilot's actual berth", () => {
     window, document, Path2D: Path2DStub
   });
   const canvas = { width: 0, height: 0, getContext: () => context(true) };
-  const high = sail();
+  const high = start();
   doWork(high, "go1", "moorSill", "go4", "go5", "rub", "go4", "take");
   assert.equal(high.phase, "return");
   window.drawMarketChart(canvas, high);
@@ -165,7 +124,7 @@ test("the chart draws the skiff at the pilot's actual berth", () => {
   assert.ok(!translations.some(([x, y]) => x === 120 && y === 320),
     "skiff must not remain at the initial approach");
   translations.length = 0;
-  const low = sail();
+  const low = start();
   doWork(low, "go1", "moorGutter");
   window.drawMarketChart(canvas, low);
   assert.ok(translations.some(([x, y]) => x === 465 && y === 351),
