@@ -1,114 +1,178 @@
-# Scenes and quests for The Third Column
-
-NAR-003 · Working scenes and dialogue · v0.3
+# Scenes and quests for The Fourth Bell
 
 ## Low Quay and South Cut · The repair order
 
-At the landing the Shorer tests the bearing foot, the Sounder measures the interval and the Linewright tests the ferry anchor. A hand walks a test load across the board. The worker writes **Landing only** on the upper return and inks a worn brass stamp onto each slip in turn. Tessa separates them. The lower dispatch stub bears the same small nick in the stamp's edge, and its scope box is empty. There's time to see it. The runner holds out a hand. The woman waiting to board needs the worker's elbow while the gangplank is level.
+The woman with her knees bound pitches her rope ring onto the wooden heron's foot. The crew bring the plank round. Siv walks out with the test sack on her back and gives a little bounce. She holds out a hand to the woman.
 
-> **Tessa** — Three hulls. Forty-six places if they sit on the sacks.  
-> **Worker** — Where's the north ferry?  
-> **Tessa** — Verran. She's ours again at the third high. This one goes on the bell.
-
-Let the player see Tessa's last mailbag and the passenger's hand. Send the runner away now and give the passenger an elbow. Tessa gets the mail aboard. Or write **Landing only** on the second slip and rule across the spare space. Tessa walks the passenger aboard and the mail waits on the stones. The runner takes the short dry stair to the duty desk above South Cut. For the hurried worker the duty officer writes **Whole route** in the empty box. For the careful worker she signs a separate emergency rider accepting the limited test for a single loaded stroke. Eran's standing order permits it. She fastens the completed papers to the order. One departure bell sounds while Tessa loads. When the masonry shears, the woman is already aboard. From the thwart she sees the stone where she waited drop below the plank. Tessa calls the boats in a different order. Carry the player's first rescue order through to the next time they land here. Let them walk past the bedding they saved or helped hang up to dry.
-
-At South Cut the player works forward through short piston strokes to brace the side channel. Once the piston settles, a service hand unlocks the dry side of the gallery and turns over the route sheet for the person she takes to be its signatory. The worker recognizes the nick along one edge of their stamp on the attached stub. Lay the landing return beside it. The two ink marks match. On the hurried handoff, **Whole route** has appeared in the empty box. On the careful handoff the limit is intact. The separate rider bears the duty officer's number. Lift its corner to see **Landing only** underneath. The player can inspect both slips again. The hand watches their face.
-
-> **Service hand** — I told my girl you walked the line.  
-> **Worker** — I saw her onto the boat. That was as far as I went.  
-> **Service hand** — Who filled in the rest?  
-> **Worker**, if the stub went empty — There was a box for me to do. I sent it up empty.
+> **Siv** — If it goes, you can have my boots.
 >
-> **Worker**, if both were limited — Lift that corner. There's my line. Whose number is on the flap?
+> **Passenger** — I saw what you walked through.
 
-She copies the route clearance, its signatories and the stamp mark into her own book while the worker keeps their landing return. The independently kept copy can travel even if Iven takes the original into custody. Outside, show the side brace take the load. Put the sixth high water against the deadline in the worker's folio. Cross off a high water when the journey or work in the campaign actually takes one. Dying in a fight or reading a document leaves the clock where the scene began.
+The deckhand takes the rope ring off the heron's toe and hangs it on a peg. The woman stays where she is until he gives it back. By then Siv has gone down to the lower shift with a pair of dry socks wrapped in oilskin.
+
+The worker's landing return is marked *Landing only*. Give the runner the stamped dispatch stub with the scope still blank, and the worker can board the woman while Tessa throws the last mailbag aboard. Write the limit on the second slip and Tessa takes the passenger's elbow herself. The mail stays ashore. The woman is winding the ring round her wrist when the stone where she stood goes under.
+
+At South Cut a hand goes up in the dark beyond the grille. Tessa raises hers. The hand falls and goes up again with the same two fingers bent. Noll has a knee on a submerged crossbar. Something is pulling him upright by the iron cuff on his right arm. In the slack his chin goes under.
+
+> **Tessa** — Noll?
+>
+> **Noll**, when his mouth comes clear — It's coming back.
+
+The worker takes the load off the rig. As the cuff opens, Noll slides off the bar. Catch him by the belt and a second body comes up against him. Siv has a forearm wedged in the grille and her fist in the back of his belt. One of the hands has to get down into the water and ease her fingers open. Tessa and the service hand try to bring her round. After they stop, Noll sees Tessa put the oilskin parcel on the bench.
+
+> **Noll** — Can't feel my belt. Is she still holding on?
+>
+> **Tessa** — Do you want your coat?
+>
+> **Noll** — There’s money in the lining.
+>
+> *She folds it inside out on his knees so he can feel the coins with his good hand.*
+
+A service hand unlocks the cage. The route clearance carries the nick in the worker's stamp. On a blank stub someone has written *Whole route*. On a ruled stub the duty officer has pinned a signed rider over *Landing only*. On either order, clipped above the clearance, are Eran Velt's own words. *Keep her level till the hold is empty.*
+
+> **Worker**, on the blank — I could have put a line through there. I didn't.
+>
+> **Worker**, on the rider — Hold the flap up to the lamp. That's where I stopped.
+
+The service hand copies the order in her own book. Iven takes the original. The worker still has the landing return.
+
+## Keld · Under the kiln
+
+Pell is stranded on the stone rib beside the dry rack. His mate holds a lamp out over the gap. At her feet the Lace stands up, yard after yard of white mouths each catching a little of the light. The ridge follows her when she backs away. She gives the lamp to the foreman and holds up Pell's bowl in its light.
+
+> **Pell** — Got that bowl with you?
+>
+> *His mate holds it up.*
+>
+> **Pell** — That's going to be cold.
+
+The worker crosses to the rib and breaks the fitting that feeds the growth. The white fan folds against their shins. When Pell gets out, his spoon keeps tapping his front teeth. His mate breaks him off a piece of bread and they sit on the stone until he can hold the bowl himself.
+
+The foreman brings the copy that used to go in the rack for inspectors. *Anset*. He brings the receipt he kept with Keld's own bills. Same date and batch, *Sere*. A young fitter puts the sheets side by side and slides them toward the lamp.
+
+> **Young fitter** — They've taken the same collars off us twice.
+>
+> **Foreman** — We sent them once. I put Anset on that copy. I was an apprentice. My master had to steady the punch for me.
+>
+> **Young fitter** — Did they have everyone off?
+>
+> **Foreman** — I don't know. I never even saw the boat.
+>
+> *He walks the two sheets to the open hatch himself. Whoever put the punch in his hand is long gone. Most of the people down on the stair are on his shift.*
+
+A man who worked freight turns over the delivery voucher. “We filed by the trip. You want the number they left on shore.”
 
 ## Sere · The return trip
 
-At the exceptional ebb following the second high water, Ada gives the pilot directions without consulting a chart. She tells the player to keep a hand on the old railing until it turns. At the corner she reaches an arm's length into empty water. The next length of iron has gone. The player holds the boat off the exposed stone while she feels for the next footing with her heel.
+Ada dips her head below an awning that went into the Sound forty-one years ago. She takes a pinch from the black groove in the oven sill, smells her thumb, and laughs at what she thought she'd find.
 
-Ada is looking for the shore half of the third ferry's brass tally. In ordinary service a crew took one half away on a trip it owed and collected the other on its return. Have a League hand demonstrate the custom during boarding on Orren. At Sere the player holds a sheet against the survey cut while Ada takes a rubbing and marks the tally in place. Wait for the wash to draw back, then ease the brass out together. Ada pencils the number beside the sketch before either of them tries to stand.
+The pilot can lay the skiff beside the high sill and rig a line for Ada, or hold below the gutter while the worker takes her round. At the turn of the rail Ada holds out her arm to keep somebody from going past. There is room for two on the stone and nobody behind them.
 
-> **Ada** — I used to stand up there for the boats.  
-> **Worker** — On the top step?  
-> **Ada** — On the rail. You could see the pastries coming off before the boys on the steps could.  
-> *She puts the tally in the worker's palm and closes the fingers herself.*  
-> **Ada** — Keep this hand out of the water.
+> **Ada** — A woman halfway up that hill asked if they'd take her from the top. I said she'd lose her place.
+>
+> **Worker** — Did she come back?
+>
+> **Ada** — They all did. Some had to carry their things down again.
+>
+> **Worker** — How did you get off?
+>
+> **Ada** — A skiff came for the list. I had it in my apron. They stood aside and let me through.
 
-In the [playable crossing](../../studies/market-steps.html), a pilot can take the skiff up to the baker’s sill and rig a line for Ada or hold below the gutter and leave the crossing to the pair on shore. A broken chalk joint goes slack with the wash. The worker can cross between ridges or turn the loose stone at slack to get Ada past. Once the tally comes out, a length of the upper ledge falls. The pilot at the high sill has to drop back to the rail. The pilot below the gutter can hold her berth. Keep the state of the gutter on the walk back.
-
-Leave the place with a question the freight office can answer. The tally establishes an outstanding return. Who received the boat at another quay? Ada keeps custody of the list of waiting passengers and decides when it goes on the table.
+The worker holds the paper against the survey cut while Ada marks the shore half of the tally in its socket. *Passage 71.* The ledge goes as they bring the brass up. A pilot who put in at the sill falls back to the rail. The boat below the gutter can hold. Ada gets the worker off a tread that's giving way and keeps hold until they reach the skiff. When the oven goes under she gives the pilot a push at the elbow. The pilot takes up her oars again.
 
 ## Verran · A place at the hearing
 
-At the third high water, Ada lays her dated passenger list and the tally beside the freight receipt. Give the player the table. Turn the receipt to find the same trip number, then follow the unloading entry for the diverted ferry. Iven reads the order for the second stroke aloud. Ada slides the list into his hand before he can lay the order down. Eran's earlier initials acknowledge that passengers still waited at the Market Steps. The people listening can follow the order of those two acts. Keep the evidence fixed in place while they speak.
+Eran reads the freight receipt close to the window. Eleven slings of rye off Passage 71. The porter made a downstroke for each one.
 
-> **Ada** — That mark beside the last name. Is that yours?  
-> **Eran** — Yes.  
-> **Ada** — Did you send the boat back?  
-> **Eran** — I sent her for grain.  
-> *Ada leaves the last name uncovered. Across the table a porter turns his cap over in his hands.*
+> **Ada** — Where did they bake it?
+>
+> **Eran** — See the ticket? Tanner's Stair. They took one sling straight to the mill for those ovens.
+>
+> **Ada** — I carried bowls there. They gave me a loaf to take home. I had to pull the crust off for Mam.
+>
+> *She takes back the receipt.*
+>
+> **Ada** — Third bell. You had our names there. The order to take the shore again says fourth. You had a whole bell.
+>
+> **Eran** — Yes.
+>
+> **Ada** — Who did you send to tell them?
+>
+> **Eran** — I sent nobody.
 
-For the current transfer, the player lays the landing return beside the Board's route sheet. Own the empty box or lift the duty officer's signed rider from the limited second slip. Iven hands over his donor register and the signed summaries. The worker gets two sets copied on the loading table. One mate holds a sheet by each corner against the draft. Both can see what's written before the bell.
+Iven opens the third column on his signed returns. The worker gives their own account of the slips from South Cut. While two copies are made, Eran bars the loading doors. Beyond them the hooks are still unloading the north ferry. He asks the worker to give him until the hull floats free of the lip. Iven takes the other end of the bar to let the worker out.
 
-From the table the player can see the two north-ferry hands waiting between a cart of exposed grain and the last passenger gangway. Tessa holds up one finger to ask for a warning bell. Bela has one end of a sack on her knee and can lift it no farther. They need the same two people. Ring for the public reading now and the hoist stands down. The hands get Bela's sacks under cover. By the time they set the last one down their ride home has cleared the pier. One of them waves after the pilot. Give Tessa the warning bell first and the two clear the gangway, climb aboard the last launch and cross home. The sacks take water where they sit on the planks. Show the cost when the player leaves by the same door. The heavy north ferry stays tied up in both.
+Ring for the reading now and two ferry hands can carry Bela's rye in out of the rain. The launch home goes by with their seats empty. Give Tessa a warning bell and the hands can clear the passenger gangway and get home on that launch. The sacks take water. Both crews get the papers. Bela stands the powered hoist down. The north ferry is still sitting too deep to sail.
 
-On the public bell, the worker puts one complete set into Bela's hands and the other into the ferry mate's. Iven stays in the doorway to answer for the years under his own hand. Read the original and copied orders, the worker's limited return, the signed donor register and the diversion where the crews can hear. Supply copies the crews can keep. The hiring clerk takes the worker off paid Board calls pending inquiry. Keld, the Boat League and the repair crews can still invite them to work under their own authority. At the next landing, the service hand waits for the crew's countersignature before she casts off.
+> **Tessa**, with the notice for Orren — There's space to say when to come down again.
+>
+> **Worker** — Send them back up. I'll give a time when I've got a hull for them.
+>
+> **Tessa** — Whose name do you want the caller to give?
+>
+> *The worker turns the sheet round and signs beneath hers. Tessa folds it so the caller can see both names.*
 
-Bela reads the posted papers on her way to the powered lower hoist. The loaded north ferry is still tied alongside. The mate has already shaken a turn off the stern line when Bela calls down to him.
+Eran breaks the seal on the winter store. At the measure a woman asks for a corner of sacking to take her grain away. He undoes the sack he just emptied and gives her the whole thing.
 
-> **Bela** — Tie that again, please.  
-> **Mate** — Same hitch?  
-> **Bela** — Double it. We're unloading by hand.  
-> *The hoist crew pockets its tokens. A skiff rows past underneath the idle hook.*  
-> **Tessa**, to the worker — You knew which boat was on that hook. I showed you her empty place at home.
+## The relief chain · At the doors
 
-Bela declines to certify the powered hoist. Its crew stands it down. Loaded that deep, the ferry has to shed freight before Tessa can put passengers aboard. The same dock has stairs, handcarts and small boats. Tessa keeps counting waiting passengers while the workers set off up the steps. The crew keeps its copy of the published figures.
+At Ropewalk a tenant borrows the chalk and draws a square behind the vats. Two children are eating in the doorway of that square. “My landlord lives up the hill. He’ll give you the place.” Her family refuses. A fitter drives the pin into the idle branch while she's still there.
 
-Eran crosses to the dry bonded store and prises the wax seal off the door with his allocation key. He gives the seal to Bela so she can charge the missing reserve to him. The first sack out needs two carriers. He takes one end and walks it to the waiting ration line. Follow it to the measure and let the player see someone collect food that evening. When the door shuts there is an empty space on the winter stack. Ada folds her copy of the list while thanking the carrier who measures her share.
+At Washhouse Steps, Rin and Moss each need a key to the dry room so one can sleep while the other works. The second key sticks. Rin brings the locksmith upstairs and makes him turn it with the door shut before she considers the terms. At Net Yard the menders' father is sitting at his own hooks.
 
-## The relief chain · A boundary by the Ropewalk
-
-At the fourth high water, bring a copy of the proposed donor boundary to the people who work and live by the Ropewalk. An occupier takes the player's chalk and draws her tenancy onto their map. There is a small square behind her vats. Two children are eating on the sill of it. The family sleeps there. Her household and the other occupiers refuse to give the ground.
-
-> **Occupier** — My landlord sleeps uphill. You'll get his mark easy.  
-> **Worker** — Where do you want me to take the line?  
-> *She gives the worker back the chalk.*  
-> **Occupier** — Off the page as far as we're concerned.
-
-Take the corrected plan to the crew. Strike Ropewalk from the proposed works in front of them. The line stays struck in both endings, even if every optional rescue succeeds. For Shared Settlement, only the existing relief spurs at Washhouse Steps and Net Yard come forward for local assent. Twelve high waters of use leave permanent loss beneath houses and workshops. Give the people at the doors the masters' signed bookings. Kite comes on the third high, Long May on the ninth. At the lower berth each can discharge sixteen slings. At the upper each has time for four. Bela has six winter kitchen accounts open. Three slings top up a week across all six. Let a resident reckon the eight extra weeks on the back of her copy while someone measures a washroom the family will lose for good. She asks for the second room key before her night shift. Put the expiry in words an occupier can take home. Each proposed donor can refuse before the first stroke. A missing assent sends the crews to Phased Trunk Release. If sharing goes ahead, that same release starts after the twelfth high water unless the affected people renew. A resident who rejects the agreement can still help carry grain down the steps for the other plan.
+> **Pilot's sister** — He can get in a boat. It's getting him out the other side. Who's there when I have to come back for work?
+>
+> *The pilot comes over from the door and lets her father take her weight by the forearm. Between them they try the step down to the boat.*
 
 ## Selwick · The service bridge
 
-At the Sixth Jack, a defender has planted her boot across a service gate to keep the crew's approach clear. The overflow unit takes its load and the deck under her turns. She meets the worker's eye across the service bridge. Her boarding hook is still pointed at them. She turns it round and holds out the wooden end.
+At the bridgehead Renn's watch starts to let the old Orren collar out. Once it leaves its scored seat it can never go back. Eran wants to keep it seated while he bargains for another landing. The packing at South Cut has to give by the sixth high. Edda is on the bridge when the sixth jack catches. At the far bell Maret has the hoist token her brother sent with Eran. The brother wants a shift back at the grain berth.
 
-> **Defender** — It's split there. Take it below my thumb.
+Eran takes the near haul rope from its peg at the bridgehead. One peal. Three hands haul from habit. Edda's boot goes over as the slack whips out beneath her. Eran turns to Maret. The old line needs an answer from the far bell before it can draw.
 
-The worker has the interval between two strokes. Catch her and guide her across now. Once she's off, the bridge folds and the carts lose their lane. She takes her place at the head of a line passing stores hand to hand. Or brace the lane while the crew hauls her over. Carts can cross, but her hand is badly hurt. When the signal comes she has to take the safety flag in her other hand. These outcomes preserve a life and leave different work for the survivors. Show both the stranded worker and the tipping cart lane before the player commits. Give every profession the same two opportunities.
+> **Eran** — Your brother wants his place back.
+>
+> **Maret** — I know.
 
-The far-station defender has promised a brother at Verran that she will ask for one more cargo. She has Eran’s written request. Under sharing he wants a late landing beyond the twelfth high. Under release he wants the wind-down delayed for the first rye boat. When the worker puts the two dated ship bookings against the agreed boundary she folds the request and puts it in her pocket. On immediate release she watches the worker write their name on the ration notice beside Bela's. At the controls the field-worker reads the undertaking back to the people who authorized it. Renn waits for her crew's answer from the far end before she makes the setting. The defender's signal is visible from the lever.
+She steps away from the rope. Eran pulls again. The worker catches his rope above his fist before the clapper reaches the rim.
+
+> **Edda**, turning her boarding hook round — It's split there. Take it below my thumb.
+
+Catch her by the wooden end and the bridge folds behind her. She goes round by the fixed stair to start a carrying line. Brace the cart lane and her crew hauls her over. The carts get through. Her hand is crushed and she'll need the other for the safety flag. Eran still has hold of the rope when she reaches him.
+
+> **Edda** — You saw me.
+>
+> **Eran** — Yes.
+
+At the sixth high the return knocks and a watch hand reaches in. The worker catches his apron. The second kick comes through the boards with the same hitch they heard through Siv's plank. Now they can free the shoe. The old collar comes clear. The worker reads the agreed limit where the far watch can hear. Edda flags the floor safe. Maret answers Renn and the watch takes the weight off Orren.
 
 ## After the setting · Two small returns
 
-**Shared Settlement.** Return to Washhouse Steps. A woman who used to work there offers the worker a stool while she finishes hemming a child's shirt by the upper landing. The lower workroom is wet. She asks to see the twelfth high water marked on the copy she will keep. Leave the shirt on her knee while the player counts the dates with her. At the last agreed high the Net Yard sister leaves her fitting slack. Both indicators fall. The rye from both booked boats is already upstairs. The winter kitchens have their extra reserve and the washroom stays wet after release. Put those two facts in the same walk home.
+On the first evening after the sixth high, Tessa takes Siv's socks to her burial. Noll has paid the mason to put her name on the shore post. It takes two people to open the test sack while he's using one hand. The worker holds its mouth and Noll chooses a stone.
 
-**Phased Trunk Release.** Return to the north ferry. With the lower docks going out of service, the crew passes small lots of grain between a lighter and handcarts up the steps. A dock porter sets down a sack to let a woman through with the household measure. She holds it out in both hands. Bela fills it to the new line inside the lip. The worker takes the first kitchen cook through both skiff receipts. Over at the yard the old man can mend at his own hooks. He has sent his grandson a twist of fried bones for his first hand shift.
+**Shared Settlement.** The deep berth takes both rye boats. At the twelfth high the Net Yard sister withholds the next draw. At Washhouse a woman leans out to see how much water is left in the room downstairs. She can make out the stool by the stove, still standing where she put it.
 
-**Both routes.** After the Verran visit, take Tessa's boat back to Low Quay. The passenger who needed an elbow that first morning waits for an old tide chart to come down. The clerk holds up the new chart at the same height. From the plank she can reach his wrist. She brings his hand down a course until she can read all three columns. At the hiring desk Tessa writes tomorrow's landing on both slips before she gives the worker one to carry.
+**Phased Trunk Release.** The menders' father works at his hooks. His grandson has gone for a hand shift. At a kitchen door the worker holds the scoop while Bela pours. The cook feels the new mark with her thumb. “I can put more water in,” she says. “Who'll tell them they can't have seconds?”
+
+Later Kit opens the inquiry. She sets her first Verran pay packet beside the sheet of people waiting at the rail on Sere. She puts a finger under her childhood name for Eran.
+
+> **Kit** — Read that one, please.
+>
+> *He reads it. She pushes the pay packet over his way.*
+>
+> **Kit** — Now that one.
+>
+> *He reads the other surname. A clerk has written *missing* beside the first. He dips his pen to correct it. Kit holds her hand out.*
+>
+> **Kit** — I can spell this one.
+
+The clerk gives her his pen. She crosses out *missing*, enters her Verran name and turns the page so Eran can see it.
 
 ## Supporting quests
 
-- **The Forty-Sixth Place.** Restore the beached skiff during the Orren rescue. A further trip costs freight space. Recognize one of its passengers on the return from Keld, this time unloading bedding for the next arrivals.
-- **Cold Fittings.** At Keld, set a spare pressure vent so the shop can release its casting impression with a shorter stoppage. On the return boat, the player sees which replacement fittings the saved shift finished.
-- **The Open Roll.** On Verran’s fourth watch, Kit asks for the page facing the Sen family deed. She and her mother rented the room behind the oven. The name on her first Verran pay packet differs from the one their steward knew on Sere. He is going on his break while Kit is halfway through unloading a sack. Take her place and she can catch him to witness both names. Pass on the job and Kit still writes her entry. A strip of sacking marks the space for the witness to come back to. Kit keeps her claim either way. No finding at the hearing and no family’s right to enter the roll depends on a side job.
-- **Above the Waterline.** During relief at Verran, open the handcart route while the powered hoist stands idle. Extra grain reaches the upper stores and an extra load comes off the ferry. Show the difference in the later queue. The residents still decide which ground they can give.
+- **The Forty-Sixth Place.** Get the spare skiff afloat. A passenger who got away on it comes back to help with the bedding.
+- **Cold Fittings.** Open the spare vent at Keld. A shorter stoppage puts finished fittings on the next boat.
+- **The Open Roll.** Take Kit's end of a sack on the fourth high so she can catch the steward who knew the family on Sere. He can witness both names before his break ends. Otherwise Kit marks his space with a strip of sacking and enters the claim herself.
+- **Above the Waterline.** Get the handcart through while the powered hoist stands idle. The last sack under its tarp goes to the upper kitchens.
 
-## Dialogue and encounter direction
-
-Speech comes from work. Tessa counts occupied places. Iven separates what he observed from what he certified. Ada calls Sere by street and household. Eran can name the shipment a decision saved. Let him answer when someone asks who was left behind.
-
-Let the player discover a fact by doing something that matters in the scene. A service hand opens the records for someone she trusts. A rope has to go back round a cleat. A child is standing where someone has drawn a boundary. Each changes what the player, or someone else, can do next.
-
-Keep voices clear of incoming attacks. Offer a folio view of the paired papers, captions for working bells and the visible tide mark at each crossing. Restore time and evidence to the start of the scene on a retry. Give players room to hear a person change their mind and to see what happens when another person holds theirs.
-
-[Campaign sequence and ending conditions](campaign-spine.md) · [Cast and relationships](cast-and-arcs.md)
+[Campaign treatment](campaign-spine.md) · [Cast and arcs](cast-and-arcs.md) · [Earlier Market Steps study](../../studies/market-steps.html)

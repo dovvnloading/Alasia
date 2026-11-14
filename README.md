@@ -1,16 +1,16 @@
 # Alasia: Lost Isles
 
-*A dark, story-driven, top-down action RPG for the web.*
+*A maritime dark-fantasy action RPG.*
 
-Alasia is in narrative preproduction. The current work is the campaign manuscript: who signed off on Orren’s landing, what happened to Sere’s third ferry, and what each shore stands to lose. The [campaign treatment](docs/02-narrative/campaign-spine.md) follows the worker from the gangplank at Low Quay to the return to Orren. An earlier short browser study explores Ada’s crossing to Sere.
+## The Fourth Bell
 
-## The premise
+Siv walks out onto the ferry plank you mended and gives a little bounce. The passengers laugh. Minutes later, she is down under the quay with her hand knotted in another worker's belt, holding his mouth above the water. Something in the wall keeps lifting his arm. Your stamp is on the order that let the sea in.
 
-The islands of Alasia keep their grain ports above the tide by transferring the strain into another shore. Forty-one years ago the Board of Sills used inhabited **Sere** to hold up Verran’s harbor. Its families kept receiving tax bills after the island vanished from the public chart. Now a field-worker signs off on a ferry landing at **Orren** and finds their stamp on the order that lowered the island beneath it. Publishing the two papers together stops the hoist and strands the loaded ferry Orren needs. Before the bell, two of its hands have time to pull Bela’s rye out of the rain or clear the passenger gangway and catch the launch home.
+Across the Sound a grain ship is unloading in Verran. Its harbor stays level because the great jacks at Selwick drive the strain through the rock into Orren. Every sling the crew takes ashore costs the island beneath your feet. You have six high waters before the repair at South Cut gives way.
 
-The story is about survival purchased at someone else's expense, the memories that official charts cannot erase, and the people who must live with the consequences of a new decision. It is *not* a chosen-one prophecy or an invasion by a generic ancient evil.
+The last time a shore went under, Ada Sen was the girl at the ferry rail. People had started uphill. She called them back. A boat was coming, and she had a brass tally to prove it. On one exceptional ebb you can go down with her to the ruined Market Steps and put your hand in the socket where she left it.
 
-**Experience:** swift, impactful combat; a dark medieval-to-early-mechanistic maritime world; distinct specialist classes; consequential characters; equipment that changes how players fight. Diablo III and IV and Path of Exile inform the intended combat pace, build choices and reasons to revisit a shore after its story ends. Those systems are design proposals.
+Read [The Fourth Bell, the complete three-act campaign](docs/02-narrative/campaign-spine.md). The [scene scripts](docs/02-narrative/writing-and-quest-standards.md) and [principal cast](docs/02-narrative/cast-and-arcs.md) accompany the manuscript. Alasia is in narrative preproduction. An earlier short browser study follows Ada's crossing to Sere.
 
 ## Explore the Inner Sound
 
