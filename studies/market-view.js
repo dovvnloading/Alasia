@@ -32,15 +32,26 @@
 
   function sceneHeading() {
     switch (state.phase) {
+      case "quay": return "One more signature";
+      case "departure": return "The service copy";
+      case "publication": return "One bell for Tessa";
+      case "roll": return "The facing page";
+      case "terms": return state.netYard ? "At the spur" : state.washhouse ? "The winter net" : "The washroom keys";
+      case "setting": return "The sixth high";
       case "verran": return state.receipt ? "The second stroke" : "What the ferry carried";
       case "relief": return "A place in the roll";
-      case "done": return "The facing page";
+      case "done": return state.settlement === "shared" ? "The twelfth high" : "The new measure";
       default: return state.position === 0 ? "Off the Market Steps" : model.places[state.position];
     }
   }
 
   function watchLabel() {
-    if (state.phase === "relief" || state.phase === "done") return "Verran · Fourth high";
+    if (state.phase === "quay" || state.phase === "departure") return "Orren · Opening watch";
+    if (state.phase === "publication") return "Verran · Third high";
+    if (state.phase === "setting") return "Selwick · Sixth high";
+    if (state.phase === "done") return "Inner Sound · After the setting";
+    if (state.phase === "terms" && state.netYard) return "Selwick · Fifth high";
+    if (["relief", "roll", "terms"].includes(state.phase)) return "Verran · Fourth high";
     if (state.phase === "verran") return "Verran · Third high";
     return "Sere · Ebb after second high";
   }
@@ -64,7 +75,14 @@
     target.replaceChildren();
     if (state.phase === "verran" && !state.receipt) return; // Each slip is its own choice.
     if (state.phase === "done") {
-      target.append(...options.map(actionButton));
+      const onward = make("a", "expedition-link", "Take Tessa’s workboat · Play Soundings");
+      onward.href = "soundings.html?settlement=" + state.settlement + "&bell=" + state.bell;
+      target.append(onward, ...options.map(actionButton));
+      return;
+    }
+    if (["quay", "publication", "terms"].includes(state.phase)) {
+      const labels = { quay: "At the plank", publication: "At the loading door", terms: "Commit your hands" };
+      listActions(target, labels[state.phase], options, "");
       return;
     }
     if (state.phase === "relief" || state.phase === "verran") {
@@ -137,10 +155,50 @@
     folio.hidden = false;
     folio.replaceChildren();
     element("companion").setAttribute("aria-label", "Papers at Verran");
-    if (state.phase === "relief" || state.phase === "done") {
+    if (state.phase === "quay" || state.phase === "departure") {
+      element("companion").setAttribute("aria-label", "Orren inspection papers");
+      folio.append(make("h2", "paper-heading", "Low Quay · inspection"));
+      record(folio, "Worker’s return", ["Low Quay landing only.", "Bearing held the test barrow.", "Worker’s stamp · nick at lower edge."]);
+      const limited = state.signature === "limited";
+      record(folio, "Dispatch stub", [
+        state.phase === "quay" ? "Scope box empty. Runner standing by." : limited ? "Low Quay landing only · spare space ruled out." : "‘Whole route’ · entered at the service desk.",
+        "Worker’s stamp · nick at lower edge."
+      ]);
+      if (limited) record(folio, "Duty officer’s rider", ["Emergency acceptance of landing test for one loaded route stroke.", "Duty officer’s number entered against the Board order."]);
+      return;
+    }
+    if (state.phase === "publication") {
+      folio.append(make("h2", "paper-heading", "Two sets for the crews"));
+      record(folio, "Your return and the duty copy", [state.signature === "limited" ? "Both copies limit work to Low Quay. The duty officer attached a separate override." : "Your original limits work to Low Quay. The duplicate went out blank and came back marked for the route."]);
+      record(folio, "Donor register · Iven’s signed series", ["Seven years of Orren readings. The public summary named another shore.", "The latest loaded stroke carries Eran’s exception and Renn’s warning."]);
+      record(folio, "At the door", ["Two deckhands. The launch can wait one bell. Rain is already crossing the quay."]);
+      return;
+    }
+    if (["terms", "setting", "done"].includes(state.phase)) {
+      element("companion").setAttribute("aria-label", "Freight and shore agreements");
+      folio.append(make("h2", "paper-heading", "The winter bookings"));
+      record(folio, "Deep berth and hand landings", model.manifest);
+      record(folio, "People on the ground", [
+        "Ropewalk · Refused. Branch pinned shut.",
+        "Washhouse Steps · " + (state.washhouse ? "Keys issued, rent deposited, local signature entered." : "A second key is outstanding."),
+        "Net Yard · " + (state.netYard ? "Paid net passage agreed and local signature entered." : "Menders have signed no agreement.")
+      ]);
+      if (state.phase === "done") {
+        record(folio, "Landing receipts", state.settlement === "shared"
+          ? ["Kite and Long May · 32 slings ashore.", "The Net Yard watch declined renewal. Both draws closed. Net hooks and washroom still under water."]
+          : ["Kite and Long May · 8 slings ashore by skiff. 24 carried on.", "Washroom and net floor dry. Smaller winter measure in use."]);
+        record(folio, "On the fourth high", [state.bell === "now" ? "Bela kept the dry sacks. Two hands missed the launch." : "Two hands got home. Bela stripped wet sacks from the stack.",
+          state.witnessed ? "Kit’s two names witnessed." : "Kit’s claim recorded. Witness space open."]);
+        return;
+      }
+      record(folio, "Safe setting", ["Either shore may stop before any new draw. Release begins by default at the twelfth high. The ground already taken stays under water.", "Immediate release keeps both floors dry. The upper port can take eight slings from the two bookings."]);
+      return;
+    }
+    if (state.phase === "relief" || state.phase === "roll") {
       folio.append(make("h2", "paper-heading", "Ada’s household roll"));
       record(folio, "The room behind the oven", ["The deed names Ada’s family.", "Kit and her mother rented the room."]);
-      if (state.phase === "done") {
+      record(folio, "After your bell", [state.bell === "now" ? "Rye under cover. Both hands missed their launch." : "Both hands crossed home. Wet sacks stripped from Bela’s stack."]);
+      if (state.phase === "roll") {
         record(folio, "Facing entry", [
           "Kit’s household · Her mother’s name on Sere and the name on Kit’s Verran pay packet.",
           state.witnessed ? "The dock steward witnessed both names." : "Witness space open · Marked with a scrap of sacking."

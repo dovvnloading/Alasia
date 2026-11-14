@@ -11,11 +11,16 @@
 
   function start() {
     return {
-      phase: "approach", position: 0, ada: 0, moored: null, pulse: 0,
+      phase: "quay", signature: null, bell: null, settlement: null,
+      washhouse: false, netYard: false, position: 0, ada: 0, moored: null, pulse: 0,
       secured: false, quiet: false, marked: false, tally: false, exit: false,
       memory: { sill: false, gutter: false }, receipt: false, witnessed: false,
-      text: "Ada sits in the stern with the pilot, sighting over her shoulder. You came south from Orren to find the brass half a ferry crew left at Sere forty-one years ago. The ebb after the second high has brought a few courses of the old market out of the Sound. Ada touches the pilot’s wrist. “Let her slide. There was a railing here.”"
+      text: "The loaded test barrow crosses Low Quay without a creak. You stamp the landing return and its dispatch stub. Only the first sheet says what you tested. A woman on the plank holds out her elbow. The runner waits for your duplicate. Tessa has one last mailbag to get aboard before the bell."
     };
+  }
+
+  function atSere() {
+    return "Ada sits in the stern with the pilot, sighting over her shoulder. You came south from Orren to find the brass half a ferry crew left at Sere forty-one years ago. The ebb after the second high has brought a few courses of the old market out of the Sound. Ada touches the pilot’s wrist. “Let her slide. There was a railing here.”";
   }
 
   function neighbors(s) {
@@ -35,7 +40,26 @@
     { name: "Sailing desk copy", lines: ["Passage 71 · Sere ferry", "Seats reserved for the return to Market Steps.", "Space to enter the landing left empty"] }
   ];
 
+  const manifest = [
+    "Kite · Third high of the agreement · 16 slings of rye",
+    "Long May · Ninth high of the agreement · 16 slings of rye",
+    "Each boat can land four by skiff before she has to sail on. Together the deep berth buys 24 extra slings. At three a week that tops up all six winter kitchens for eight weeks."
+  ];
+
   function choices(s) {
+    if (s.phase === "quay") return [choice("limit", "Write ‘Landing only’ on the stub. Call Tessa to the plank."), choice("hand", "Send the stub as it stands. Take the passenger’s elbow.")];
+    if (s.phase === "departure") return [choice("sail", "Take the Sere boat with Ada")];
+    if (s.phase === "publication") return [choice("now", "Ring now. Put the two hands on Bela’s sacks."), choice("warn", "Give Tessa one bell. Send the hands home on the launch.")];
+    if (s.phase === "roll") return [choice("terms", "Carry the freight schedule to the two shore watches")];
+    if (s.phase === "terms") {
+      const options = [];
+      if (!s.washhouse) options.push(choice("keys", "Bring both room keys to Washhouse Steps"));
+      if (!s.netYard && s.washhouse) options.push(choice("net", "Take the fifth-high service boat to Net Yard"));
+      if (s.netYard && s.washhouse) options.push(choice("shared", "Undertake the twelve-high freight run"));
+      options.push(choice("release", "Crew the upper landings and wind the trunk down"));
+      return options;
+    }
+    if (s.phase === "setting") return [choice("set", "Read the boundary to Renn and take the return line")];
     if (s.phase === "done") return [choice("restart", "Make another crossing")];
     if (s.phase === "relief") return [choice("spell", "Take Kit’s place on the carrying line"), choice("pass", "Leave the roll with Kit and Ada")];
     if (s.phase === "verran") {
@@ -90,6 +114,20 @@
     if (!choices(s).some(option => option.id === id)) return false;
     const nextWash = () => { s.pulse = (s.pulse + 1) % 3; };
     if (id === "restart") { Object.assign(s, start()); return true; }
+    if (id === "limit" || id === "hand") {
+      s.signature = id === "limit" ? "limited" : "blank";
+      s.phase = "departure";
+      s.text = (id === "limit"
+        ? "You fill the second box and score through the space below. Tessa gets the woman aboard. The mailbag is still at her feet when the deck draws away. A stroke runs under your boots. The ferry stair drops. Later, at South Cut, your writing is intact. A separate rider accepts your landing test for the whole route under Eran’s standing order. The duty officer signed the rider. You take her number."
+        : "You take the woman’s elbow. Tessa gets the last mailbag aboard, and the runner takes your stamped stub away blank. A stroke runs under your boots. The ferry stair drops. Later, at South Cut, somebody has written ‘Whole route’ above your mark. The service hand copies it in her own book while you hold your landing return beside it.")
+        + " After the Keld crossing you come back to Orren with a trip to make for Ada Sen. A freight clerk may have kept the receipt for the boat that left her family waiting on Sere.";
+      return true;
+    }
+    if (id === "sail") {
+      s.phase = "approach";
+      s.text = atSere();
+      return true;
+    }
     if (id.startsWith("go")) {
       const to = Number(id.slice(2));
       if (hazard(s.position, to) && s.pulse === 2 && !s.quiet) {
@@ -159,20 +197,52 @@
     } else if (id === "order2") {
       s.text = "Ada taps the receipt bell beside the waiting names. Third bell. Iven reads the work bell aloud. Fourth. “He’d had our names a whole bell by then.” You can put the papers in that order.";
     } else if (id === "order1") {
-      s.phase = "relief";
+      s.phase = "publication";
+      s.text = "Ada asks Eran who carried word to the families. His hand goes to the freight receipt. Then he takes it away. “Nobody.” "
+        + (s.signature === "limited"
+          ? "You lay both limited signatures beside the duty officer’s rider. “She accepted one landing for a whole route. Here’s her number. Read it with mine.” "
+          : "You lay down the two sheets. “I sent the duplicate empty. I was there. The rest was written after.” ")
+        + "Iven gives you the signed donor register. You make two sets and step to the loading door. Two deckhands can get Bela’s rye under cover before the rain, or clear Tessa’s gangway and catch their launch home. Tessa holds up one finger for a bell.";
+    } else if (id === "now" || id === "warn") {
+      s.bell = id; s.phase = "relief";
       const recognition = s.memory.gutter
         ? "Ada calls “Skin on?” Kit turns with a sack riding her hip. “Oh, for pity’s sake, Ada. My mam could hear you from her bed.”"
         : s.memory.sill ? "Ada holds her thumb out like a sticky spoon. Kit laughs. “You used to give me the clean end and tell me I was lucky.”" : "Ada picks out a woman tying up her sleeve on the sack line. “That’s Kit. Her mam rented the room behind our oven.”";
-      s.text = "Eran looks at his initials. Ada asks who took word to the people at the steps. He cannot name anybody. Later the crews publish the orders and Bela stops the powered hoist. On the fourth high, you find Ada on the hand-unloading stair. " + recognition + " Kit wants the room her family rented entered in her own name. There’s space opposite Ada’s family deed. The steward who knew them on Sere is just going on break.";
+      s.text = (id === "now"
+        ? "You ring. The hands put the rye inside. One watches the launch leave with his clean shirt tied up aboard. "
+        : "You hold the pages through one warning bell. The hands get the gangway aboard and go home. Rain gets through the bottom seams of Bela’s sacks. ")
+        + "You give a set to each crew. Bela reads the clearance, doubles the ferry’s stern line and stops the powered hoist. Your name comes off the Board call sheet. On the fourth high the hand-unloading stair is still busy. " + recognition
+        + " Kit wants her mother’s tenancy entered beside Ada’s deed. The steward who knew both names is going on break.";
     } else if (id === "spell") {
-      s.phase = "done";
+      s.phase = "roll";
       s.witnessed = true;
       s.text = "You take Kit’s end of the next sack. She overtakes the steward two steps up. He starts to write her mother’s name. “I can do that part,” she says. She writes it as it was on Sere and adds the surname Verran put on her first pay packet. He witnesses both. Ada blows the grit off the facing page. When Kit comes back you’ve got the sack up as far as your knee. She shows you how to turn under it.";
     } else if (id === "pass") {
-      s.phase = "done";
+      s.phase = "roll";
       s.text = "Kit props the book on the top sack and writes her mother’s name opposite Ada’s family deed. She adds the surname on her Verran pay packet. The steward’s break ends before he comes down the stair. His witness space stays open. Kit slips a scrap of sacking in to mark the place. Ada goes back up the queue with her, carrying one end this time.";
+    } else if (id === "terms") {
+      s.phase = "terms";
+      s.text = "Bela sets down the two rye bookings. “This is all I can promise to land.” At Ropewalk a tenant has drawn her kitchen inside the proposed line. She refuses. The fitters pin that branch shut. At Washhouse Steps the beds are upstairs, but the tenants have one key between a day shift and a night shift. Rin holds the empty second loop on the ring. You can take a hand shift under the release order at any time.";
+    } else if (id === "keys") {
+      s.washhouse = true;
+      s.text = "Rin tries one key, Moss the other. The washer sees the paid rent entered against the freight deposit and walks the wet line herself. They sign for twelve highs, with a stop before any fresh draw. The rinse bench below their old room will never be dry again. Across the Sound the pilot’s sister still has a winter net laid out on the proposed ground.";
+    } else if (id === "net") {
+      s.netYard = true;
+      s.text = "On Selwick you hold one end of the winter net. The pilot’s sister reaches the shed door with half the web still in her hands. “Where does Dad work?” The pilot puts her own boat on the rota to take him and the net to a borrowed loft. Her sister checks the paid trips and signs. Both local watches seat their fittings for the first draw. Renn lays the release order beside the freight agreement. The choice of work is yours.";
+    } else if (id === "shared" || id === "release") {
+      s.phase = "setting"; s.settlement = id;
+      s.text = id === "shared"
+        ? "At the sixth high Eran asks for one more landing beyond the twelfth high if a rye boat is late. You hold the two freight bookings against the gauge. No third boat is promised. The defender at the far station keeps her hand on the return until Renn shows her both local needles. Then she gives you the line."
+        : "At the sixth high Eran has the rye invoices in his coat. One porter who unloaded with you wants to know whose turn it is to tell the kitchens. You put your own name beside Bela’s on the notice. Renn checks that both feeds are shut. The defender signals from the far station and gives you the return line.";
+    } else if (id === "set") {
+      s.phase = "done";
+      s.text = s.settlement === "shared"
+        ? "You call the two shores by name. Renn seats the drive. Later you find the two rye receipts in the upstairs kitchens. At the twelfth high the Net Yard sister leaves her fitting slack. “I’ve a boat ride now every time my dad breaks a needle.” The watch starts the wind-down. The winter kitchens have their eight weeks. Water still runs over the net hooks."
+        : "You call the lower harbor off the drive. The old room stays dry. At Net Yard the pilot’s father drops a fried fish backbone into a paper twist for his grandson’s hand shift. At Verran both boats have gone on with twelve slings still aboard each. You stand where you said you would. Bela files a new line inside the measure and lets the first cook hold it while you tell her.";
+      s.text += " Tessa has a berth for you on the next workboat. “Come see what we’ve got to carry.”";
+
     }
     return true;
   }
-  window.MarketSteps = { start, act, choices, neighbors, places, slips };
+  window.MarketSteps = { start, act, choices, neighbors, places, slips, manifest };
 })();
