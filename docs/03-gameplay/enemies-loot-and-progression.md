@@ -1,6 +1,6 @@
 # Opposition, itemization, progression and economy
 
-**ID:** SYS-003 · **Status:** WORKING · **Depends on:** WRL-001, SYS-001–002 · **Version:** 0.1
+**ID:** SYS-003 · **Status:** WORKING · **Depends on:** WRL-001, SYS-001–002 · **Version:** 0.2
 
 ## 1. Every enemy needs an ecological, human or mechanical reason
 
@@ -72,7 +72,7 @@ Every affix/fitting is tagged to a **verb or material behavior**: **hold**, **re
 
 | Fitting | Clear behavioral change | Tradeoff | Benefits |
 | --- | --- | --- | --- |
-| **Sliding Heel** | Shorer can drag a stake through one turn without resetting it | Stored Counterload cap reduced | Mobile offensive Shorer |
+| **Sliding Stake Shoe** | Shorer can drag a stake through one turn without resetting it | Stored Counterload cap reduced | Mobile offensive Shorer |
 | **Narrow Mouth** | Sounder True Return passes through a second correctly read target on same line | Shorter read duration | Pack precision |
 | **Hard Reeve** | Linewright lines survive one heavy impact and can be used for a quicker second traversal | Lower damage transferred through line | Mobile Linewright |
 | **Dry Collar** | Common tool fitting resists short water interruption once | Longer recovery after discharge | Route planning across classes |
@@ -104,9 +104,25 @@ The player cannot collect a thousand seamglass engines from a field of crabs wit
 
 **Trading or live player-to-player markets are not in the first slice.** Balancing against a future online economy prematurely would consume time better spent on combat quality and authored gear.
 
-## 8. Long-tail temptation and strict restraint
+## 8. Playable progression in Soundings
 
-The early game centers on authored combat and a small set of meaningful items, rather than an endless dungeon, trading economy or enormous crafting tree. Those larger systems can be explored later if they strengthen the actual experience. A polished 10-minute fight with mechanically interesting loot is more valuable now than a thousand meaningless drops.
+At the field station, take a watch, work through two packs and face the fault holding up its crew. The salvage, fitting, mastery and grade record belong to the station and carry across professions. Each cleared watch puts a fresh set of seeded calls on the board. Each site has an authored arena and boss. Pack composition, approach and working conditions vary between calls. The service crews return to recurring faults. The worker's campaign decisions stand. [Play Soundings](../../studies/soundings.html)
+
+| Bench | Job | Fitting to pursue | Decision it changes |
+| --- | --- | --- | --- |
+| Gauge Steps, Orren | Turn the Breakwater Mason and reopen the ferry landing | Long Socket | Trade primary damage for greater reach. At grade IV a hit also sends part of the blow into a nearby foe outside the original strike. |
+| South Cut, Orren | Relieve the donor shunt before the next transfer | Transfer Collar | A release hits harder and costs more resource. A Sounder needs enough reading on the particular target they want to answer. |
+| Outer Sill, Selwick | Free the return guide on the service bridge | Sliding Heel | Evade sooner at the cost of maximum health. Quickstep can bring that evade back earlier when a spender connects or releases. |
+
+**The first fitting.** During a station call, defeated Bridleshells leave bridle plates and chalk organisms shed seamglass chips. Up to three pieces remain where they fell until the worker comes close enough to gather them. The quartermaster pays two salvage per piece brought home on a successful watch, or three apiece from grade IV onward. Uncollected parts stay on the shore. A successful call also pays the contract fee and a fitting from its advertised family. The fabrication stamp adds damage, primary attack speed or health. The locker keeps the best workmanship for each pattern and stamp. Equal or lower workmanship returns extra salvage. Once a crew has seen the worker clear its site, its bench can make any of the three stamps at the highest grade cleared there. The fee and finished fitting are visible before purchase. A player chasing a Braced Long Socket can keep working for the quay crew or use salvage earned at either of the other two sites.
+
+**Character progression.** The station tracks ten levels. A new worker can equip Bearing to take a harder hit. Level two opens Follow-through for timing primary attacks against a recovering enemy. Level four opens Quickstep for turning a resource spend into an earlier evade. The equipped mastery and fitting can both change between watches. Switching profession at the workshop gives the worker the new combat kit immediately and keeps their locker, bench stamps and standing.
+
+**High water.** Two different sites cleared at one grade open the next grade. The crew can still take a lower-grade call to try a fitting or complete its record. Higher grades introduce denser packs and added boss pressure as well as harder hits. Each call advertises its working condition. Crosswash marks a lane ahead of an eruption, Set Plates rewards flanking or attacking during recovery, and Short Tide shortens the time before moving enemies reach you. Clearing all three sites at grade VI earns the Standing Watch Collar once. Every site and grade keeps a local best clear time. A failed watch preserves the same offer and equipment for a rematch.
+
+**Deep Watch.** The three crews' commission opens a six-depth expedition. Commit a profession and fitting at the station. Each leg visits a different site under two simultaneous working conditions. Remaining health travels with the crew. At the two camps, choose a repair worth up to 40% of maximum health or a tune worth 14% of starting damage for the rest of that expedition. Finishing the third site records the depth and opens the next. A failed expedition keeps its route for a fresh attempt. Completing the depth rotates its itinerary. The campaign's public orders stay in force while crews work these later tides.
+
+**Where to take the endgame.** The six watch grades and six expedition depths let a worker earn a tool, test it in combination and then try to carry it through three sites. For the wider game, the next expansion should give the worker a reason to take one route through the Sound over another. A run to Keld could earn a fitting that lets a Linewright keep an edge through a heavy stroke, while repairing a ferry ramp could open a second entry into the next site. Prototype the journey and the changed attack together. A player who has finished the high-water watch should be able to name both the next piece they want and the encounter where it will make a difference.
 
 ## 9. The experience this system should create
 

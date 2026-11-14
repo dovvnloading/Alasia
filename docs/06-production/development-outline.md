@@ -8,9 +8,9 @@ We are beginning with the narrative and setting because the places, characters a
 
 First, keep developing the story, relationships, exact geography and expressive combat concepts together. Then bring the first stretch of **Orren** to life: the ferry quay, the falling gauge steps, its inhabited reed fields, and the South Cut machine whose failure exposes the hidden donor route.
 
-[Market Steps](../../studies/market-steps.html) can already be played offline by opening the extracted HTML file. The study covers a single exceptional ebb and the evidence and household claim that travel out of it. For the opening island’s combat and rescue blockout, [The long board](../03-gameplay/orren-field-sequence.md) places the two berths, families and shell charges on the same patch of shore.
+[Soundings](../../studies/soundings.html) now runs offline with all three professions, three service calls, a fitting workshop and a repeatable three-leg expedition. Use it to test reaction to tells, route selection and build changes. [Market Steps](../../studies/market-steps.html) takes the worker from the signature on Orren to a public setting at Verran and Selwick. A completed settlement changes the haul waiting in Soundings.
 
-The Orren action prototype will need a controllable figure, a camera that never obscures combat, responsive attacks and evasion, one convincing enemy, and a way to make each profession's unusual movement or force mechanic intuitive. When those feel good, the same environment can grow into a full sequence with Tessa, discoveries, rescues, loot, sound and art.
+The campaign opening is still a separate production task. [The long board](../03-gameplay/orren-field-sequence.md) places two berths, families and shell charges in one continuous space. The current field contracts do not stage that evacuation. The next production pass needs that continuous district, character animation, mixed environmental audio, and observed sessions with first-time players across the three professions.
 
 Three.js and TypeScript are the proposed basis; measure browser performance as the game grows. Build the combat and environment with readable silhouettes and deliberate effects. The art style should come from Alasia's own materials, never direct copies of competitor designs.
 

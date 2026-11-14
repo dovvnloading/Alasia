@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111b1a">
+  <title>Soundings · Alasia</title>
+  <link rel="stylesheet" href="soundings.css">
+  <script defer src="sound-progression.js"></script>
+  <script defer src="deep-watch.js"></script>
+  <script defer src="sound-combat.js"></script>
+  <script defer src="sound-arena.js"></script>
+  <script defer src="soundings.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to game</a>
+  <header class="mast"><div class="wrap mast-inner">
+    <a class="brand" href="soundings.html" aria-label="Alasia, Soundings home"><span class="gauge" aria-hidden="true"></span>Alasia</a>
+    <nav aria-label="Field station"><button id="board-tab" type="button" aria-current="page">Contracts</button><button id="shop-tab" type="button">Workshop</button><a id="story-link" href="market-steps.html">Market Steps <span aria-hidden="true">↗</span></a></nav>
+    <button id="sound-toggle" type="button" class="quiet" aria-pressed="false">Sound off</button>
+  </div></header>
+  <main id="main" class="wrap" tabindex="-1">
+    <div id="notice" role="status" hidden></div>
+    <section id="station" aria-labelledby="station-heading">
+      <div class="title-row"><div><p class="eyebrow">Inner Sound / Field station</p><h1 id="station-heading">Soundings</h1></div>
+        <div class="station-totals"><span id="level"></span><span id="currency"></span></div></div>
+      <p id="dispatch" class="dispatch" hidden></p>
+      <section id="debrief" hidden tabindex="-1" aria-labelledby="result-title"><p class="eyebrow" id="result-label">Return to port</p><h2 id="result-title"></h2><p id="result-copy"></p><p id="result-drop"></p><p id="result-order"></p><div class="button-row" id="result-actions"></div></section>
+      <div id="board">
+        <div class="charter-grid">
+          <article id="feature" class="feature" aria-labelledby="site-title">
+            <div class="painting" aria-hidden="true"></div>
+            <div class="feature-copy"><span class="plate" id="site-place"></span><h2 id="site-title"></h2>
+              <p id="site-brief"></p><div class="feature-action"><button type="button" id="launch" class="brass"></button><span id="target-drop"></span></div></div>
+          </article>
+          <section class="board-panel" aria-labelledby="list-heading"><div class="ledger-heading"><h2 id="list-heading">Field contracts</h2><label class="grade-select">Grade <select id="grade" aria-label="Contract grade"></select></label></div>
+            <div id="contracts" class="contract-list" role="group" aria-label="Choose a contract"></div>
+            <p id="grade-progress" class="ledger-foot"></p>
+          </section>
+        </div>
+        <section id="deep-panel" hidden class="deep-panel" aria-labelledby="deep-heading" tabindex="-1">
+          <div class="work-top"><div><p class="eyebrow" id="deep-record"></p><h2 id="deep-heading">Deep Watches</h2></div>
+          <label class="grade-select">Depth <select id="depth" aria-label="Deep Watch depth"></select></label></div>
+          <p id="deep-summary"></p><ol id="deep-route"></ol><p id="deep-outcome" role="status"></p><div class="button-row" id="deep-actions"></div>
+        </section>
+        <section class="loadout"><div><p class="eyebrow">On the muster</p><h2 id="active-class"></h2></div>
+          <div class="loadout-info"><p id="class-line"></p><p id="equipped-line"></p></div>
+          <button type="button" id="open-workshop" class="outline">Change loadout <span aria-hidden="true">→</span></button>
+        </section>
+      </div>
+      <section id="workshop" hidden aria-label="Workshop">
+        <div class="work-top"><h2>Workshop</h2><button type="button" id="return-board" class="outline">Back to contracts</button></div>
+        <div class="bench-grid"><section><h3>Profession</h3><div id="professions" class="options"></div></section>
+          <section><h3>Mastery</h3><div id="masteries" class="options"></div></section></div>
+        <div class="bench-grid"><section><h3>Fitting locker</h3><div id="locker" class="options"></div></section>
+          <section><h3>Commission a fitting</h3><div id="recipes" class="options"></div></section></div>
+        <p id="rank-progress" class="ledger-foot"></p>
+      </section>
+
+    </section>
+    <section id="field" hidden aria-labelledby="field-title">
+      <div class="field-heading"><div><p class="eyebrow" id="field-grade"></p><h1 id="field-title"></h1></div><button type="button" id="pause" class="outline">Pause <kbd>Esc</kbd></button></div>
+      <div class="arena-wrap" id="arena-wrap">
+        <canvas id="arena" width="960" height="540" tabindex="0" aria-label="Live combat arena. Keyboard controls and tactical readout follow."></canvas>
+        <div id="overlay" class="overlay" hidden><div role="group" aria-labelledby="overlay-title"><p class="eyebrow" id="overlay-label"></p><h2 id="overlay-title"></h2><p id="overlay-copy"></p><div class="button-row"><button id="resume" class="brass" type="button">Resume watch</button><button id="withdraw" type="button" class="outline">Withdraw to port</button></div></div></div>
+      </div>
+      <div class="hud"><div class="meter"><div><span>Health</span><b id="health-text"></b></div><progress id="health" value="1" max="1"></progress></div><div class="meter resource"><div><span id="resource-name"></span><b id="resource-text"></b></div><progress id="resource" value="0" max="100"></progress></div>
+        <div class="watch-status" id="objective"></div></div>
+      <p id="work-order" class="order"></p>
+      <div class="controls"><div class="stick" id="stick" aria-label="Touch movement pad"><span></span></div><div id="skills" class="skills"></div></div>
+      <details class="help"><summary>Controls and profession technique</summary><p id="technique"></p><p>Move with WASD or arrows, or click the ground. Click an enemy to close and strike. Hold Shift and click to strike in place. Right-click releases your signature. J, E and Q work with keyboard aim. Space evades. R works the marked haul point. On touch, drag the movement pad and hold an action.</p><p>With a standard controller, move with the left stick, aim with the right, strike with the right trigger, set your tool with X, release with Y, evade with A, and work with B. Start pauses.</p></details>
+      <p id="announcer" class="sr" role="status"></p>
+    </section>
+    <noscript><p>Enable JavaScript to play Soundings.</p></noscript>
+  </main>
+  <footer class="wrap"><span>Alasia <i>Lost Isles</i></span><span>Inner Sound survey service</span></footer>
+</body>
+</html>
