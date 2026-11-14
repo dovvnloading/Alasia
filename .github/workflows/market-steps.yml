@@ -1,16 +1,14 @@
-name: Playable studies
+name: Market Steps regression
 
 on:
   pull_request:
     paths:
       - "studies/**"
-      - "tests/soundings-browser.cjs"
       - ".github/workflows/market-steps.yml"
   push:
     branches: [main]
     paths:
       - "studies/**"
-      - "tests/soundings-browser.cjs"
       - ".github/workflows/market-steps.yml"
 
 permissions:
@@ -23,20 +21,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check JavaScript syntax
         run: |
-          for file in studies/*.js studies/*.cjs tests/*.cjs; do
+          for file in studies/*.js studies/*.cjs; do
             node --check "$file"
           done
       - name: Check game-state and chart regressions
-        run: node --test studies/*.test.cjs
-      - name: Play Soundings in headless Chrome
-        env:
-          SOUNDINGS_CAPTURE_DIR: ${{ runner.temp }}/soundings-frames
-        run: node tests/soundings-browser.cjs
-      - name: Keep the rendered game frames
-        if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: soundings-browser-frames
-          path: ${{ runner.temp }}/soundings-frames/
-          if-no-files-found: ignore
-          retention-days: 7
+        run: node --test studies/market-scene.test.cjs

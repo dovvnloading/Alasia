@@ -55,7 +55,6 @@ h1:focus { outline: none; }
 .observations dd { font: 1.05rem/1.45 var(--serif); color: var(--ink); }
 .actions { margin-top: 1.2rem; }
 .actions:empty { display: none; }
-.expedition-link { display: block; width: fit-content; margin-bottom: .9rem; padding: .7rem 1rem; background: var(--ink); color: var(--paper); font-weight: 600; }
 .action-group + .action-group { margin-top: .95rem; }
 .group-heading, .paper-heading { color: var(--red); margin: 0 0 .45rem; }
 .action-list { display: grid; gap: .32rem; }
@@ -114,4 +113,3 @@ button.paper:hover { background: #dbe2cf; }
   .at-hearing .scene { grid-column: 1; }
   .at-hearing #companion { grid-column: 2; }
 }
-a.wordmark { color: inherit; text-decoration: none; }
