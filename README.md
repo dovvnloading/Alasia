@@ -2,15 +2,15 @@
 
 *A dark, story-driven, top-down action RPG for the web.*
 
-**Alasia is a world in development, not a checklist awaiting permission to exist.** This repository begins with its fiction, geography, cast, combat concepts and art direction. The main action RPG is in design. A short browser study lets you make the Sere crossing and follow one claim into Verran. The project title is established; the remaining creative material can deepen and evolve as we write, design and build.
+Alasia is in narrative preproduction. The current work is the campaign manuscript: who signed off on Orren’s landing, what happened to Sere’s third ferry, and what each shore stands to lose. The [campaign treatment](docs/02-narrative/campaign-spine.md) follows the worker from the gangplank at Low Quay to the return to Orren. An earlier short browser study explores Ada’s crossing to Sere.
 
 ## The premise
 
-The islands of Alasia keep their grain ports above the tide by transferring the strain into another shore. Forty-one years ago the Board of Sills used inhabited **Sere** to hold up Verran’s harbor. Its families kept receiving tax bills after the island vanished from the public chart. Now a field-worker signs off on a ferry landing at **Orren** and finds their stamp on the order that lowered the island beneath it. Publishing the two papers together will strand the boat Orren needs to bring its people home.
+The islands of Alasia keep their grain ports above the tide by transferring the strain into another shore. Forty-one years ago the Board of Sills used inhabited **Sere** to hold up Verran’s harbor. Its families kept receiving tax bills after the island vanished from the public chart. Now a field-worker signs off on a ferry landing at **Orren** and finds their stamp on the order that lowered the island beneath it. Publishing the two papers together stops the hoist and strands the loaded ferry Orren needs. Before the bell, two of its hands have time to pull Bela’s rye out of the rain or clear the passenger gangway and catch the launch home.
 
 The story is about survival purchased at someone else's expense, the memories that official charts cannot erase, and the people who must live with the consequences of a new decision. It is *not* a chosen-one prophecy or an invasion by a generic ancient evil.
 
-**Experience:** swift, impactful combat; a dark medieval-to-early-mechanistic maritime world; distinct specialist classes; consequential characters; equipment that changes how players fight. Diablo and Path of Exile are references for *pace and visual finish*, never material to reproduce.
+**Experience:** swift, impactful combat; a dark medieval-to-early-mechanistic maritime world; distinct specialist classes; consequential characters; equipment that changes how players fight. Diablo III and IV and Path of Exile inform the intended combat pace, build choices and reasons to revisit a shore after its story ends. Those systems are design proposals.
 
 ## Explore the Inner Sound
 
